@@ -1,6 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 const ClientReviewOne = () => {
   return (
     <>
@@ -40,181 +41,227 @@ const ClientReviewOne = () => {
           <div className='container'>
             <div className='row'>
               {/* Additional required wrapper */}
-              <div className='swiper swiper-container review-version-one'>
+              <div className=' review-version-one'>
                 <div className='swiper-wrapper'>
                   {/* Slides */}
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper shadow'>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/client/profile-1.png'
-                          alt='Roralex'
-                        />
+                  <Swiper
+                    // install Swiper modules
+                    modules={[Pagination]}
+                    spaceBetween={40}
+                    slidesPerView={3}
+                    slidesPerGroup={2}
+                    speed={1000}
+                    pagination={{ clickable: true }}
+                    autoplay={{ delay: 6000 }}
+                    className=''
+                    breakpoints={{
+                      0: {
+                        slidesPerView: 1,
+                        pagination: false,
+                        spaceBetween: 20,
+                        slidesPerGroup: 1,
+                      },
+                      500: {
+                        slidesPerView: 1,
+                        pagination: false,
+                        spaceBetween: 20,
+                        slidesPerGroup: 1,
+                      },
+                      768: {
+                        slidesPerView: 2,
+                      },
+                      992: {
+                        slidesPerView: 3,
+                      },
+                      1200: {
+                        slidesPerView: 3,
+                      },
+                      1400: {
+                        slidesPerView: 3,
+                      },
+                    }}
+                  >
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper shadow'>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/client/profile-1.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='quta-img'>
+                            <img
+                              src='./assets/img/icons/icon-23.svg'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='review-star'>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                          </div>
+                          <div className='text-file'>
+                            <h2>Julio G. Fisher</h2>
+                            <h4>Administrative assistant</h4>
+                            <p>
+                              Builder wants to be your builder for life. Whether
+                              we built your home or not, it’s not too late for
+                              you to join our family.
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                      <div className='quta-img'>
-                        <img
-                          src='./assets/img/icons/icon-23.svg'
-                          alt='Roralex'
-                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper shadow'>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/client/profile-2.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='quta-img'>
+                            <img
+                              src='./assets/img/icons/icon-23.svg'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='review-star'>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                          </div>
+                          <div className='text-file'>
+                            <h2>Ethel J. McFarland</h2>
+                            <h4>Excavating operator</h4>
+                            <p>
+                              Builder wants to be your builder for life. Whether
+                              we built your home or not, it’s not too late for
+                              you to join our family.
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                      <div className='review-star'>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper shadow'>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/client/profile-3.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='quta-img'>
+                            <img
+                              src='./assets/img/icons/icon-23.svg'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='review-star'>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                          </div>
+                          <div className='text-file'>
+                            <h2>Elvis K. Mullen</h2>
+                            <h4>Building manager</h4>
+                            <p>
+                              Builder wants to be your builder for life. Whether
+                              we built your home or not, it’s not too late for
+                              you to join our family.
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                      <div className='text-file'>
-                        <h2>Julio G. Fisher</h2>
-                        <h4>Administrative assistant</h4>
-                        <p>
-                          Builder wants to be your builder for life. Whether we
-                          built your home or not, it’s not too late for you to
-                          join our family.
-                        </p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper shadow'>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/client/profile-4.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='quta-img'>
+                            <img
+                              src='./assets/img/icons/icon-23.svg'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='review-star'>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                            <span>
+                              <FaStar />
+                            </span>
+                          </div>
+                          <div className='text-file'>
+                            <h2>Elvis K. Mullen</h2>
+                            <h4>Building manager</h4>
+                            <p>
+                              Builder wants to be your builder for life. Whether
+                              we built your home or not, it’s not too late for
+                              you to join our family.
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper shadow'>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/client/profile-2.png'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='quta-img'>
-                        <img
-                          src='./assets/img/icons/icon-23.svg'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='review-star'>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                      </div>
-                      <div className='text-file'>
-                        <h2>Ethel J. McFarland</h2>
-                        <h4>Excavating operator</h4>
-                        <p>
-                          Builder wants to be your builder for life. Whether we
-                          built your home or not, it’s not too late for you to
-                          join our family.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper shadow'>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/client/profile-3.png'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='quta-img'>
-                        <img
-                          src='./assets/img/icons/icon-23.svg'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='review-star'>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                      </div>
-                      <div className='text-file'>
-                        <h2>Elvis K. Mullen</h2>
-                        <h4>Building manager</h4>
-                        <p>
-                          Builder wants to be your builder for life. Whether we
-                          built your home or not, it’s not too late for you to
-                          join our family.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper shadow'>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/client/profile-4.png'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='quta-img'>
-                        <img
-                          src='./assets/img/icons/icon-23.svg'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='review-star'>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                        <span>
-                          <FaStar />
-                        </span>
-                      </div>
-                      <div className='text-file'>
-                        <h2>Elvis K. Mullen</h2>
-                        <h4>Building manager</h4>
-                        <p>
-                          Builder wants to be your builder for life. Whether we
-                          built your home or not, it’s not too late for you to
-                          join our family.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
               </div>
               {/* If we need pagination */}

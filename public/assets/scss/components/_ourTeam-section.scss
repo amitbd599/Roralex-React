@@ -14,6 +14,7 @@
     margin-top: 30px;
     .team-version-one {
       .swiper-wrapper {
+        margin-bottom: 15px;
         .swiper-slide {
           .inner-wrapper {
             border-radius: 8px;
@@ -88,11 +89,11 @@
         }
       }
     }
-    .team-version-one-pagination {
+    .swiper-pagination-bullets {
       display: flex;
       gap: 10px;
       justify-content: center;
-      margin-top: 38px;
+      bottom: 3px;
       .swiper-pagination-bullet-active {
         background: var(--theme_color);
       }

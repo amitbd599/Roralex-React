@@ -12,7 +12,7 @@ import {
 import { useState } from "react";
 
 const SliderOne = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState({});
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   console.log(thumbsSwiper);
   return (
     <>
@@ -23,16 +23,18 @@ const SliderOne = () => {
             <Swiper
               loop={true}
               navigation={true}
-              // thumbs={{ swiper: thumbsSwiper }}
+              thumbs={{ swiper: thumbsSwiper }}
               modules={[FreeMode, Navigation, Thumbs, EffectFade]}
               effect='fade'
-              className='mySwiper2'
             >
               <SwiperSlide>
                 <div className='inner-item swiper-slide'>
                   <div
                     className='slide-bg'
-                    data-background='./assets/img/slider-bg/slider-bg-1.png'
+                    style={{
+                      backgroundImage:
+                        "url('assets/img/slider-bg/slider-bg-1.png')",
+                    }}
                   />
                   <div className='body-data'>
                     <div className='container'>
@@ -77,7 +79,10 @@ const SliderOne = () => {
                 <div className='inner-item swiper-slide'>
                   <div
                     className='slide-bg'
-                    data-background='./assets/img/slider-bg/slider-bg-2.png'
+                    style={{
+                      backgroundImage:
+                        "url('assets/img/slider-bg/slider-bg-2.png')",
+                    }}
                   />
                   <div className='body-data'>
                     <div className='container'>
@@ -122,7 +127,10 @@ const SliderOne = () => {
                 <div className='inner-item swiper-slide'>
                   <div
                     className='slide-bg'
-                    data-background='./assets/img/slider-bg/slider-bg-3.png'
+                    style={{
+                      backgroundImage:
+                        "url('assets/img/slider-bg/slider-bg-3.png')",
+                    }}
                   />
                   <div className='body-data'>
                     <div className='container'>
@@ -167,7 +175,10 @@ const SliderOne = () => {
                 <div className='inner-item swiper-slide'>
                   <div
                     className='slide-bg'
-                    data-background='./assets/img/slider-bg/slider-bg-4.png'
+                    style={{
+                      backgroundImage:
+                        "url('assets/img/slider-bg/slider-bg-4.png')",
+                    }}
                   />
                   <div className='body-data'>
                     <div className='container'>
@@ -220,7 +231,7 @@ const SliderOne = () => {
 
       <section className='hero-slider-arrow'>
         <div className='container'>
-          <div className='swiper hero-slider-nav'>
+          <div className='swiper hero-slider-nav '>
             <div className='swiper-wrapper'>
               <Swiper
                 onSwiper={setThumbsSwiper}
@@ -229,7 +240,7 @@ const SliderOne = () => {
                 freeMode={true}
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
-                className='mySwiper'
+                className='mySwiper w-100'
               >
                 <SwiperSlide>
                   <div className='swiper-slide'>

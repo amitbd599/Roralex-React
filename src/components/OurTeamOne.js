@@ -5,6 +5,8 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 
 const OurTeamOne = () => {
   return (
@@ -46,256 +48,349 @@ const OurTeamOne = () => {
             <div className='row'>
               <div className='swiper swiper-container team-version-one'>
                 <div className='swiper-wrapper'>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper '>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/team/team-6.png'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='intro'>
-                        <a href='team-details.html'>
-                          <h2 className='name'>Michael V. Fournier</h2>
-                        </a>
-                        <p className='position'>Civil Engineer</p>
-                        <div className='social-icon'>
-                          <ul>
-                            <li>
-                              <a href='#'>
-                                <FaFacebookF />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaTwitter />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaYoutube />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaLinkedinIn />
-                              </a>
-                            </li>
-                          </ul>
+                  <Swiper
+                    // install Swiper modules
+                    modules={[Pagination]}
+                    spaceBetween={20}
+                    slidesPerView={4}
+                    slidesPerGroup={2}
+                    speed={1000}
+                    pagination={{ clickable: true }}
+                    autoplay={{ delay: 6000 }}
+                    className='mySwiper'
+                    breakpoints={{
+                      0: {
+                        slidesPerView: 1,
+                        pagination: false,
+                        spaceBetween: 20,
+                        slidesPerGroup: 1,
+                      },
+                      500: {
+                        slidesPerView: 1,
+                        pagination: false,
+                        spaceBetween: 20,
+                        slidesPerGroup: 1,
+                      },
+                      768: {
+                        slidesPerView: 2,
+                      },
+                      992: {
+                        slidesPerView: 3,
+                      },
+                      1200: {
+                        slidesPerView: 4,
+                      },
+                      1400: {
+                        slidesPerView: 4,
+                      },
+                    }}
+                  >
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper '>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/team/team-6.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='intro'>
+                            <a href='team-details.html'>
+                              <h2 className='name'>Michael V. Fournier</h2>
+                            </a>
+                            <p className='position'>Civil Engineer</p>
+                            <div className='social-icon'>
+                              <ul>
+                                <li>
+                                  <a href='#'>
+                                    <FaFacebookF />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaTwitter />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaYoutube />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaLinkedinIn />
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper '>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/team/team-7.png'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='intro'>
-                        <a href='team-details.html'>
-                          <h2 className='name'>George Skertchly</h2>
-                        </a>
-                        <p className='position'>Building Inspector</p>
-                        <div className='social-icon'>
-                          <ul>
-                            <li>
-                              <a href='#'>
-                                <FaFacebookF />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaTwitter />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaYoutube />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaLinkedinIn />
-                              </a>
-                            </li>
-                          </ul>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper '>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/team/team-7.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='intro'>
+                            <a href='team-details.html'>
+                              <h2 className='name'>George Skertchly</h2>
+                            </a>
+                            <p className='position'>Building Inspector</p>
+                            <div className='social-icon'>
+                              <ul>
+                                <li>
+                                  <a href='#'>
+                                    <FaFacebookF />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaTwitter />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaYoutube />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaLinkedinIn />
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper '>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/team/team-8.png'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='intro'>
-                        <a href='team-details.html'>
-                          <h2 className='name'>Dakota Budd</h2>
-                        </a>
-                        <p className='position'>Architecture</p>
-                        <div className='social-icon'>
-                          <ul>
-                            <li>
-                              <a href='#'>
-                                <FaFacebookF />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaTwitter />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaYoutube />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaLinkedinIn />
-                              </a>
-                            </li>
-                          </ul>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      {" "}
+                      <div>
+                        <div className='inner-wrapper '>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/team/team-8.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='intro'>
+                            <a href='team-details.html'>
+                              <h2 className='name'>Dakota Budd</h2>
+                            </a>
+                            <p className='position'>Architecture</p>
+                            <div className='social-icon'>
+                              <ul>
+                                <li>
+                                  <a href='#'>
+                                    <FaFacebookF />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaTwitter />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaYoutube />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaLinkedinIn />
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper '>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/team/team-9.png'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='intro'>
-                        <a href='team-details.html'>
-                          <h2 className='name'>Betty O. Werner</h2>
-                        </a>
-                        <p className='position'>Architect</p>
-                        <div className='social-icon'>
-                          <ul>
-                            <li>
-                              <a href='#'>
-                                <FaFacebookF />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaTwitter />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaYoutube />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaLinkedinIn />
-                              </a>
-                            </li>
-                          </ul>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper '>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/team/team-9.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='intro'>
+                            <a href='team-details.html'>
+                              <h2 className='name'>Betty O. Werner</h2>
+                            </a>
+                            <p className='position'>Architect</p>
+                            <div className='social-icon'>
+                              <ul>
+                                <li>
+                                  <a href='#'>
+                                    <FaFacebookF />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaTwitter />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaYoutube />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaLinkedinIn />
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper '>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/team/team-6.png'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='intro'>
-                        <a href='team-details.html'>
-                          <h2 className='name'>Michael V. Fournier</h2>
-                        </a>
-                        <p className='position'>Civil Engineer</p>
-                        <div className='social-icon'>
-                          <ul>
-                            <li>
-                              <a href='#'>
-                                <FaFacebookF />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaTwitter />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaYoutube />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaLinkedinIn />
-                              </a>
-                            </li>
-                          </ul>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper '>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/team/team-6.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='intro'>
+                            <a href='team-details.html'>
+                              <h2 className='name'>Michael V. Fournier</h2>
+                            </a>
+                            <p className='position'>Civil Engineer</p>
+                            <div className='social-icon'>
+                              <ul>
+                                <li>
+                                  <a href='#'>
+                                    <FaFacebookF />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaTwitter />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaYoutube />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaLinkedinIn />
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper '>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/team/team-10.png'
-                          alt='Roralex'
-                        />
-                      </div>
-                      <div className='intro'>
-                        <a href='team-details.html'>
-                          <h2 className='name'>Betty R. Reis</h2>
-                        </a>
-                        <p className='position'>Stereotyper</p>
-                        <div className='social-icon'>
-                          <ul>
-                            <li>
-                              <a href='#'>
-                                <FaFacebookF />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaTwitter />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaYoutube />
-                              </a>
-                            </li>
-                            <li>
-                              <a href='#'>
-                                <FaLinkedinIn />
-                              </a>
-                            </li>
-                          </ul>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper '>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/team/team-10.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='intro'>
+                            <a href='team-details.html'>
+                              <h2 className='name'>Betty R. Reis</h2>
+                            </a>
+                            <p className='position'>Stereotyper</p>
+                            <div className='social-icon'>
+                              <ul>
+                                <li>
+                                  <a href='#'>
+                                    <FaFacebookF />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaTwitter />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaYoutube />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaLinkedinIn />
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      {" "}
+                      <div>
+                        <div className='inner-wrapper '>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/team/team-8.png'
+                              alt='Roralex'
+                            />
+                          </div>
+                          <div className='intro'>
+                            <a href='team-details.html'>
+                              <h2 className='name'>Dakota Budd</h2>
+                            </a>
+                            <p className='position'>Architecture</p>
+                            <div className='social-icon'>
+                              <ul>
+                                <li>
+                                  <a href='#'>
+                                    <FaFacebookF />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaTwitter />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaYoutube />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <FaLinkedinIn />
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
               </div>
-              {/* If we need pagination */}
-              <div className='team-version-one-pagination' />
             </div>
           </div>
         </div>
