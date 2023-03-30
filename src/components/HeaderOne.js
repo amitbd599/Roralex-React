@@ -5,6 +5,7 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaLocationArrow,
+  FaMapMarkerAlt,
   FaSearch,
   FaTimes,
   FaTwitter,
@@ -118,7 +119,7 @@ const HeaderOne = () => {
                 <div className='inner-location-email-intro pr-30'>
                   <div className='inner'>
                     <span>
-                      <i className='fa-solid fa-location-dot' />
+                      <FaMapMarkerAlt />
                     </span>
                     <span className='text'>Location</span>
                   </div>
