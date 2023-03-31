@@ -1,29 +1,30 @@
 import React, { useEffect, useState } from "react";
 import Isotope from "isotope-layout";
+import imagesLoaded from "imagesloaded";
+
 const LatestProjectsOne = () => {
   const isotope = React.useRef(Isotope | null);
-  // store the filter keyword in a state
-  const [filterKey, setFilterKey] = useState("*");
   const [active, setActive] = useState(1);
-
-  useEffect(() => {
-    isotope.current = new Isotope(".filter-container", {
-      itemSelector: ".filter-item",
-      layoutMode: "fitRows",
-    });
-    // cleanup
-    return () => isotope.current?.destroy();
-  }, []);
 
   // handling filter key change
   useEffect(() => {
-    if (filterKey === "*") isotope.current?.arrange({ filter: `*` });
-    else isotope.current?.arrange({ filter: `.${filterKey}` });
-  }, [filterKey]);
+    const imgLoad = imagesLoaded(document.querySelectorAll(".image-container"));
+
+    imgLoad.on("done", () => {
+      isotope.current = new Isotope(".filter-container", {
+        itemSelector: ".filter-item",
+        layoutMode: "masonry",
+      });
+
+      return () => isotope.current?.destroy();
+    });
+
+    return () => imgLoad.off("done");
+  }, []);
 
   const handleFilterKeyChange = (key, index) => {
-    setFilterKey(key);
     setActive(index);
+    isotope.current?.arrange({ filter: `${key}` });
   };
 
   return (
@@ -77,31 +78,31 @@ const LatestProjectsOne = () => {
                     </button>
                     <button
                       className={active === 2 ? "active" : null}
-                      onClick={() => handleFilterKeyChange("pro1", 2)}
+                      onClick={() => handleFilterKeyChange(".pro1", 2)}
                     >
                       Bridge
                     </button>
                     <button
                       className={active === 3 ? "active" : null}
-                      onClick={() => handleFilterKeyChange("pro2", 3)}
+                      onClick={() => handleFilterKeyChange(".pro2", 3)}
                     >
                       Building
                     </button>
                     <button
                       className={active === 4 ? "active" : null}
-                      onClick={() => handleFilterKeyChange("pro3", 4)}
+                      onClick={() => handleFilterKeyChange(".pro3", 4)}
                     >
                       Home
                     </button>
                     <button
                       className={active === 5 ? "active" : null}
-                      onClick={() => handleFilterKeyChange("pro4", 5)}
+                      onClick={() => handleFilterKeyChange(".pro4", 5)}
                     >
                       School
                     </button>
                     <button
                       className={active === 6 ? "active" : null}
-                      onClick={() => handleFilterKeyChange("pro5", 6)}
+                      onClick={() => handleFilterKeyChange(".pro5", 6)}
                     >
                       Mill Factory
                     </button>
@@ -111,12 +112,13 @@ const LatestProjectsOne = () => {
               {/* End Project Filter Area */}
             </div>
             {/* Start Project Filter Items Area */}
+
             <div
               id='project-version-one'
-              className='row project-version-one filter-container'
+              className='row project-version-one filter-container '
             >
               <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro2'>
-                <div className='project-item'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -143,7 +145,7 @@ const LatestProjectsOne = () => {
                 </div>
               </div>
               <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro2 pro3'>
-                <div className='project-item'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -170,7 +172,7 @@ const LatestProjectsOne = () => {
                 </div>
               </div>
               <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro4 pro5'>
-                <div className='project-item'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -197,7 +199,7 @@ const LatestProjectsOne = () => {
                 </div>
               </div>
               <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro3 pro2'>
-                <div className='project-item'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -224,7 +226,7 @@ const LatestProjectsOne = () => {
                 </div>
               </div>
               <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro5'>
-                <div className='project-item'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -251,7 +253,7 @@ const LatestProjectsOne = () => {
                 </div>
               </div>
               <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro3 pro2'>
-                <div className='project-item'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -278,7 +280,7 @@ const LatestProjectsOne = () => {
                 </div>
               </div>
               <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro4 pro5'>
-                <div className='project-item'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -304,8 +306,8 @@ const LatestProjectsOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro2 pro4'>
-                <div className='project-item'>
+              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro3 pro4'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -332,6 +334,7 @@ const LatestProjectsOne = () => {
                 </div>
               </div>
             </div>
+
             {/* End Project Filter Items Area */}
           </div>
         </div>
