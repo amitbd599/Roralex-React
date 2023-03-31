@@ -9,7 +9,7 @@
     padding-bottom: 30px;
   }
   .slider-client-review {
-    margin-top: 40px;
+    margin-top: -20px;
     .review-version-one {
       .swiper-wrapper {
         padding: 60px 0 30px 0;
@@ -69,11 +69,11 @@
         }
       }
     }
-    .review-version-one-pagination {
+    .swiper-pagination {
       display: flex;
       gap: 10px;
       justify-content: center;
-      margin-top: 20px;
+      bottom: 36px;
       .swiper-pagination-bullet-active {
         background: var(--theme_color);
       }
