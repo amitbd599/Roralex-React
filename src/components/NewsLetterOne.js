@@ -6,7 +6,9 @@ const NewsLetterOne = () => {
       {/* News Letter version one Start */}
       <section
         className='newsletter-section-version-one bg-white py-80 '
-        data-background='./assets/img/bg-overlay/bg-overlay-2.png'
+        style={{
+          backgroundImage: 'url("assets/img/bg-overlay/bg-overlay-2.png")',
+        }}
       >
         <div className='container'>
           <div className='row'>
