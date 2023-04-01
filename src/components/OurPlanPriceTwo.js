@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCircle } from "react-icons/fa";
+import { FaCheck, FaCircle, FaTimes } from "react-icons/fa";
 
 const OurPlanPriceTwo = () => {
   return (
@@ -42,27 +42,27 @@ const OurPlanPriceTwo = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Curing of Plain Cement Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Dos and Don’ts of PCC Works.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Advantages of Laying Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes className='close' />
                           <span>Reinforcement steel bars placed on PCC.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes className='close' />
                           <span>Mixing Plain Cement Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes className='close' />
                           <span>Proportioning Plain Cement Concrete.</span>
                         </li>
                       </ul>
@@ -93,27 +93,27 @@ const OurPlanPriceTwo = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Curing of Plain Cement Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Dos and Don’ts of PCC Works.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Advantages of Laying Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Reinforcement steel placed on PCC.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Mixing of Plain Cement Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes className='close' />
                           <span>Proportioning Plain Cement Concrete.</span>
                         </li>
                       </ul>
@@ -144,27 +144,27 @@ const OurPlanPriceTwo = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Curing of Plain Cement Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Dos and Don’ts of PCC Works.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Advantages of Laying Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Reinforcement steel bars on PCC.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Mixing of Plain Cement Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='check' />
                           <span>Proportioning of Cement Concrete.</span>
                         </li>
                       </ul>
