@@ -11,8 +11,6 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import MobileMenu from "../elements/MobileMenu";
-import MobileMenu_1 from "../elements/MobileMenu_1";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -54,7 +52,6 @@ const HeaderOne = () => {
     setActive(!active);
   };
 
-  console.log(active);
   return (
     <>
       {/* header-area-start */}
@@ -183,84 +180,8 @@ const HeaderOne = () => {
         </div>
       </header>
       {/* header-area-end */}
-      {/* mobile sidebar area start */}
-      {/* <div className='mobile-sidebar-area'>
-        <div className='sidebar__wrapper'>
-          <div className='sidebar__close'>
-            <button className='sidebar__close-btn' id='sidebar__close-btn'>
-              <FaTimes />
-            </button>
-          </div>
-          <div className='sidebar__content'>
-            <div className='sidebar__logo mb-20'>
-              <a href='index-1.html'>
-                <img src='./assets/img/common/Logo_Black.png' alt='logo' />
-              </a>
-              <p>Trusted Contraction service!</p>
-            </div>
-            <div className='sidebar__search mb-25'>
-              <form action='#'>
-                <input type='text' placeholder='Find A Construction Service!' />
-                <button type='submit'>
-                  <FaSearch />
-                </button>
-              </form>
-            </div>
-            <div className='mobile-menu fix' />
-            <div className='sidebar__contact  mb-20'>
-              <h4>Contact With US</h4>
-              <div className='sidebar__social'>
-                <ul>
-                  <li>
-                    <a href='#'>
-                      <FaFacebookF />
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      <FaTwitter />
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      <FaYoutube />
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      <FaLinkedinIn />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className='location-email-intro mobile'>
-                <div className='inner-location-email-intro pr-30'>
-                  <div className='inner'>
-                    <span>
-                      <FaLocationArrow />
-                    </span>
-                    <span className='text'>Location</span>
-                  </div>
-                  <h5 className='text'>4043 Riverside Augusta</h5>
-                </div>
-                <div className='inner-location-email-intro pt-5'>
-                  <div className='inner'>
-                    <span>
-                      <FaEnvelope />
-                    </span>
-                    <span className='text'>Get In Touch</span>
-                  </div>
-                  <h5 className='text'>info@roralex.com</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+
       <div className={active ? "body-overlay active" : "body-overlay"} />
-      {/* <div className='sideBar' onClick={mobileMenu}>
-        <FaTimes />
-      </div> */}
       <div>
         {/*=======  offcanvas mobile menu  =======*/}
         <div
