@@ -295,72 +295,64 @@
   .hero-slider-two {
     .swiper-wrapper {
       position: relative;
-      .inner-item {
-        height: 550px;
-        overflow: hidden;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .slide-bg {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 1;
-          z-index: 0;
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: cover;
-          transition: all 10s cubic-bezier(0, 0, 0.2, 1);
-          mix-blend-mode: multiply;
-          &::after {
-            content: "";
+      .swiper-slide {
+        .inner-item {
+          height: 550px;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .slide-bg {
             position: absolute;
             left: 0;
             top: 0;
-            background: #0000009f;
             width: 100%;
             height: 100%;
-          }
-        }
-        .body-data {
-          position: relative;
-          z-index: 9 !important;
-          .content {
-            padding: 80px 0;
-            .intro-box {
-              display: inline-block;
-              span {
-                background: var(--theme_color);
-                display: flex;
-                padding: 8px 20px;
-                border-radius: 50px;
-                align-items: center;
-                justify-content: center;
-                color: var(--bg_white);
-              }
+            opacity: 1;
+            z-index: 0;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            transition: all 10s cubic-bezier(0, 0, 0.2, 1);
+            mix-blend-mode: multiply;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              background: #0000009f;
+              width: 100%;
+              height: 100%;
             }
-            .heading-text {
-              position: relative;
-              h2 {
-                text-align: center;
-                padding: 0 100px;
-                font-size: 66px;
-                color: var(--bg_white);
-                font-weight: 700;
-                line-height: 75px;
-                text-transform: capitalize;
-                @media #{$md, $sm, $xs} {
-                  padding: 0;
+          }
+          .body-data {
+            position: relative;
+            z-index: 9 !important;
+            .content {
+              padding: 80px 0;
+              .intro-box {
+                display: inline-block;
+                span {
+                  background: var(--theme_color);
+                  display: flex;
+                  padding: 8px 20px;
+                  border-radius: 50px;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--bg_white);
                 }
-                @media #{$sm, $xs} {
-                  text-align: end;
-                  font-size: 50px;
-                  line-height: 60px;
-                }
-                &.rtl {
+              }
+              .heading-text {
+                position: relative;
+                h2 {
+                  text-align: center;
+                  padding: 0 100px;
+                  font-size: 66px;
+                  color: var(--bg_white);
+                  font-weight: 700;
+                  line-height: 75px;
+                  text-transform: capitalize;
                   @media #{$md, $sm, $xs} {
                     padding: 0;
                   }
@@ -369,41 +361,50 @@
                     font-size: 50px;
                     line-height: 60px;
                   }
+                  &.rtl {
+                    @media #{$md, $sm, $xs} {
+                      padding: 0;
+                    }
+                    @media #{$sm, $xs} {
+                      text-align: end;
+                      font-size: 50px;
+                      line-height: 60px;
+                    }
+                  }
                 }
-              }
-              p {
-                padding: 0 100px;
-                text-align: center;
-                margin-top: 20px;
-                font-size: 16px;
-                color: var(--bg_white);
-                @media #{$md, $sm, $xs} {
-                  padding: 0;
-                }
-                @media #{$sm, $xs} {
-                  text-align: start;
-                }
-                &.rtl {
+                p {
+                  padding: 0 100px;
+                  text-align: center;
+                  margin-top: 20px;
+                  font-size: 16px;
+                  color: var(--bg_white);
                   @media #{$md, $sm, $xs} {
                     padding: 0;
                   }
                   @media #{$sm, $xs} {
-                    text-align: end;
+                    text-align: start;
+                  }
+                  &.rtl {
+                    @media #{$md, $sm, $xs} {
+                      padding: 0;
+                    }
+                    @media #{$sm, $xs} {
+                      text-align: end;
+                    }
                   }
                 }
-              }
-              .btn-section {
-                margin-top: 30px;
-                display: flex;
-                justify-content: center;
-                .btn-shape-normal-outline {
-                  width: 140px;
+                .btn-section {
+                  margin-top: 30px;
+                  display: flex;
+                  justify-content: center;
+                  .btn-shape-normal-outline {
+                    width: 140px;
+                  }
                 }
               }
             }
           }
         }
-
         &.swiper-slide-active {
           .slide-bg {
             transform: scale(1.2);
@@ -470,6 +471,7 @@
       transition: all 0.3s linear;
       &::after {
         color: var(--bg_white);
+        font-size: 20px;
       }
       &:hover {
         left: 15px;
@@ -489,6 +491,7 @@
       transition: all 0.3s linear;
       &::after {
         color: var(--bg_white);
+        font-size: 20px;
       }
       &:hover {
         right: 15px;

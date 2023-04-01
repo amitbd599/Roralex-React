@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  FaAngleDown,
   FaBars,
   FaEnvelope,
   FaFacebookF,
@@ -9,12 +10,13 @@ import {
   FaSearch,
   FaTimes,
   FaTwitter,
+  FaUserAlt,
   FaYoutube,
 } from "react-icons/fa";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import Marquee from "react-fast-marquee";
 const HeaderTwo = () => {
   const [active, setActive] = useState(false);
 
@@ -63,48 +65,42 @@ const HeaderTwo = () => {
                   <ul>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-facebook-f' />
+                        <FaFacebookF />
                       </a>
                     </li>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-twitter' />
+                        <FaTwitter />
                       </a>
                     </li>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-youtube' />
+                        <FaYoutube />
                       </a>
                     </li>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-linkedin' />
+                        <FaLinkedinIn />
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div className='news-intro simple-marquee-container'>
                   <div id='topHeader' className='scroll-text'>
-                    <ul>
-                      <li>
-                        <a href='#'>
-                          Building structures are generally constructed on
-                          concrete foundations.
-                        </a>
-                      </li>
-                      <li>
-                        <a href='#'>
-                          The superstructure is constructed once the
-                          substructure is complete.
-                        </a>
-                      </li>
-                      <li>
-                        <a href='#'>
-                          Within this period, any defects found in building must
-                          be fixed and replaced.
-                        </a>
-                      </li>
-                    </ul>
+                    <Marquee pauseOnHover={true} gradient={false}>
+                      <a href='#'>
+                        Within this period, any defects found in building must
+                        be fixed and replaced.
+                      </a>
+                      <a href='#'>
+                        The superstructure is constructed once the substructure
+                        is complete.
+                      </a>
+                      <a href='#'>
+                        Building structures are generally constructed on
+                        concrete foundations.
+                      </a>
+                    </Marquee>
                   </div>
                 </div>
               </div>
@@ -114,9 +110,9 @@ const HeaderTwo = () => {
                 <div className='login-reg'>
                   <div className='inner'>
                     <span>
-                      <i className='fa-solid fa-user' />
+                      <FaUserAlt />
                     </span>
-                    <span>
+                    <span className='pt-5'>
                       <a href='#'>Login</a> / <a href='#'>Registration</a>
                     </span>
                   </div>
@@ -151,7 +147,9 @@ const HeaderTwo = () => {
                     <nav id='mobile-menu'>
                       <ul>
                         <li className='has-dropdown'>
-                          <a href='index-1.html'>Home</a>
+                          <a href='index-1.html'>
+                            Home <FaAngleDown />
+                          </a>
                           <ul className='sub-menu'>
                             <li>
                               <a href='index-1.html'>Home One</a>
@@ -165,7 +163,9 @@ const HeaderTwo = () => {
                           </ul>
                         </li>
                         <li className='has-dropdown'>
-                          <a href='services.html'>Services</a>
+                          <a href='services.html'>
+                            Services <FaAngleDown />
+                          </a>
                           <ul className='sub-menu'>
                             <li>
                               <a href='services.html'>Services</a>
@@ -178,7 +178,9 @@ const HeaderTwo = () => {
                           </ul>
                         </li>
                         <li className='has-dropdown'>
-                          <a href='about.html'>Pages</a>
+                          <a href='about.html'>
+                            Pages <FaAngleDown />
+                          </a>
                           <ul className='sub-menu'>
                             <li>
                               <a href='about.html'>About Us</a>
@@ -206,7 +208,9 @@ const HeaderTwo = () => {
                           </ul>
                         </li>
                         <li className='has-dropdown'>
-                          <a href='blog.html'>Blogs</a>
+                          <a href='blog.html'>
+                            Blogs <FaAngleDown />
+                          </a>
                           <ul className='sub-menu'>
                             <li>
                               <a href='blog.html'>Blogs</a>
@@ -227,8 +231,9 @@ const HeaderTwo = () => {
                   <a
                     href='javascript:void(0)'
                     className='info-toggle-btn f-right sidebar-toggle-btn'
+                    onClick={mobileMenu}
                   >
-                    <i className='fal fa-bars' />
+                    <FaBars />
                   </a>
                 </div>
               </div>

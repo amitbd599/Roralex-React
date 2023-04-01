@@ -224,7 +224,7 @@ a.meanmenu-reveal {
 
         &.active {
           & > .menu-expand {
-            i {
+            svg {
               &:before {
                 transform: rotate(0);
               }
@@ -377,7 +377,7 @@ a.meanmenu-reveal {
     display: flex;
     justify-content: center;
     @media #{$md, $sm, $xs} {
-      display: none;
+      display: none !important;
     }
     & ul {
       & li {
@@ -392,16 +392,7 @@ a.meanmenu-reveal {
         }
         &.has-dropdown {
           & > a {
-            padding-right: 16px;
-            &::after {
-              position: absolute;
-              content: "\f107";
-              right: -4px;
-              top: 30px;
-              font-size: 16px;
-              color: var(--bg_white);
-              font-family: "Font Awesome 6 Pro";
-            }
+            padding-right: 5px;
           }
         }
         & a {
@@ -636,10 +627,10 @@ a.meanmenu-reveal {
   }
 }
 
-.mean-container .mean-nav ul li > a > i {
+.mean-container .mean-nav ul li > a > svg {
   display: none;
 }
-.mean-container .mean-nav ul li > a.mean-expand i {
+.mean-container .mean-nav ul li > a.mean-expand svg {
   display: inline-block;
 }
 
@@ -650,7 +641,7 @@ a.meanmenu-reveal {
 .mean-container .mean-nav ul li a.mean-expand.mean-clicked {
   color: var(--bg_white);
 }
-.mean-container .mean-nav ul li a.mean-expand.mean-clicked i {
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked svg {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -871,7 +862,7 @@ a.meanmenu-reveal {
       gap: 6px;
       font-size: 14px;
     }
-    i {
+    svg {
       color: var(--theme_color);
     }
     .text {
@@ -932,21 +923,12 @@ a.meanmenu-reveal {
         li {
           line-height: initial;
 
-          i {
-            font-size: 18px;
+          svg {
+            font-size: 17px;
             transition: all 0.2s linear;
           }
-          &:hover .fa-facebook-f {
-            color: var(--facebook);
-          }
-          &:hover .fa-twitter {
-            color: var(--twitter);
-          }
-          &:hover .fa-youtube {
-            color: var(--youtube);
-          }
-          &:hover .fa-linkedin {
-            color: var(--linkedin);
+          &:hover svg {
+            color: var(--theme_color);
           }
         }
       }
@@ -957,8 +939,10 @@ a.meanmenu-reveal {
       .scroll-text {
         padding-left: 8px;
         width: 100%;
-        height: 4.5em;
+        height: 35px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
         ul {
           li {
             padding: 5px 0;
@@ -977,6 +961,9 @@ a.meanmenu-reveal {
       height: 100%;
       .inner {
         line-height: initial;
+        display: flex;
+        align-items: center;
+        gap: 5px;
       }
       span {
         a {

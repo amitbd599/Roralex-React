@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  FaAngleDown,
   FaBars,
   FaEnvelope,
   FaFacebookF,
@@ -76,7 +77,9 @@ const HeaderOne = () => {
                   <nav id='mobile-menu'>
                     <ul>
                       <li className='has-dropdown'>
-                        <a href='index-1.html'>Home</a>
+                        <a href='index-1.html'>
+                          Home <FaAngleDown />
+                        </a>
                         <ul className='sub-menu'>
                           <li>
                             <a href='index-1.html'>Home One</a>
@@ -90,7 +93,9 @@ const HeaderOne = () => {
                         </ul>
                       </li>
                       <li className='has-dropdown'>
-                        <a href='services.html'>Services</a>
+                        <a href='services.html'>
+                          Services <FaAngleDown />
+                        </a>
                         <ul className='sub-menu'>
                           <li>
                             <a href='services.html'>Services</a>
@@ -101,7 +106,9 @@ const HeaderOne = () => {
                         </ul>
                       </li>
                       <li className='has-dropdown'>
-                        <a href='about.html'>Pages</a>
+                        <a href='about.html'>
+                          Pages <FaAngleDown />
+                        </a>
                         <ul className='sub-menu'>
                           <li>
                             <a href='about.html'>About Us</a>
@@ -127,7 +134,9 @@ const HeaderOne = () => {
                         </ul>
                       </li>
                       <li className='has-dropdown'>
-                        <a href='blog.html'>Blogs</a>
+                        <a href='blog.html'>
+                          Blogs <FaAngleDown />
+                        </a>
                         <ul className='sub-menu'>
                           <li>
                             <a href='blog.html'>Blogs</a>

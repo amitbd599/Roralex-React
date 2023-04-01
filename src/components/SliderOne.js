@@ -221,9 +221,6 @@ const SliderOne = () => {
               </SwiperSlide>
             </Swiper>
           </div>
-          {/* If we need navigation buttons */}
-          {/* <div className='swiper-button-prev' />
-          <div className='swiper-button-next' /> */}
         </div>
       </section>
       {/* Hero Slider Version One End */}
