@@ -6,7 +6,9 @@ const ProjectBackgroundOverlayTwo = () => {
       {/* Project Background Overlay Section version two start */}
       <section
         className='projectBackgroundOverlay-version-two bg-white '
-        data-background='./assets/img/bg-overlay/bg-overlay-3.png'
+        style={{
+          backgroundImage: "url('assets/img/bg-overlay/bg-overlay-3.png')",
+        }}
       >
         <div className=' container'>
           <div className='row'>
