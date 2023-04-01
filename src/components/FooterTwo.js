@@ -5,6 +5,7 @@ import {
   FaFax,
   FaGlobe,
   FaLinkedinIn,
+  FaLocationArrow,
   FaPhoneAlt,
   FaTwitter,
   FaYoutube,
@@ -13,41 +14,16 @@ import {
 const FooterTwo = () => {
   return (
     <>
-      {/* Footer Section version one Start */}
-      <section className='footer-section-version-one pt-100 mt-50'>
+      {/* Footer Section version two Start */}
+      <section className='footer-section-version-two  mt-50'>
         {/* footer top */}
         <div className='footer-top'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-8'>
-                <div className='wrapper-left'>
-                  <h2>
-                    Looking For Best Partner <br />
-                    For Your Next Construction Works?
-                  </h2>
-                </div>
-              </div>
-              <div className='col-lg-4'>
-                <div className='wrapper-right'>
-                  <button className='btn-shape-normal-outline'>
-                    <span>More About</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* footer middle */}
-        <div className='footer-middle'>
           <div className='container'>
             <div className='row'>
               <div className='col-lg-4 col-md-6'>
                 <div className='wrapper-one'>
                   <div className='img-file'>
-                    <img
-                      src='./assets/img/common/Logo_White.png'
-                      alt='Roralex'
-                    />
+                    <img src='./assets/img/common/Logo_White.png' alt='' />
                   </div>
                   <div className='text-file'>
                     <h3>Building Construction</h3>
@@ -57,6 +33,51 @@ const FooterTwo = () => {
                       aliqua consectetur adipiscingLoren ipsum dolor consectetur
                       adipiscing elit sed do eiusmod tempor incididunt.
                     </p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-2 col-md-6'>
+                <div className='wrapper-two'>
+                  <div className='text-file'>
+                    <h3>Our Service</h3>
+                  </div>
+                  <div className='list-items'>
+                    <ul>
+                      <li>
+                        <a href='#'>Why Choose</a>
+                      </li>
+                      <li>
+                        <a href='#'>Team</a>
+                      </li>
+                      <li>
+                        <a href='#'>About Us</a>
+                      </li>
+                      <li>
+                        <a href='#'>Green Building</a>
+                      </li>
+                      <li>
+                        <a href='#'>Design and Build</a>
+                      </li>
+                      <li>
+                        <a href='#'>Construction</a>
+                      </li>
+                      <li>
+                        <a href='#'>Pre-Construction </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div className='wrapper-three'>
+                  <div className='text-file'>
+                    <h3>Update Information</h3>
+                  </div>
+                  <div className='input-section'>
+                    <input type='email' placeholder='Enter You Email' />
+                    <button className='btn-shape-normal-outline'>
+                      <span>Submit</span>
+                    </button>
                   </div>
                   <div className='social-icon'>
                     <ul>
@@ -84,89 +105,6 @@ const FooterTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-2 col-md-6'>
-                <div className='wrapper-two'>
-                  <div className='text-file'>
-                    <h3>Important Links</h3>
-                  </div>
-                  <div className='list-items'>
-                    <ul>
-                      <li>
-                        <a href='#'>Why Choose</a>
-                      </li>
-                      <li>
-                        <a href='#'>Team</a>
-                      </li>
-                      <li>
-                        <a href='#'>About Us</a>
-                      </li>
-                      <li>
-                        <a href='#'>Green Building</a>
-                      </li>
-                      <li>
-                        <a href='#'>Design and Build</a>
-                      </li>
-                      <li>
-                        <a href='#'>Construction Management</a>
-                      </li>
-                      <li>
-                        <a href='#'>Pre-Construction &amp; Planning </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6'>
-                <div className='wrapper-three'>
-                  <div className='text-file'>
-                    <h3>Gallery Items</h3>
-                  </div>
-                  <div className='items'>
-                    <div className='img'>
-                      <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-1.png'
-                        alt='Roralex'
-                      />
-                    </div>
-                    <div className='img'>
-                      <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-2.png'
-                        alt='Roralex'
-                      />
-                    </div>
-                    <div className='img'>
-                      <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-3.png'
-                        alt='Roralex'
-                      />
-                    </div>
-                    <div className='img'>
-                      <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-4.png'
-                        alt='Roralex'
-                      />
-                    </div>
-                    <div className='img'>
-                      <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-5.png'
-                        alt='Roralex'
-                      />
-                    </div>
-                    <div className='img'>
-                      <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-6.png'
-                        alt='Roralex'
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div className='col-lg-3 col-md-6'>
                 <div className='wrapper-four'>
                   <div className='text-file'>
@@ -176,7 +114,7 @@ const FooterTwo = () => {
                     <ul>
                       <li>
                         <span>
-                          <FaGlobe />
+                          <FaLocationArrow />
                         </span>
                         <span>Canis, New York, United States</span>
                       </li>
@@ -210,15 +148,28 @@ const FooterTwo = () => {
           <div className='container'>
             <div className='row'>
               <hr />
-              <p>
-                2023 © Copyright RORALEX Construction Building. All rights
-                Reserved.
-              </p>
+              <div className='inner'>
+                <p>RORALEX © 2023. All Rights Reserved</p>
+                <ul>
+                  <li>
+                    <a href='#'>Contact Us</a>
+                  </li>
+                  <li>
+                    <a href='#'>FAQ</a>
+                  </li>
+                  <li>
+                    <a href='#'>Privacy</a>
+                  </li>
+                  <li>
+                    <a href='#'>Terms &amp; Conditions</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      {/* Footer Section version one End */}
+      {/* Footer Section version two End */}
     </>
   );
 };
