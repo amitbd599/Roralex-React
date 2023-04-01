@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaCheckCircle, FaPlay } from "react-icons/fa";
+import { FaCheckCircle, FaCircle, FaPlay } from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import ModalVideo from "react-modal-video";
@@ -44,21 +44,21 @@ const AboutTwo = () => {
                   <div className='list-data'>
                     <ul>
                       <li>
-                        <i className='fa-solid fa-circle-small' />
+                        <FaCircle />
                         <span>
                           The Floor Area Ratio (FAR) is the total sum of the
                           whole.
                         </span>
                       </li>
                       <li>
-                        <i className='fa-solid fa-circle-small' />
+                        <FaCircle />
                         <span>
                           FAR will make you understand what will be the height
                           and area of floors..
                         </span>
                       </li>
                       <li>
-                        <i className='fa-solid fa-circle-small' />
+                        <FaCircle />
                         <span>
                           Constructing a building according to the total size of
                           the land area.
