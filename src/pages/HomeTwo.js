@@ -7,6 +7,7 @@ import HeaderTwo from "../components/HeaderTwo";
 import LatestProjectsTwo from "../components/LatestProjectsTwo";
 import NewsLetterTwo from "../components/NewsLetterTwo";
 import OurClientTwo from "../components/OurClientTwo";
+import OurPlanPriceTwo from "../components/OurPlanPriceTwo";
 import OurTeamTwo from "../components/OurTeamTwo";
 import ProjectBackgroundOverlayTwo from "../components/ProjectBackgroundOverlayTwo";
 import ServiceListTwo from "../components/ServiceListTwo";
@@ -45,6 +46,9 @@ const HomeTwo = () => {
 
       {/* Blog Section Two */}
       <BlogSectionTwo />
+
+      {/* Our Plan Price Two */}
+      <OurPlanPriceTwo />
 
       {/* News Letter Two */}
       <NewsLetterTwo />
