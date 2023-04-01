@@ -106,10 +106,10 @@
 .ourTeam-section-version-two {
   .inner-card-items-slider {
     position: relative;
-    margin-top: 40px;
     .team-version-two {
       .swiper-wrapper {
         .swiper-slide {
+          padding: 40px 0;
           .inner-wrapper {
             border-radius: 8px;
             overflow: hidden;
@@ -182,13 +182,13 @@
         }
       }
     }
-    .team-version-two-pagination {
+    .swiper-pagination {
       position: absolute;
       display: flex;
       justify-content: center;
       z-index: 9;
       left: 0;
-      bottom: -50px;
+      bottom: 1px;
       gap: 12px;
       & .swiper-pagination-bullet {
         width: 10px;
