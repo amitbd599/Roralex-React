@@ -54,22 +54,40 @@ const LatestProjectsTwo = () => {
               <div className='col-12'>
                 <div className='text-center'>
                   <div className='project-filter mb-40'>
-                    <button className='active' data-filter='*'>
+                    <button
+                      className={active === 1 ? "active" : null}
+                      onClick={() => handleFilterKeyChange("*", 1)}
+                    >
                       All Projects
                     </button>
-                    <button data-filter='.pro1' className=''>
+                    <button
+                      className={active === 2 ? "active" : null}
+                      onClick={() => handleFilterKeyChange(".pro1", 2)}
+                    >
                       Bridge
                     </button>
-                    <button data-filter='.pro2' className=''>
+                    <button
+                      className={active === 3 ? "active" : null}
+                      onClick={() => handleFilterKeyChange(".pro2", 3)}
+                    >
                       Building
                     </button>
-                    <button data-filter='.pro3' className=''>
+                    <button
+                      className={active === 4 ? "active" : null}
+                      onClick={() => handleFilterKeyChange(".pro3", 4)}
+                    >
                       Home
                     </button>
-                    <button data-filter='.pro4' className=''>
+                    <button
+                      className={active === 5 ? "active" : null}
+                      onClick={() => handleFilterKeyChange(".pro4", 5)}
+                    >
                       School
                     </button>
-                    <button data-filter='.pro5' className=''>
+                    <button
+                      className={active === 6 ? "active" : null}
+                      onClick={() => handleFilterKeyChange(".pro5", 6)}
+                    >
                       Mill Factory
                     </button>
                   </div>
@@ -78,9 +96,12 @@ const LatestProjectsTwo = () => {
               {/* End Project Filter Area */}
             </div>
             {/* Start Project Filter Items Area */}
-            <div id='project-version-two' className='row project-version-two'>
-              <div className='col-xl-3 col-lg-4 col-md-6  pro5 pro2'>
-                <div className='project-item'>
+            <div
+              id='project-version-two'
+              className='row project-version-two filter-container'
+            >
+              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro5 pro2'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -114,8 +135,8 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 pro3 pro4'>
-                <div className='project-item'>
+              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro3 pro4'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -149,8 +170,8 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 pro1 pro5 pro2'>
-                <div className='project-item'>
+              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro5 pro2'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -184,8 +205,8 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 pro4 pro3'>
-                <div className='project-item'>
+              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro4 pro3'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -219,8 +240,8 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 pro3 pro4'>
-                <div className='project-item'>
+              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro3 pro4'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -254,8 +275,8 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 pro1 pro5'>
-                <div className='project-item'>
+              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro5'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -289,8 +310,8 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 pro4 pro2'>
-                <div className='project-item'>
+              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro4 pro2'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img
@@ -324,8 +345,8 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 pro1 pro4'>
-                <div className='project-item'>
+              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro4'>
+                <div className='project-item image-container'>
                   <div className='project-wrapper'>
                     <div className='img-file'>
                       <img

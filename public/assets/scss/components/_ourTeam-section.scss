@@ -155,24 +155,15 @@
                         padding: 2px;
                       }
                     }
-                    i {
+                    svg {
                       font-size: 18px;
                       transition: all 0.2s linear;
                       @media #{$sm, $xs} {
                         font-size: 26px;
                       }
                     }
-                    &:hover .fa-facebook-f {
-                      color: var(--facebook);
-                    }
-                    &:hover .fa-twitter {
-                      color: var(--twitter);
-                    }
-                    &:hover .fa-youtube {
-                      color: var(--youtube);
-                    }
-                    &:hover .fa-linkedin {
-                      color: var(--linkedin);
+                    &:hover svg {
+                      color: var(--theme_color);
                     }
                   }
                 }
