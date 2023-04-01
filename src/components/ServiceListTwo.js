@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 const ServiceListTwo = () => {
   return (
     <>
@@ -27,160 +28,208 @@ const ServiceListTwo = () => {
             <div className='row'>
               <div className='swiper swiper-container serviceList-version-two'>
                 <div className='swiper-wrapper'>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper bg-theme'>
-                      <div className='icon-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/icons/icon-24.svg'
-                          alt=''
-                        />
+                  <Swiper
+                    // install Swiper modules
+                    modules={[Pagination]}
+                    spaceBetween={30}
+                    slidesPerView={3}
+                    slidesPerGroup={2}
+                    speed={1000}
+                    pagination={{ clickable: true }}
+                    autoplay={{ delay: 6000 }}
+                    breakpoints={{
+                      0: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                      },
+                      500: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                      },
+                      768: {
+                        slidesPerView: 2,
+                      },
+                      992: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 2,
+                      },
+                      1200: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 2,
+                      },
+                      1400: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 2,
+                      },
+                    }}
+                  >
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper bg-theme'>
+                          <div className='icon-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/icons/icon-24.svg'
+                              alt=''
+                            />
+                          </div>
+                          <div className='intro'>
+                            <h2>Construction</h2>
+                            <p>
+                              Building construction means any physical activity
+                              on the site involved in the erection
+                            </p>
+                          </div>
+                          <div className='btn-section'>
+                            <a href='services-details.html'>
+                              <span className='btn-shape-normal-outline'>
+                                <span>More Info</span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <div className='intro'>
-                        <h2>Construction</h2>
-                        <p>
-                          Building construction means any physical activity on
-                          the site involved in the erection
-                        </p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper bg-dark'>
+                          <div className='icon-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/icons/icon-25.svg'
+                              alt=''
+                            />
+                          </div>
+                          <div className='intro'>
+                            <h2>Interior</h2>
+                            <p>
+                              Building construction means any physical activity
+                              on the site involved in the erection
+                            </p>
+                          </div>
+                          <div className='btn-section'>
+                            <a href='services-details.html'>
+                              <span className='btn-shape-normal-outline'>
+                                <span>More Info</span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <div className='btn-section'>
-                        <a href='services-details.html'>
-                          <span className='btn-shape-normal-outline'>
-                            <span>More Info</span>
-                          </span>
-                        </a>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper bg-theme'>
+                          <div className='icon-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/icons/icon-26.svg'
+                              alt=''
+                            />
+                          </div>
+                          <div className='intro'>
+                            <h2>Automobile</h2>
+                            <p>
+                              Building construction means any physical activity
+                              on the site involved in the erection
+                            </p>
+                          </div>
+                          <div className='btn-section'>
+                            <a href='services-details.html'>
+                              <span className='btn-shape-normal-outline'>
+                                <span>More Info</span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper bg-dark'>
-                      <div className='icon-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/icons/icon-25.svg'
-                          alt=''
-                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper bg-dark'>
+                          <div className='icon-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/icons/icon-27.svg'
+                              alt=''
+                            />
+                          </div>
+                          <div className='intro'>
+                            <h2>Superstructure</h2>
+                            <p>
+                              Building construction means any physical activity
+                              on the site involved in the erection
+                            </p>
+                          </div>
+                          <div className='btn-section'>
+                            <a href='services-details.html'>
+                              <span className='btn-shape-normal-outline'>
+                                <span>More Info</span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <div className='intro'>
-                        <h2>Interior</h2>
-                        <p>
-                          Building construction means any physical activity on
-                          the site involved in the erection
-                        </p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper bg-theme'>
+                          <div className='icon-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/icons/icon-28.svg'
+                              alt=''
+                            />
+                          </div>
+                          <div className='intro'>
+                            <h2>Manufacture</h2>
+                            <p>
+                              Building construction means any physical activity
+                              on the site involved in the erection
+                            </p>
+                          </div>
+                          <div className='btn-section'>
+                            <a href='services-details.html'>
+                              <span className='btn-shape-normal-outline'>
+                                <span>More Info</span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <div className='btn-section'>
-                        <a href='services-details.html'>
-                          <span className='btn-shape-normal-outline'>
-                            <span>More Info</span>
-                          </span>
-                        </a>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper bg-dark'>
+                          <div className='icon-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/icons/icon-29.svg'
+                              alt=''
+                            />
+                          </div>
+                          <div className='intro'>
+                            <h2>Strengthen </h2>
+                            <p>
+                              Building construction means any physical activity
+                              on the site involved in the erection
+                            </p>
+                          </div>
+                          <div className='btn-section'>
+                            <a href='services-details.html'>
+                              <span className='btn-shape-normal-outline'>
+                                <span>More Info</span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper bg-theme'>
-                      <div className='icon-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/icons/icon-26.svg'
-                          alt=''
-                        />
-                      </div>
-                      <div className='intro'>
-                        <h2>Automobile</h2>
-                        <p>
-                          Building construction means any physical activity on
-                          the site involved in the erection
-                        </p>
-                      </div>
-                      <div className='btn-section'>
-                        <a href='services-details.html'>
-                          <span className='btn-shape-normal-outline'>
-                            <span>More Info</span>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper bg-dark'>
-                      <div className='icon-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/icons/icon-27.svg'
-                          alt=''
-                        />
-                      </div>
-                      <div className='intro'>
-                        <h2>Superstructure</h2>
-                        <p>
-                          Building construction means any physical activity on
-                          the site involved in the erection
-                        </p>
-                      </div>
-                      <div className='btn-section'>
-                        <a href='services-details.html'>
-                          <span className='btn-shape-normal-outline'>
-                            <span>More Info</span>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper bg-theme'>
-                      <div className='icon-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/icons/icon-28.svg'
-                          alt=''
-                        />
-                      </div>
-                      <div className='intro'>
-                        <h2>Manufacture</h2>
-                        <p>
-                          Building construction means any physical activity on
-                          the site involved in the erection
-                        </p>
-                      </div>
-                      <div className='btn-section'>
-                        <a href='services-details.html'>
-                          <span className='btn-shape-normal-outline'>
-                            <span>More Info</span>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper bg-dark'>
-                      <div className='icon-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/icons/icon-29.svg'
-                          alt=''
-                        />
-                      </div>
-                      <div className='intro'>
-                        <h2>Strengthen </h2>
-                        <p>
-                          Building construction means any physical activity on
-                          the site involved in the erection
-                        </p>
-                      </div>
-                      <div className='btn-section'>
-                        <a href='services-details.html'>
-                          <span className='btn-shape-normal-outline'>
-                            <span>More Info</span>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
               </div>
               {/* If we need pagination */}
-              <div className='serviceList-section-version-two-pagination' />
+              {/* <div className='serviceList-section-version-two-pagination' /> */}
             </div>
           </div>
         </div>

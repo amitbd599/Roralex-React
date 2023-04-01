@@ -68,11 +68,12 @@
 
 .serviceList-section-version-two {
   .inner-card-items-slider {
-    margin-top: 50px;
+    margin-top: 10px;
     position: relative;
     .serviceList-version-two {
       .swiper-wrapper {
         .swiper-slide {
+          padding: 40px 0;
           .inner-wrapper {
             border-radius: 8px;
             padding: 20px 20px;
@@ -120,12 +121,12 @@
         }
       }
     }
-    .serviceList-section-version-two-pagination {
+    .swiper-pagination {
       position: absolute;
       z-index: 9;
       display: flex;
       justify-content: center;
-      bottom: -50px;
+      bottom: 1px;
       left: 0;
       gap: 12px;
       & .swiper-pagination-bullet {
