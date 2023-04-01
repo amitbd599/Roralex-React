@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCalendarAlt, FaUserAlt } from "react-icons/fa";
+import { FaArrowRight, FaCalendarAlt, FaUserAlt } from "react-icons/fa";
 
 const BlogSectionTwo = () => {
   return (
@@ -38,13 +38,13 @@ const BlogSectionTwo = () => {
                     <div className='date-admin'>
                       <div className='date'>
                         <span>
-                          <i className='fa-regular fa-timer' />
+                          <FaCalendarAlt />
                         </span>
                         <span>January 15 2019</span>
                       </div>
                       <div className='admin'>
                         <span>
-                          <i className='fa-solid fa-user-tie' />
+                          <FaUserAlt />
                         </span>
                         <span>Admin</span>
                       </div>
@@ -60,7 +60,7 @@ const BlogSectionTwo = () => {
                       <a href='blog-details.html'>
                         <div className='inner'>
                           <span>Read More</span>
-                          <i className='fa-sharp fa-solid fa-arrow-right'></i>
+                          <FaArrowRight />
                         </div>
                       </a>
                     </div>
@@ -80,13 +80,13 @@ const BlogSectionTwo = () => {
                     <div className='date-admin'>
                       <div className='date'>
                         <span>
-                          <i className='fa-regular fa-timer' />
+                          <FaCalendarAlt />
                         </span>
                         <span>January 15 2019</span>
                       </div>
                       <div className='admin'>
                         <span>
-                          <i className='fa-solid fa-user-tie' />
+                          <FaUserAlt />
                         </span>
                         <span>Admin</span>
                       </div>
@@ -100,7 +100,7 @@ const BlogSectionTwo = () => {
                       <a href='blog-details.html'>
                         <div className='inner'>
                           <span>Read More</span>
-                          <i className='fa-sharp fa-solid fa-arrow-right'></i>
+                          <FaArrowRight />
                         </div>
                       </a>
                     </div>
@@ -120,13 +120,13 @@ const BlogSectionTwo = () => {
                     <div className='date-admin'>
                       <div className='date'>
                         <span>
-                          <i className='fa-regular fa-timer' />
+                          <FaCalendarAlt />
                         </span>
                         <span>January 15 2019</span>
                       </div>
                       <div className='admin'>
                         <span>
-                          <i className='fa-solid fa-user-tie' />
+                          <FaUserAlt />
                         </span>
                         <span>Admin</span>
                       </div>
@@ -142,7 +142,7 @@ const BlogSectionTwo = () => {
                       <a href='blog-details.html'>
                         <div className='inner'>
                           <span>Read More</span>
-                          <i className='fa-sharp fa-solid fa-arrow-right'></i>
+                          <FaArrowRight />
                         </div>
                       </a>
                     </div>
@@ -162,13 +162,13 @@ const BlogSectionTwo = () => {
                     <div className='date-admin'>
                       <div className='date'>
                         <span>
-                          <i className='fa-regular fa-timer' />
+                          <FaCalendarAlt />
                         </span>
                         <span>January 15 2019</span>
                       </div>
                       <div className='admin'>
                         <span>
-                          <i className='fa-solid fa-user-tie' />
+                          <FaUserAlt />
                         </span>
                         <span>Admin</span>
                       </div>
@@ -182,7 +182,7 @@ const BlogSectionTwo = () => {
                       <a href='blog-details.html'>
                         <div className='inner'>
                           <span>Read More</span>
-                          <i className='fa-sharp fa-solid fa-arrow-right'></i>
+                          <FaArrowRight />
                         </div>
                       </a>
                     </div>
@@ -202,13 +202,13 @@ const BlogSectionTwo = () => {
                     <div className='date-admin'>
                       <div className='date'>
                         <span>
-                          <i className='fa-regular fa-timer' />
+                          <FaCalendarAlt />
                         </span>
                         <span>January 15 2019</span>
                       </div>
                       <div className='admin'>
                         <span>
-                          <i className='fa-solid fa-user-tie' />
+                          <FaUserAlt />
                         </span>
                         <span>Admin</span>
                       </div>
@@ -222,7 +222,7 @@ const BlogSectionTwo = () => {
                       <a href='blog-details.html'>
                         <div className='inner'>
                           <span>Read More</span>
-                          <i className='fa-sharp fa-solid fa-arrow-right'></i>
+                          <FaArrowRight />
                         </div>
                       </a>
                     </div>
@@ -242,13 +242,13 @@ const BlogSectionTwo = () => {
                     <div className='date-admin'>
                       <div className='date'>
                         <span>
-                          <i className='fa-regular fa-timer' />
+                          <FaCalendarAlt />
                         </span>
                         <span>January 15 2019</span>
                       </div>
                       <div className='admin'>
                         <span>
-                          <i className='fa-solid fa-user-tie' />
+                          <FaUserAlt />
                         </span>
                         <span>Admin</span>
                       </div>
@@ -262,7 +262,7 @@ const BlogSectionTwo = () => {
                       <a href='blog-details.html'>
                         <div className='inner'>
                           <span>Read More</span>
-                          <i className='fa-sharp fa-solid fa-arrow-right'></i>
+                          <FaArrowRight />
                         </div>
                       </a>
                     </div>
