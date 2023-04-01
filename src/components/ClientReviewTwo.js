@@ -30,85 +30,178 @@ const ClientReviewTwo = () => {
               <div className='swiper swiper-container review-version-two'>
                 <div className='swiper-wrapper'>
                   {/* Slides */}
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper shadow'>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/client/profile-1.png'
-                          alt=''
-                        />
+                  <Swiper
+                    // install Swiper modules
+                    modules={[Pagination]}
+                    spaceBetween={0}
+                    slidesPerView={3}
+                    speed={1000}
+                    pagination={{ clickable: true }}
+                    autoplay={{ delay: 6000 }}
+                    breakpoints={{
+                      0: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                      },
+                      500: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                      },
+                      768: {
+                        slidesPerView: 2,
+                      },
+                      992: {
+                        slidesPerView: 3,
+                      },
+                      1200: {
+                        slidesPerView: 3,
+                      },
+                      1400: {
+                        slidesPerView: 3,
+                      },
+                    }}
+                  >
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper shadow'>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/client/profile-1.png'
+                              alt=''
+                            />
+                          </div>
+                          <div className='quta-img'>
+                            <img src='./assets/img/icons/icon-30.svg' alt='' />
+                          </div>
+                          <div className='text'>
+                            <p>
+                              Builder wants to be your builder for life. Whether
+                              we built your home or not, it’s not too late for
+                              you to join our family.
+                            </p>
+                          </div>
+                          <div className='name-pos'>
+                            <h2>Jefferey Y. Lemke</h2>
+                            <h4>Airport service agent</h4>
+                          </div>
+                        </div>
                       </div>
-                      <div className='quta-img'>
-                        <img src='./assets/img/icons/icon-30.svg' alt='' />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      {" "}
+                      <div>
+                        <div className='inner-wrapper shadow'>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/client/profile-5.png'
+                              alt=''
+                            />
+                          </div>
+                          <div className='quta-img'>
+                            <img src='./assets/img/icons/icon-30.svg' alt='' />
+                          </div>
+                          <div className='text'>
+                            <p>
+                              Builder wants to be your builder for life. Whether
+                              we built your home or not, it’s not too late for
+                              you to join our family.
+                            </p>
+                          </div>
+                          <div className='name-pos'>
+                            <h2>Agnes A. Miller</h2>
+                            <h4>Bookmobile driver</h4>
+                          </div>
+                        </div>
                       </div>
-                      <div className='text'>
-                        <p>
-                          Builder wants to be your builder for life. Whether we
-                          built your home or not, it’s not too late for you to
-                          join our family.
-                        </p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      {" "}
+                      <div>
+                        <div className='inner-wrapper shadow'>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/client/profile-3.png'
+                              alt=''
+                            />
+                          </div>
+                          <div className='quta-img'>
+                            <img src='./assets/img/icons/icon-30.svg' alt='' />
+                          </div>
+                          <div className='text'>
+                            <p>
+                              Builder wants to be your builder for life. Whether
+                              we built your home or not, it’s not too late for
+                              you to join our family.
+                            </p>
+                          </div>
+                          <div className='name-pos'>
+                            <h2>Robin C. Ochoa</h2>
+                            <h4>Mortgage broker</h4>
+                          </div>
+                        </div>
                       </div>
-                      <div className='name-pos'>
-                        <h2>Jefferey Y. Lemke</h2>
-                        <h4>Airport service agent</h4>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper shadow'>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/client/profile-2.png'
+                              alt=''
+                            />
+                          </div>
+                          <div className='quta-img'>
+                            <img src='./assets/img/icons/icon-30.svg' alt='' />
+                          </div>
+                          <div className='text'>
+                            <p>
+                              Builder wants to be your builder for life. Whether
+                              we built your home or not, it’s not too late for
+                              you to join our family.
+                            </p>
+                          </div>
+                          <div className='name-pos'>
+                            <h2>Agnes A. Miller</h2>
+                            <h4>Bookmobile driver</h4>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper shadow'>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/client/profile-2.png'
-                          alt=''
-                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div>
+                        <div className='inner-wrapper shadow'>
+                          <div className='img-file'>
+                            <img
+                              className='img-fluid'
+                              src='./assets/img/client/profile-4.png'
+                              alt=''
+                            />
+                          </div>
+                          <div className='quta-img'>
+                            <img src='./assets/img/icons/icon-30.svg' alt='' />
+                          </div>
+                          <div className='text'>
+                            <p>
+                              Builder wants to be your builder for life. Whether
+                              we built your home or not, it’s not too late for
+                              you to join our family.
+                            </p>
+                          </div>
+                          <div className='name-pos'>
+                            <h2>Agnes A. Miller</h2>
+                            <h4>Bookmobile driver</h4>
+                          </div>
+                        </div>
                       </div>
-                      <div className='quta-img'>
-                        <img src='./assets/img/icons/icon-30.svg' alt='' />
-                      </div>
-                      <div className='text'>
-                        <p>
-                          Builder wants to be your builder for life. Whether we
-                          built your home or not, it’s not too late for you to
-                          join our family.
-                        </p>
-                      </div>
-                      <div className='name-pos'>
-                        <h2>Agnes A. Miller</h2>
-                        <h4>Bookmobile driver</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='inner-wrapper shadow'>
-                      <div className='img-file'>
-                        <img
-                          className='img-fluid'
-                          src='./assets/img/client/profile-3.png'
-                          alt=''
-                        />
-                      </div>
-                      <div className='quta-img'>
-                        <img src='./assets/img/icons/icon-30.svg' alt='' />
-                      </div>
-                      <div className='text'>
-                        <p>
-                          Builder wants to be your builder for life. Whether we
-                          built your home or not, it’s not too late for you to
-                          join our family.
-                        </p>
-                      </div>
-                      <div className='name-pos'>
-                        <h2>Robin C. Ochoa</h2>
-                        <h4>Mortgage broker</h4>
-                      </div>
-                    </div>
-                  </div>
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
               </div>
               {/* If we need pagination */}
-              <div className='review-version-two-pagination' />
             </div>
           </div>
         </div>
