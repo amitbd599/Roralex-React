@@ -24,7 +24,9 @@ const HomeOne = () => {
       <SliderOne />
 
       {/* About One */}
-      <AboutOne />
+      <section className='about-section-version-one  pt-40 pb-80'>
+        <AboutOne />
+      </section>
 
       {/* Service List One */}
       <ServiceListOne />
@@ -33,7 +35,14 @@ const HomeOne = () => {
       <WhyChooseUs />
 
       {/* Project Background Overlay One */}
-      <ProjectBackgroundOverlayOne />
+      <section
+        className='projectBackgroundOverlay bg-white '
+        style={{
+          backgroundImage: "url('assets/img/bg-overlay/bg-overlay-1.png')",
+        }}
+      >
+        <ProjectBackgroundOverlayOne />
+      </section>
 
       {/* Our Team One */}
       <OurTeamOne />
@@ -54,7 +63,9 @@ const HomeOne = () => {
       <NewsLetterOne />
 
       {/* Our Client One */}
-      <OurClientOne />
+      <section className='ourclient-section-version-one py-80'>
+        <OurClientOne />
+      </section>
 
       {/* Footer One */}
       <FooterOne />
