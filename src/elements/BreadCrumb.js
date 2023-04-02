@@ -14,7 +14,7 @@ const BreadCrumb = ({ title }) => {
           <div className='row'>
             <div className='col-12'>
               <div className='wrapper'>
-                <h2>About</h2>
+                <h2>{title}</h2>
                 <p>
                   <a href='/index-1.html'>Home</a> / <span>{title}</span>
                 </p>
