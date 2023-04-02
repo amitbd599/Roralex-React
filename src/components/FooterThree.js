@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  FaCircle,
   FaEnvelope,
   FaFacebookF,
   FaFax,
@@ -38,22 +39,22 @@ const FooterThree = () => {
                     <ul>
                       <li>
                         <a href='#'>
-                          <i className='fab fa-facebook-f' />
+                          <FaFacebookF />
                         </a>
                       </li>
                       <li>
                         <a href='#'>
-                          <i className='fab fa-twitter' />
+                          <FaTwitter />
                         </a>
                       </li>
                       <li>
                         <a href='#'>
-                          <i className='fab fa-youtube' />
+                          <FaYoutube />
                         </a>
                       </li>
                       <li>
                         <a href='#'>
-                          <i className='fab fa-linkedin' />
+                          <FaLinkedinIn />
                         </a>
                       </li>
                     </ul>
@@ -69,43 +70,43 @@ const FooterThree = () => {
                     <ul>
                       <li>
                         <a href='#'>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           Why Choose
                         </a>
                       </li>
                       <li>
                         <a href='#'>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           Team
                         </a>
                       </li>
                       <li>
                         <a href='#'>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           About Us
                         </a>
                       </li>
                       <li>
                         <a href='#'>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           Green Building
                         </a>
                       </li>
                       <li>
                         <a href='#'>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           Design and Build
                         </a>
                       </li>
                       <li>
                         <a href='#'>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           Management
                         </a>
                       </li>
                       <li>
                         <a href='#'>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           Pre-Construction{" "}
                         </a>
                       </li>
@@ -196,8 +197,8 @@ const FooterThree = () => {
             <div className='row'>
               <hr />
               <p>
-                2023 © Copyright RORALEX Construction Building. All rights
-                Reserved.
+                2023 © Copyright RORALEX Construction Building React Template.
+                All rights Reserved.
               </p>
             </div>
           </div>

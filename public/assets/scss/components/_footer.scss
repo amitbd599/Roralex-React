@@ -574,21 +574,13 @@
             a {
               padding: 2px;
               font-size: 20px;
+              color: var(--bg_white);
 
-              i {
+              svg {
                 transition: all 0.2s linear;
               }
-              &:hover .fa-facebook-f {
-                color: var(--facebook);
-              }
-              &:hover .fa-twitter {
-                color: var(--twitter);
-              }
-              &:hover .fa-youtube {
-                color: var(--youtube);
-              }
-              &:hover .fa-linkedin {
-                color: var(--linkedin);
+              &:hover svg {
+                color: var(--theme_color);
               }
             }
           }
@@ -624,8 +616,8 @@
             color: var(--bg_white);
             padding: 2px 0;
             transition: all 0.2s linear;
-            i {
-              font-size: 12px;
+            svg {
+              font-size: 8px;
               margin-right: 6px;
             }
             &:hover {
