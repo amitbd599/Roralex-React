@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import Contact from "./pages/Contact";
+import Faq from "./pages/Faq";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -26,6 +27,7 @@ function App() {
         <Route exact path='/index-3' element={<HomeThree />} />
         <Route exact path='/about' element={<About />} />
         <Route exact path='/contact' element={<Contact />} />
+        <Route exact path='/faq' element={<Faq />} />
         <Route exact path='/blog' element={<Blog />} />
         <Route exact path='/blog-details' element={<BlogDetails />} />
       </Routes>
