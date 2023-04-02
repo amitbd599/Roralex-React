@@ -1,12 +1,16 @@
 import React from "react";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
+import { FaAngleDoubleRight } from "react-icons/fa";
 const ProjectBackgroundOverlayThree = () => {
   return (
     <>
       {/* Project Background Overlay Section version three start */}
       <section
         className='projectBackgroundOverlay-version-three bg-white '
-        data-background='./assets/img/bg-overlay/bg-overlay-4.png'
+        style={{
+          backgroundImage: "url('assets/img/bg-overlay/bg-overlay-4.png')",
+        }}
       >
         <div className='container'>
           <div className='row'>
@@ -34,108 +38,126 @@ const ProjectBackgroundOverlayThree = () => {
                       <div className='swiper swiper-container hip-slider-one'>
                         <div className='swiper-wrapper'>
                           {/* Slides */}
-                          <div className='swiper-slide'>
-                            <div className='inner-wrapper'>
-                              <div className='text'>
-                                <h2>Popular Destinations</h2>
+                          <Swiper
+                            // install Swiper modules
+                            modules={[Pagination]}
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            speed={1000}
+                            pagination={{ clickable: true }}
+                            autoplay={{ delay: 6000 }}
+                          >
+                            <SwiperSlide>
+                              {" "}
+                              <div>
+                                <div className='inner-wrapper'>
+                                  <div className='text'>
+                                    <h2>Popular Destinations</h2>
+                                  </div>
+                                  <div className='list'>
+                                    <ul>
+                                      <li>
+                                        {" "}
+                                        <FaAngleDoubleRight />
+                                        <span>
+                                          most commonly used for paving and
+                                          flooring.
+                                        </span>
+                                      </li>
+                                      <li>
+                                        <FaAngleDoubleRight />{" "}
+                                        <span>
+                                          Made from a mix of cement, aggregate
+                                          water.
+                                        </span>
+                                      </li>
+                                      <li>
+                                        <FaAngleDoubleRight />
+                                        <span>
+                                          PCC is a combination of cement
+                                          aggregate.
+                                        </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
                               </div>
-                              <div className='list'>
-                                <ul>
-                                  <li>
-                                    {" "}
-                                    <i className='fa-solid fa-right-to-line' />
-                                    <span>
-                                      most commonly used for paving and
-                                      flooring.
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <i className='fa-solid fa-right-to-line' />{" "}
-                                    <span>
-                                      Made from a mix of cement, aggregate
-                                      water.
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <i className='fa-solid fa-right-to-line' />
-                                    <span>
-                                      PCC is a combination of cement aggregate.
-                                    </span>
-                                  </li>
-                                </ul>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <div>
+                                <div className='inner-wrapper'>
+                                  <div className='text'>
+                                    <h2>History of building</h2>
+                                  </div>
+                                  <div className='list'>
+                                    <ul>
+                                      <li>
+                                        {" "}
+                                        <FaAngleDoubleRight />
+                                        <span>
+                                          One is the increasing durability of
+                                          materials used.
+                                        </span>
+                                      </li>
+                                      <li>
+                                        <FaAngleDoubleRight />
+                                        <span>
+                                          Another is a for buildings of ever
+                                          greater height.
+                                        </span>
+                                      </li>
+                                      <li>
+                                        <FaAngleDoubleRight />
+                                        <span>
+                                          The present state of construction is
+                                          complex.
+                                        </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                          </div>
-                          <div className='swiper-slide'>
-                            <div className='inner-wrapper'>
-                              <div className='text'>
-                                <h2>History of building</h2>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <div>
+                                <div className='inner-wrapper'>
+                                  <div className='text'>
+                                    <h2>Construction today</h2>
+                                  </div>
+                                  <div className='list'>
+                                    <ul>
+                                      <li>
+                                        {" "}
+                                        <FaAngleDoubleRight />
+                                        <span>
+                                          A tent illustrates the elements of
+                                          environmental.
+                                        </span>
+                                      </li>
+                                      <li>
+                                        <FaAngleDoubleRight />{" "}
+                                        <span>
+                                          The membrane must be supported against
+                                          the forces.
+                                        </span>
+                                      </li>
+                                      <li>
+                                        <FaAngleDoubleRight />
+                                        <span>
+                                          The tent has continued in use to the
+                                          present.
+                                        </span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
                               </div>
-                              <div className='list'>
-                                <ul>
-                                  <li>
-                                    {" "}
-                                    <i className='fa-solid fa-right-to-line' />
-                                    <span>
-                                      One is the increasing durability of
-                                      materials used.
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <i className='fa-solid fa-right-to-line' />
-                                    <span>
-                                      Another is a for buildings of ever greater
-                                      height.
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <i className='fa-solid fa-right-to-line' />
-                                    <span>
-                                      The present state of construction is
-                                      complex.
-                                    </span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div className='swiper-slide'>
-                            <div className='inner-wrapper'>
-                              <div className='text'>
-                                <h2>Construction today</h2>
-                              </div>
-                              <div className='list'>
-                                <ul>
-                                  <li>
-                                    {" "}
-                                    <i className='fa-solid fa-right-to-line' />
-                                    <span>
-                                      A tent illustrates the elements of
-                                      environmental.
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <i className='fa-solid fa-right-to-line' />{" "}
-                                    <span>
-                                      The membrane must be supported against the
-                                      forces.
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <i className='fa-solid fa-right-to-line' />
-                                    <span>
-                                      The tent has continued in use to the
-                                      present.
-                                    </span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
+                            </SwiperSlide>
+                          </Swiper>
                         </div>
                       </div>
                       {/* If we need pagination */}
-                      <div className='hip-slider-pagination' />
+                      {/* <div className='hip-slider-pagination' /> */}
                     </div>
                   </div>
                 </div>

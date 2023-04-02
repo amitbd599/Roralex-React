@@ -12,6 +12,7 @@ import ProjectBackgroundOverlayThree from "../components/ProjectBackgroundOverla
 import ServiceListThree from "../components/ServiceListThree";
 import SliderThree from "../components/SliderThree";
 import WhyChooseUsThree from "../components/WhyChooseUsThree";
+import OurTeamThree from "../components/OurTeamThree";
 
 const HomeThree = () => {
   return (
@@ -33,6 +34,11 @@ const HomeThree = () => {
 
       {/* Project Background Overlay Three */}
       <ProjectBackgroundOverlayThree />
+
+      {/* Our Team Three */}
+      <section className='ourTeam-section-version-three bg-white pt-200 pb-60'>
+        <OurTeamThree />
+      </section>
 
       {/* Latest Projects Three */}
       <LatestProjectsThree />

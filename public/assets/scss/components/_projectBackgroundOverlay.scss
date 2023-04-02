@@ -320,6 +320,9 @@
       @media #{$md, $sm, $xs} {
         display: none;
       }
+      .swiper-slide {
+        padding: 36px 0px;
+      }
       .text {
         h2 {
           text-align: start;
@@ -336,14 +339,16 @@
             font-weight: 500;
             color: var(--bg_white);
             font-size: 15px;
-            i {
-              margin-right: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            svg {
               color: var(--theme_color);
             }
           }
         }
       }
-      .hip-slider-pagination {
+      .swiper-pagination {
         margin-top: 16px;
         display: flex;
         justify-content: center;

@@ -201,6 +201,9 @@
     position: relative;
     margin-top: 40px;
     .team-version-three {
+      .swiper-slide {
+        padding-bottom: 30px;
+      }
       .inner-wrapper {
         position: relative;
         border-radius: 8px;
@@ -208,6 +211,7 @@
         @media #{$xs} {
           margin: 20px 20px;
         }
+
         .img-file {
           position: relative;
           z-index: 9;
@@ -285,7 +289,7 @@
           width: 100%;
           height: 100%;
           left: 0;
-          bottom: 0;
+          bottom: 0 !important;
           background: var(--theme_color);
           z-index: 0;
           border-radius: 8px;
@@ -300,7 +304,7 @@
             border-top: transparent;
           }
           .overlay {
-            bottom: -7px;
+            bottom: -7px !important;
             visibility: visible;
             opacity: 1;
           }
@@ -313,21 +317,22 @@
       }
     }
   }
-}
-
-.team-version-three-pagination {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  z-index: 9;
-  gap: 12px;
-  & .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    border-radius: 0;
-  }
-  & .swiper-pagination-bullet-active {
-    background: var(--theme_color);
-    opacity: 1;
+  .swiper-pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    gap: 12px;
+    position: absolute;
+    bottom: 0px;
+    & .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      border-radius: 0;
+    }
+    & .swiper-pagination-bullet-active {
+      background: var(--theme_color);
+      opacity: 1;
+    }
   }
 }
