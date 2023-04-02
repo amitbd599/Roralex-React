@@ -275,6 +275,13 @@
                 @media #{$xs} {
                   margin-bottom: 30px;
                 }
+                .inner {
+                  display: flex;
+                  gap: 4px;
+                  svg {
+                    margin-top: 3px;
+                  }
+                }
               }
             }
             &:hover {
@@ -288,7 +295,7 @@
         }
       }
     }
-    .blog-version-three-pagination {
+    .swiper-pagination {
       margin-top: 20px;
       display: flex;
       justify-content: center;
