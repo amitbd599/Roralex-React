@@ -1,19 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  FreeMode,
-  Thumbs,
-  EffectFade,
-} from "swiper";
+import { Navigation, FreeMode, Thumbs, EffectFade } from "swiper";
 import { useState } from "react";
 
 const SliderOne = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  console.log(thumbsSwiper);
   return (
     <>
       {/* Hero Slider Version One start  */}

@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  FaAngleDown,
   FaBars,
   FaEnvelope,
   FaFacebookF,
@@ -75,7 +76,9 @@ const HeaderThree = () => {
                   <nav id='mobile-menu'>
                     <ul>
                       <li className='has-dropdown'>
-                        <a href='index-1.html'>Home</a>
+                        <a href='index-1.html'>
+                          Home <FaAngleDown />
+                        </a>
                         <ul className='sub-menu'>
                           <li>
                             <a href='index-1.html'>Home One</a>
@@ -89,7 +92,9 @@ const HeaderThree = () => {
                         </ul>
                       </li>
                       <li className='has-dropdown'>
-                        <a href='services.html'>Services</a>
+                        <a href='services.html'>
+                          Services <FaAngleDown />
+                        </a>
                         <ul className='sub-menu'>
                           <li>
                             <a href='services.html'>Services</a>
@@ -100,7 +105,9 @@ const HeaderThree = () => {
                         </ul>
                       </li>
                       <li className='has-dropdown'>
-                        <a href='about.html'>Pages</a>
+                        <a href='about.html'>
+                          Pages <FaAngleDown />
+                        </a>
                         <ul className='sub-menu'>
                           <li>
                             <a href='about.html'>About Us</a>
@@ -126,7 +133,9 @@ const HeaderThree = () => {
                         </ul>
                       </li>
                       <li className='has-dropdown'>
-                        <a href='blog.html'>Blogs</a>
+                        <a href='blog.html'>
+                          Blogs <FaAngleDown />
+                        </a>
                         <ul className='sub-menu'>
                           <li>
                             <a href='blog.html'>Blogs</a>
@@ -147,8 +156,9 @@ const HeaderThree = () => {
                 <a
                   href='javascript:void(0)'
                   className='info-toggle-btn f-right sidebar-toggle-btn'
+                  onClick={mobileMenu}
                 >
-                  <i className='fal fa-bars' />
+                  <FaBars />
                 </a>
               </div>
             </div>
