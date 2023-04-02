@@ -46,7 +46,7 @@ const ServiceListThree = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -71,7 +71,7 @@ const ServiceListThree = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -96,7 +96,7 @@ const ServiceListThree = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -121,7 +121,7 @@ const ServiceListThree = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
