@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCircle } from "react-icons/fa";
+import { FaCheck, FaCircle, FaTimes } from "react-icons/fa";
 
 const OurPlanPriceThree = () => {
   return (
@@ -43,27 +43,27 @@ const OurPlanPriceThree = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>Evidence construction of clay and wood.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>Heavier timber buildings also appeared.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes className='fa-xmark' />
                           <span>The packed clay walls of earlier times.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes className='fa-xmark' />
                           <span>Bricks were made from mud and straw.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes className='fa-xmark' />
                           <span>Less effort was thus required to fell.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes className='fa-xmark' />
                           <span>Against this drab background of endless.</span>
                         </li>
                       </ul>
@@ -91,27 +91,27 @@ const OurPlanPriceThree = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>Evidence construction of clay and wood.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>Heavier timber buildings also appeared.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>The packed clay walls of earlier times.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>Bricks were made from mud and straw.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes className='fa-xmark' />
                           <span>Less effort was thus required to fell.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes className='fa-xmark' />
                           <span>Against this drab background of endless.</span>
                         </li>
                       </ul>
@@ -139,27 +139,27 @@ const OurPlanPriceThree = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>Evidence construction of clay and wood.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>Heavier timber buildings also appeared.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>The packed clay walls of earlier times.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>Bricks were made from mud and straw.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>Less effort was thus required to fell.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck className='fa-check' />
                           <span>Against this background of endless.</span>
                         </li>
                       </ul>
