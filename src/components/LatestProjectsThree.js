@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Isotope from "isotope-layout";
 import imagesLoaded from "imagesloaded";
+import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 
 const LatestProjectsThree = () => {
   const isotope = React.useRef(Isotope | null);
@@ -71,7 +72,7 @@ const LatestProjectsThree = () => {
                       </div>
                       <div className='location'>
                         <h3>
-                          <i className='fa-solid fa-location-dot' />
+                          <FaMapMarkerAlt />
                           Kelly Drive Bridgeport
                         </h3>
                       </div>
@@ -91,7 +92,7 @@ const LatestProjectsThree = () => {
                         <a href='blog-details.html'>
                           <span className='inner'>
                             <span>View Info</span>
-                            <i className='fa-regular fa-arrow-right-to-line' />
+                            <FaArrowRight />
                           </span>
                         </a>
                       </div>
@@ -113,7 +114,7 @@ const LatestProjectsThree = () => {
                       </div>
                       <div className='location'>
                         <h3>
-                          <i className='fa-solid fa-location-dot' />
+                          <FaMapMarkerAlt />
                           Lawman Washington
                         </h3>
                       </div>
@@ -133,7 +134,7 @@ const LatestProjectsThree = () => {
                         <a href='blog-details.html'>
                           <span className='inner'>
                             <span>View Info</span>
-                            <i className='fa-regular fa-arrow-right-to-line' />
+                            <FaArrowRight />
                           </span>
                         </a>
                       </div>
@@ -155,7 +156,7 @@ const LatestProjectsThree = () => {
                       </div>
                       <div className='location'>
                         <h3>
-                          <i className='fa-solid fa-location-dot' />
+                          <FaMapMarkerAlt />
                           Stockert Hollow
                         </h3>
                       </div>
@@ -175,7 +176,7 @@ const LatestProjectsThree = () => {
                         <a href='blog-details.html'>
                           <span className='inner'>
                             <span>View Info</span>
-                            <i className='fa-regular fa-arrow-right-to-line' />
+                            <FaArrowRight />
                           </span>
                         </a>
                       </div>
@@ -197,7 +198,7 @@ const LatestProjectsThree = () => {
                       </div>
                       <div className='location'>
                         <h3>
-                          <i className='fa-solid fa-location-dot' />
+                          <FaMapMarkerAlt />
                           Southern Pines
                         </h3>
                       </div>
@@ -217,7 +218,7 @@ const LatestProjectsThree = () => {
                         <a href='blog-details.html'>
                           <span className='inner'>
                             <span>View Info</span>
-                            <i className='fa-regular fa-arrow-right-to-line' />
+                            <FaArrowRight />
                           </span>
                         </a>
                       </div>
@@ -239,7 +240,7 @@ const LatestProjectsThree = () => {
                       </div>
                       <div className='location'>
                         <h3>
-                          <i className='fa-solid fa-location-dot' />
+                          <FaMapMarkerAlt />
                           Overland Park
                         </h3>
                       </div>
@@ -259,7 +260,7 @@ const LatestProjectsThree = () => {
                         <a href='blog-details.html'>
                           <span className='inner'>
                             <span>View Info</span>
-                            <i className='fa-regular fa-arrow-right-to-line' />
+                            <FaArrowRight />
                           </span>
                         </a>
                       </div>
@@ -281,7 +282,7 @@ const LatestProjectsThree = () => {
                       </div>
                       <div className='location'>
                         <h3>
-                          <i className='fa-solid fa-location-dot' />
+                          <FaMapMarkerAlt />
                           Baton Rouge
                         </h3>
                       </div>
@@ -301,7 +302,7 @@ const LatestProjectsThree = () => {
                         <a href='blog-details.html'>
                           <span className='inner'>
                             <span>View Info</span>
-                            <i className='fa-regular fa-arrow-right-to-line' />
+                            <FaArrowRight />
                           </span>
                         </a>
                       </div>

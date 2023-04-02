@@ -528,7 +528,7 @@
                 align-items: center;
                 gap: 8px;
                 transition: all 0.2s linear;
-                i {
+                svg {
                   visibility: hidden;
                   opacity: 0;
                   transform: translateX(-8px);
@@ -536,7 +536,7 @@
                 }
                 &:hover {
                   color: var(--theme_color);
-                  i {
+                  svg {
                     visibility: visible;
                     opacity: 1;
                     transform: translateX(0px);
@@ -545,11 +545,11 @@
               }
               &.rtl {
                 .inner {
-                  i {
+                  svg {
                     transform: translateX(8px);
                   }
                   &:hover {
-                    i {
+                    svg {
                       transform: translateX(0px);
                     }
                   }

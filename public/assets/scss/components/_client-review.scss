@@ -284,6 +284,8 @@
     }
     .review-version-three {
       margin-top: 10px;
+      display: flex;
+      gap: 10px;
       .icon-file {
         i {
           font-size: 60px;
@@ -312,4 +314,12 @@
       }
     }
   }
+}
+
+.react-tabs-tab {
+  position: initial;
+}
+
+.react-tabs__tab:focus-visible {
+  outline: none;
 }
