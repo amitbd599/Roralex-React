@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaCheckCircle, FaPlay } from "react-icons/fa";
+import { FaAngleDoubleRight, FaCheckCircle, FaPlay } from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import ModalVideo from "react-modal-video";
@@ -30,28 +30,28 @@ const AboutThree = () => {
                     </p>
                     <ul>
                       <li>
-                        <i className='fa-solid fa-arrow-right-from-bracket' />
+                        <FaAngleDoubleRight />
                         <span>
                           Consectetur ac nisi venenatis consequat varius
                           vestibulum phasellus.
                         </span>
                       </li>
                       <li>
-                        <i className='fa-solid fa-arrow-right-from-bracket' />
+                        <FaAngleDoubleRight />
                         <span>
                           A inceptos justo a tincidunt facilisis praesent in
                           convallis accumsan.
                         </span>
                       </li>
                       <li>
-                        <i className='fa-solid fa-arrow-right-from-bracket' />
+                        <FaAngleDoubleRight />
                         <span>
                           Convallis accumsan adipiscing leo a eleifend senectus
                           diam proin.
                         </span>
                       </li>
                       <li>
-                        <i className='fa-solid fa-arrow-right-from-bracket' />
+                        <FaAngleDoubleRight />
                         <span>
                           Asperiores recusandae, orci! Elementum fermentum
                           montes.
@@ -61,19 +61,43 @@ const AboutThree = () => {
                     <div className='hub-show'>
                       <div className='inner-hub'>
                         <h2>
-                          <span className='counter'>450</span>+
+                          <TrackVisibility once>
+                            {({ isVisible }) =>
+                              isVisible && (
+                                <span className='counter'>
+                                  <CountUp delay={0} start={0} end={450} />+
+                                </span>
+                              )
+                            }
+                          </TrackVisibility>
                         </h2>
                         <p>HAPPY CLIENTS</p>
                       </div>
                       <div className='inner-hub'>
                         <h2>
-                          <span className='counter'>5680</span>+
+                          <TrackVisibility once>
+                            {({ isVisible }) =>
+                              isVisible && (
+                                <span className='counter'>
+                                  <CountUp delay={0} start={0} end={5680} />+
+                                </span>
+                              )
+                            }
+                          </TrackVisibility>
                         </h2>
                         <p>PROJECT DONE</p>
                       </div>
                       <div className='inner-hub'>
                         <h2>
-                          <span className='counter'>3690</span>+
+                          <TrackVisibility once>
+                            {({ isVisible }) =>
+                              isVisible && (
+                                <span className='counter'>
+                                  <CountUp delay={0} start={0} end={3690} />+
+                                </span>
+                              )
+                            }
+                          </TrackVisibility>
                         </h2>
                         <p>HAPPY CLIENTS</p>
                       </div>
@@ -109,12 +133,12 @@ const AboutThree = () => {
                   <div className='pop-img'>
                     <div className='inner'>
                       <img src='./assets/img/about-us/about-6.png' alt='' />
-                      <div className='vide-button'>
-                        <a
-                          href='https://www.youtube.com/watch?v=LXsdt6RMNfY'
-                          className='popup-video'
-                        >
-                          <i className='fa-solid fa-play' />
+                      <div
+                        className='vide-button'
+                        onClick={() => setOpen(true)}
+                      >
+                        <a href='JavaScript:void(0)' className='popup-video'>
+                          <FaPlay />
                         </a>
                       </div>
                     </div>
@@ -124,6 +148,13 @@ const AboutThree = () => {
             </div>
           </div>
         </div>
+        <ModalVideo
+          channel='youtube'
+          autoplay
+          isOpen={isOpen}
+          videoId='XM6kTQPzzpQ'
+          onClose={() => setOpen(false)}
+        />
       </section>
       {/* About Section version three end */}
     </>
