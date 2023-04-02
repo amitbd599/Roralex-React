@@ -69,7 +69,10 @@ const SliderThree = () => {
                 <div className='inner-item swiper-slide'>
                   <div
                     className='slide-bg'
-                    data-background='assets/img/slider-bg/slider-bg-2.png'
+                    style={{
+                      backgroundImage:
+                        "url('assets/img/slider-bg/slider-bg-2.png')",
+                    }}
                   />
                   <div className='body-data'>
                     <div className='container'>
@@ -117,7 +120,10 @@ const SliderThree = () => {
                 <div className='inner-item swiper-slide'>
                   <div
                     className='slide-bg'
-                    data-background='assets/img/slider-bg/slider-bg-3.png'
+                    style={{
+                      backgroundImage:
+                        "url('assets/img/slider-bg/slider-bg-3.png')",
+                    }}
                   />
                   <div className='body-data'>
                     <div className='container'>
@@ -164,7 +170,10 @@ const SliderThree = () => {
                 <div className='inner-item swiper-slide'>
                   <div
                     className='slide-bg'
-                    data-background='assets/img/slider-bg/slider-bg-4.png'
+                    style={{
+                      backgroundImage:
+                        "url('assets/img/slider-bg/slider-bg-4.png')",
+                    }}
                   />
                   <div className='body-data'>
                     <div className='container'>
