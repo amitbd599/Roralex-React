@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCheck, FaCircle, FaTimes } from "react-icons/fa";
+import { FaCheck, FaTimes } from "react-icons/fa";
 
 const OurPlanPriceThree = () => {
   return (
