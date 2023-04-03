@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Isotope from "isotope-layout";
 import imagesLoaded from "imagesloaded";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const LatestProjectsTwo = () => {
   const isotope = React.useRef(Isotope | null);
@@ -118,7 +119,7 @@ const LatestProjectsTwo = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>North America</span>
                           </div>
@@ -153,7 +154,7 @@ const LatestProjectsTwo = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>Zappia Drive</span>
                           </div>
@@ -188,7 +189,7 @@ const LatestProjectsTwo = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>Meadowcrest Lane</span>
                           </div>
@@ -223,7 +224,7 @@ const LatestProjectsTwo = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>Passaic Street</span>
                           </div>
@@ -258,7 +259,7 @@ const LatestProjectsTwo = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>Avenue East</span>
                           </div>
@@ -293,7 +294,7 @@ const LatestProjectsTwo = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>East Syracuse</span>
                           </div>
@@ -328,7 +329,7 @@ const LatestProjectsTwo = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>Elk Avenue</span>
                           </div>
@@ -363,7 +364,7 @@ const LatestProjectsTwo = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>Caldwell Road</span>
                           </div>

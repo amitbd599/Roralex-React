@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheck, FaCircle, FaTimes } from "react-icons/fa";
 
 const PricingInner = () => {
   return (
@@ -24,27 +25,27 @@ const PricingInner = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck />
                           <span>Evidence construction of clay and wood.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck />
                           <span>Heavier timber buildings also appeared.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes />
                           <span>The packed clay walls of earlier times.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes />
                           <span>Bricks were made from mud and straw.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes />
                           <span>Less effort was thus required to fell.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes />
                           <span>Against this drab background of endless.</span>
                         </li>
                       </ul>
@@ -72,27 +73,27 @@ const PricingInner = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck />
                           <span>Evidence construction of clay and wood.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck />
                           <span>Heavier timber buildings also appeared.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck />
                           <span>The packed clay walls of earlier times.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck />
                           <span>Bricks were made from mud and straw.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes />
                           <span>Less effort was thus required to fell.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-xmark' />
+                          <FaTimes />
                           <span>Against this drab background of endless.</span>
                         </li>
                       </ul>
@@ -120,27 +121,27 @@ const PricingInner = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck />
                           <span>Evidence construction of clay and wood.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-check' />
+                          <FaCheck />
                           <span>Heavier timber buildings also appeared.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck />
                           <span>The packed clay walls of earlier times.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck />
                           <span>Bricks were made from mud and straw.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck />
                           <span>Less effort was thus required to fell.</span>
                         </li>
                         <li>
-                          <i className='fa-regular fa-check' />
+                          <FaCheck />
                           <span>Against this background of endless.</span>
                         </li>
                       </ul>
@@ -205,23 +206,23 @@ const PricingInner = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>Cement – Rs. 320 to 400 per 50kg.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>TMX Steel Price 55 Rs. Per Kg.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>Aggregate Price- 3300 Rs. Per Tonne.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>RMC Price- 7500 Rs. grade of Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>TMT Wires Price- 50 Rs. per Kg.</span>
                         </li>
                       </ul>
@@ -247,23 +248,23 @@ const PricingInner = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>Cement – Rs. 320 to 500 per 50kg.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>TMX Steel Price 85 Rs. Per Kg.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>Aggregate Price- 5300 Rs. Per Tonne.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>RMC Price- 9500 Rs. grade of Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>TMT Wires Price- 90 Rs. per Kg.</span>
                         </li>
                       </ul>
@@ -289,23 +290,23 @@ const PricingInner = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>Cement – Rs. 320 to 900 per 50kg.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>TMX Steel Price 95 Rs. Per Kg.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>Aggregate Price- 8300 Rs. Per Tonne.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>RMC Price- 9500 Rs. grade of Concrete.</span>
                         </li>
                         <li>
-                          <i className='fa-solid fa-circle-small' />
+                          <FaCircle />
                           <span>TMT Wires Price- 110 Rs. per Kg.</span>
                         </li>
                       </ul>

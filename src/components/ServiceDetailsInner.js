@@ -1,4 +1,14 @@
 import React from "react";
+import {
+  FaArrowRight,
+  FaBuilding,
+  FaDollarSign,
+  FaFilePdf,
+  FaMapMarkerAlt,
+  FaPlay,
+  FaRegCalendarAlt,
+  FaUserAlt,
+} from "react-icons/fa";
 
 const ServiceDetailsInner = () => {
   return (
@@ -105,7 +115,7 @@ const ServiceDetailsInner = () => {
                       <li>
                         <div>
                           <span>
-                            <i className='fa-solid fa-file-pdf' />
+                            <FaFilePdf />
                           </span>
                         </div>
                         <div>
@@ -116,7 +126,7 @@ const ServiceDetailsInner = () => {
                       <li>
                         <div>
                           <span>
-                            <i className='fa-solid fa-file-pdf' />
+                            <FaFilePdf />
                           </span>
                         </div>
                         <div>
@@ -129,7 +139,7 @@ const ServiceDetailsInner = () => {
                       <li>
                         <div>
                           <span>
-                            <i className='fa-solid fa-file-pdf' />
+                            <FaFilePdf />
                           </span>
                         </div>
                         <div>
@@ -140,7 +150,7 @@ const ServiceDetailsInner = () => {
                       <li>
                         <div>
                           <span>
-                            <i className='fa-solid fa-file-pdf' />
+                            <FaFilePdf />
                           </span>
                         </div>
                         <div>
@@ -151,7 +161,7 @@ const ServiceDetailsInner = () => {
                       <li>
                         <div>
                           <span>
-                            <i className='fa-solid fa-file-pdf' />
+                            <FaFilePdf />
                           </span>
                         </div>
                         <div>
@@ -178,7 +188,7 @@ const ServiceDetailsInner = () => {
                               href='https://www.youtube.com/watch?v=o4GuSJYSzrY'
                               className='popup-video'
                             >
-                              <i className='fa-solid fa-play' />
+                              <FaPlay />
                             </a>
                           </div>
                         </div>
@@ -192,27 +202,27 @@ const ServiceDetailsInner = () => {
                     <h3>Company Details :</h3>
                     <ul>
                       <li>
-                        <i className='fa-sharp fa-solid fa-buildings' />
+                        <FaBuilding />
                         <span>Project Name:</span>
                         Inhouse Building
                       </li>
                       <li>
-                        <i className='fa-sharp fa-solid fa-location-dot' />
+                        <FaMapMarkerAlt />
                         <span>Location:</span>
                         Twin House, new york
                       </li>
                       <li>
-                        <i className='fa-solid fa-timer' />
+                        <FaRegCalendarAlt />
                         <span>Published Date:</span>
                         23-01-2023
                       </li>
                       <li>
-                        <i className='fa-solid fa-user' />
+                        <FaUserAlt />
                         <span>Architecture:</span>
                         Amit Biswas
                       </li>
                       <li>
-                        <i className='fa-sharp fa-solid fa-dollar-sign' />
+                        <FaDollarSign />
                         <span>Value:</span>$ 596,52,360
                       </li>
                     </ul>
@@ -263,7 +273,7 @@ const ServiceDetailsInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -288,7 +298,7 @@ const ServiceDetailsInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -313,7 +323,7 @@ const ServiceDetailsInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -338,7 +348,7 @@ const ServiceDetailsInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>

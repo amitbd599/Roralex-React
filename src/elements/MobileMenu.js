@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import {
+  FaEnvelope,
   FaFacebookF,
   FaLinkedinIn,
+  FaPhoneAlt,
+  FaSearch,
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
@@ -64,7 +67,7 @@ class MobileMenu extends Component {
                 <form action='#'>
                   <input type='search' placeholder='Search ...' />
                   <button type='submit'>
-                    <i className='fa fa-search' />
+                    <FaSearch />
                   </button>
                 </form>
               </div>
@@ -183,11 +186,11 @@ class MobileMenu extends Component {
                   <div className='header-contact-info'>
                     <ul className='header-contact-info__list'>
                       <li>
-                        <i className='ion-android-phone-portrait' />{" "}
+                        <FaPhoneAlt />{" "}
                         <a href='tel://12452456012'>(1245) 2456 012 </a>
                       </li>
                       <li>
-                        <i className='ion-android-mail' />{" "}
+                        <FaEnvelope />{" "}
                         <a href='mailto:info@yourdomain.com'>
                           info@yourdomain.com
                         </a>

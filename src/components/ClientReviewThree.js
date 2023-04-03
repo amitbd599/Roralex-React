@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Isotope from "isotope-layout";
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { FaQuoteLeft } from "react-icons/fa";
 const ClientReviewThree = () => {
   const isotope = React.useRef(Isotope | null);
   const [active, setActive] = useState(1);
@@ -220,7 +221,7 @@ const ClientReviewThree = () => {
                           <div className='image-container'>
                             <div className='icon-file'>
                               <span>
-                                <i className='fa-sharp fa-solid fa-quote-left' />
+                                <FaQuoteLeft />
                               </span>
                             </div>
                             <div className='text-file'>
@@ -245,7 +246,7 @@ const ClientReviewThree = () => {
                           <div className='image-container'>
                             <div className='icon-file'>
                               <span>
-                                <i className='fa-sharp fa-solid fa-quote-left' />
+                                <FaQuoteLeft />
                               </span>
                             </div>
                             <div className='text-file'>
@@ -269,7 +270,7 @@ const ClientReviewThree = () => {
                           <div className='image-container'>
                             <div className='icon-file'>
                               <span>
-                                <i className='fa-sharp fa-solid fa-quote-left' />
+                                <FaQuoteLeft />
                               </span>
                             </div>
                             <div className='text-file'>
@@ -294,7 +295,7 @@ const ClientReviewThree = () => {
                           <div className='image-container'>
                             <div className='icon-file'>
                               <span>
-                                <i className='fa-sharp fa-solid fa-quote-left' />
+                                <FaQuoteLeft />
                               </span>
                             </div>
                             <div className='text-file'>
@@ -319,7 +320,7 @@ const ClientReviewThree = () => {
                           <div className='image-container'>
                             <div className='icon-file'>
                               <span>
-                                <i className='fa-sharp fa-solid fa-quote-left' />
+                                <FaQuoteLeft />
                               </span>
                             </div>
                             <div className='text-file'>
@@ -345,7 +346,7 @@ const ClientReviewThree = () => {
                           <div className='image-container'>
                             <div className='icon-file'>
                               <span>
-                                <i className='fa-sharp fa-solid fa-quote-left' />
+                                <FaQuoteLeft />
                               </span>
                             </div>
                             <div className='text-file'>
@@ -371,7 +372,7 @@ const ClientReviewThree = () => {
                           <div className='image-container'>
                             <div className='icon-file'>
                               <span>
-                                <i className='fa-sharp fa-solid fa-quote-left' />
+                                <FaQuoteLeft />
                               </span>
                             </div>
                             <div className='text-file'>

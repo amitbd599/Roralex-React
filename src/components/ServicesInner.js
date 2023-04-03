@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 const ServicesInner = () => {
   return (
@@ -45,7 +46,7 @@ const ServicesInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -70,7 +71,7 @@ const ServicesInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -95,7 +96,7 @@ const ServicesInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -120,7 +121,7 @@ const ServicesInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -145,7 +146,7 @@ const ServicesInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -170,7 +171,7 @@ const ServicesInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -195,7 +196,7 @@ const ServicesInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>
@@ -220,7 +221,7 @@ const ServicesInner = () => {
                     <div className='btn-hold'>
                       <a href='services-details.html'>
                         <span>Read More</span>
-                        <i className='fa-regular fa-arrow-right-to-line' />
+                        <FaArrowRight />
                       </a>
                     </div>
                   </div>

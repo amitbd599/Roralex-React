@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  FaCommentAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPlay,
+  FaUserAlt,
+} from "react-icons/fa";
 
 const ProjectDetailsInner = () => {
   return (
@@ -285,19 +292,19 @@ const ProjectDetailsInner = () => {
                     <div className='input-inner'>
                       <div className='input'>
                         <span>
-                          <i className='fa-solid fa-user' />
+                          <FaUserAlt />
                         </span>
                         <input type='text' placeholder='Enter Your Name' />
                       </div>
                       <div className='input'>
                         <span>
-                          <i className='fa-solid fa-envelope' />
+                          <FaEnvelope />
                         </span>
                         <input type='text' placeholder='Enter Your Email ID' />
                       </div>
                       <div className='text-area'>
                         <span>
-                          <i className='fa-solid fa-message-text' />
+                          <FaCommentAlt />
                         </span>
                         <textarea
                           name='comment'
@@ -325,7 +332,7 @@ const ProjectDetailsInner = () => {
                               href='https://www.youtube.com/watch?v=o4GuSJYSzrY'
                               className='popup-video'
                             >
-                              <i className='fa-solid fa-play' />
+                              <FaPlay />
                             </a>
                           </div>
                         </div>
@@ -417,7 +424,7 @@ const ProjectDetailsInner = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>North America</span>
                           </div>
@@ -452,7 +459,7 @@ const ProjectDetailsInner = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>Zappia Drive</span>
                           </div>
@@ -487,7 +494,7 @@ const ProjectDetailsInner = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>Meadowcrest Lane</span>
                           </div>
@@ -522,7 +529,7 @@ const ProjectDetailsInner = () => {
                           </p>
                           <div className='location'>
                             <span>
-                              <i className='fa-sharp fa-solid fa-location-dot' />
+                              <FaMapMarkerAlt />
                             </span>
                             <span>Passaic Street</span>
                           </div>

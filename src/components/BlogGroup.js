@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  FaAngleDoubleLeft,
+  FaAngleDoubleRight,
+  FaPlay,
+  FaRegCommentDots,
+  FaSearch,
+  FaTimes,
+  FaUserAlt,
+} from "react-icons/fa";
 
 const BlogGroup = () => {
   return (
@@ -21,19 +30,19 @@ const BlogGroup = () => {
                     <div className='admin-intro'>
                       <div className='name'>
                         <span>
-                          <i className='fa-solid fa-user' />
+                          <FaUserAlt />
                         </span>
                         <span>Alex Johan</span>
                       </div>
                       <div className='date'>
                         <span>
-                          <i className='fa-solid fa-timer' />
+                          <FaTimes />
                         </span>
                         <span>Wednesday, February 8, 2023</span>
                       </div>
                       <div className='comment'>
                         <span>
-                          <i className='fa-solid fa-comment' />
+                          <FaRegCommentDots />
                         </span>
                         <span>0 Comments </span>
                       </div>
@@ -74,19 +83,19 @@ const BlogGroup = () => {
                     <div className='admin-intro'>
                       <div className='name'>
                         <span>
-                          <i className='fa-solid fa-user' />
+                          <FaUserAlt />
                         </span>
                         <span>Alex Johan</span>
                       </div>
                       <div className='date'>
                         <span>
-                          <i className='fa-solid fa-timer' />
+                          <FaTimes />
                         </span>
                         <span>Wednesday, February 8, 2023</span>
                       </div>
                       <div className='comment'>
                         <span>
-                          <i className='fa-solid fa-comment' />
+                          <FaRegCommentDots />
                         </span>
                         <span>0 Comments </span>
                       </div>
@@ -127,19 +136,19 @@ const BlogGroup = () => {
                     <div className='admin-intro'>
                       <div className='name'>
                         <span>
-                          <i className='fa-solid fa-user' />
+                          <FaUserAlt />
                         </span>
                         <span>Alex Johan</span>
                       </div>
                       <div className='date'>
                         <span>
-                          <i className='fa-solid fa-timer' />
+                          <FaTimes />
                         </span>
                         <span>Wednesday, February 8, 2023</span>
                       </div>
                       <div className='comment'>
                         <span>
-                          <i className='fa-solid fa-comment' />
+                          <FaRegCommentDots />
                         </span>
                         <span>0 Comments </span>
                       </div>
@@ -173,7 +182,7 @@ const BlogGroup = () => {
                 <div className='pagination'>
                   <div className='item'>
                     <span>
-                      <i className='fa-light fa-angles-left' />
+                      <FaAngleDoubleLeft />
                     </span>
                   </div>
                   <div className='item active'>
@@ -193,7 +202,7 @@ const BlogGroup = () => {
                   </div>
                   <div className='item'>
                     <span>
-                      <i className='fa-light fa-angles-right' />
+                      <FaAngleDoubleRight />
                     </span>
                   </div>
                 </div>
@@ -208,7 +217,7 @@ const BlogGroup = () => {
                     <div className='input-inner'>
                       <div className='input'>
                         <span>
-                          <i className='fa-sharp fa-solid fa-magnifying-glass' />
+                          <FaSearch />
                         </span>
                         <input
                           type='text'
@@ -330,7 +339,7 @@ const BlogGroup = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>construction (8)</span>
                           </a>
@@ -338,7 +347,7 @@ const BlogGroup = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>Superstructure (5)</span>
                           </a>
@@ -346,7 +355,7 @@ const BlogGroup = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>Finance (5)</span>
                           </a>
@@ -354,7 +363,7 @@ const BlogGroup = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>Excavations (5)</span>
                           </a>
@@ -362,7 +371,7 @@ const BlogGroup = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>Superstructure (5)</span>
                           </a>
@@ -370,7 +379,7 @@ const BlogGroup = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>Manufacturers (5)</span>
                           </a>
@@ -410,7 +419,7 @@ const BlogGroup = () => {
                               href='https://www.youtube.com/watch?v=o4GuSJYSzrY'
                               className='popup-video'
                             >
-                              <i className='fa-solid fa-play' />
+                              <FaPlay />
                             </a>
                           </div>
                         </div>

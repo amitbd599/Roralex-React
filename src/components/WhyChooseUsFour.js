@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheck } from "react-icons/fa";
 
 const WhyChooseUsFour = () => {
   return (
@@ -61,19 +62,19 @@ const WhyChooseUsFour = () => {
                             <h2>Best Feature Of Building construction </h2>
                             <ul>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 Design Details and Full Feasibility Study.
                               </li>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 Incorporation of Permits into Design.
                               </li>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 Choosing General Contractor &amp; Construction.
                               </li>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 Research, Surveys, and Sketches.
                               </li>
                             </ul>
@@ -94,20 +95,20 @@ const WhyChooseUsFour = () => {
                             <h2>Egyptian stone diffused the eastern.</h2>
                             <ul>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 The first surviving construction drawings.
                               </li>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 In contrast to stone technology remained.
                               </li>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 Developed the final of columns and moldings.
                               </li>
                               <li>
-                                <i className='fa-solid fa-badge-check' />A
-                                technique borrowed from stone construction.
+                                <FaCheck />A technique borrowed from stone
+                                construction.
                               </li>
                             </ul>
                           </div>
@@ -127,19 +128,19 @@ const WhyChooseUsFour = () => {
                             <h2>Although stone technology confined. </h2>
                             <ul>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 Perhaps the spectacular building achievement.
                               </li>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 It was a huge stone tower nearly as the Great.
                               </li>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 Another example of a new stone technology.
                               </li>
                               <li>
-                                <i className='fa-solid fa-badge-check' />
+                                <FaCheck />
                                 Thus it does not take full advantage of the
                                 great.
                               </li>

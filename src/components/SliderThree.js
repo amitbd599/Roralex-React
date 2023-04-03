@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, FreeMode, Thumbs, EffectFade } from "swiper";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const SliderThree = () => {
   return (
@@ -224,7 +225,7 @@ const SliderThree = () => {
             <h2>FOR Encourage Request CALL :</h2>
             <div className='clips'>
               <span>
-                <i className='fa-solid fa-phone-plus' />
+                <FaPhoneAlt />
               </span>
               <span className='phone'>(989)-256-111-89</span>
             </div>

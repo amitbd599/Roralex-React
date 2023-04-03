@@ -1,4 +1,5 @@
 import React from "react";
+import { FaEnvelopeOpen, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
 
 const ContactInner = () => {
   return (
@@ -125,7 +126,7 @@ const ContactInner = () => {
                       <li>
                         <div>
                           <span>
-                            <i className='fa-solid fa-phone-rotary' />
+                            <FaPhoneAlt />
                           </span>
                         </div>
                         <div>
@@ -136,7 +137,7 @@ const ContactInner = () => {
                       <li>
                         <div>
                           <span>
-                            <i className='fa-solid fa-phone-rotary' />
+                            <FaEnvelopeOpen />
                           </span>
                         </div>
                         <div>
@@ -147,7 +148,7 @@ const ContactInner = () => {
                       <li>
                         <div>
                           <span>
-                            <i className='fa-solid fa-map-location-dot' />
+                            <FaMapMarkedAlt />
                           </span>
                         </div>
                         <div>

@@ -167,7 +167,7 @@ const HeaderThree = () => {
                 <div className='inner-location-email-intro pr-30'>
                   <div className='inner'>
                     <span>
-                      <i className='fa-solid fa-location-dot' />
+                      <FaMapMarkerAlt />
                     </span>
                     <span className='text'>Location</span>
                   </div>
@@ -176,7 +176,7 @@ const HeaderThree = () => {
                 <div className='inner-location-email-intro'>
                   <div className='inner'>
                     <span>
-                      <i className='fa-solid fa-envelope' />
+                      <FaEnvelope />
                     </span>
                     <span className='text'>Get In Touch</span>
                   </div>

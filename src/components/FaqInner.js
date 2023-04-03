@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  FaEnvelopeOpen,
+  FaPlay,
+  FaTextHeight,
+  FaUserAlt,
+} from "react-icons/fa";
 
 const FaqInner = () => {
   return (
@@ -447,19 +453,19 @@ const FaqInner = () => {
                     <div className='input-inner'>
                       <div className='input'>
                         <span>
-                          <i className='fa-solid fa-user' />
+                          <FaUserAlt />
                         </span>
                         <input type='text' placeholder='Enter Your Name' />
                       </div>
                       <div className='input'>
                         <span>
-                          <i className='fa-solid fa-envelope' />
+                          <FaEnvelopeOpen />
                         </span>
                         <input type='text' placeholder='Enter Your Email ID' />
                       </div>
                       <div className='text-area'>
                         <span>
-                          <i className='fa-solid fa-message-text' />
+                          <FaTextHeight />
                         </span>
                         <textarea
                           name='comment'
@@ -487,7 +493,7 @@ const FaqInner = () => {
                               href='https://www.youtube.com/watch?v=o4GuSJYSzrY'
                               className='popup-video'
                             >
-                              <i className='fa-solid fa-play' />
+                              <FaPlay />
                             </a>
                           </div>
                         </div>

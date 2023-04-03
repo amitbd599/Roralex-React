@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  FaAngleDoubleRight,
+  FaPlay,
+  FaRegCalendarAlt,
+  FaRegCommentDots,
+  FaSearch,
+  FaUserAlt,
+} from "react-icons/fa";
 
 const BlogDetailsInner = () => {
   return (
@@ -19,19 +27,19 @@ const BlogDetailsInner = () => {
                   <div className='admin-intro'>
                     <div className='name'>
                       <span>
-                        <i className='fa-solid fa-user' />
+                        <FaUserAlt />
                       </span>
                       <span>Alex Johan</span>
                     </div>
                     <div className='date'>
                       <span>
-                        <i className='fa-solid fa-timer' />
+                        <FaRegCalendarAlt />
                       </span>
                       <span>Wednesday, February 8, 2023</span>
                     </div>
                     <div className='comment'>
                       <span>
-                        <i className='fa-solid fa-comment' />
+                        <FaRegCommentDots />
                       </span>
                       <span>0 Comments </span>
                     </div>
@@ -268,7 +276,7 @@ const BlogDetailsInner = () => {
                     <div className='input-inner'>
                       <div className='input'>
                         <span>
-                          <i className='fa-sharp fa-solid fa-magnifying-glass' />
+                          <FaSearch />
                         </span>
                         <input
                           type='text'
@@ -390,7 +398,7 @@ const BlogDetailsInner = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>construction (8)</span>
                           </a>
@@ -398,7 +406,7 @@ const BlogDetailsInner = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>Superstructure (5)</span>
                           </a>
@@ -406,7 +414,7 @@ const BlogDetailsInner = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>Finance (5)</span>
                           </a>
@@ -414,7 +422,7 @@ const BlogDetailsInner = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>Excavations (5)</span>
                           </a>
@@ -422,7 +430,7 @@ const BlogDetailsInner = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>Superstructure (5)</span>
                           </a>
@@ -430,7 +438,7 @@ const BlogDetailsInner = () => {
                         <li>
                           <a href='#'>
                             <span>
-                              <i className='fa-light fa-chevrons-right' />
+                              <FaAngleDoubleRight />
                             </span>
                             <span>Manufacturers (5)</span>
                           </a>
@@ -470,7 +478,7 @@ const BlogDetailsInner = () => {
                               href='https://www.youtube.com/watch?v=o4GuSJYSzrY'
                               className='popup-video'
                             >
-                              <i className='fa-solid fa-play' />
+                              <FaPlay />
                             </a>
                           </div>
                         </div>
