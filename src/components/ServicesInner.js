@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ServicesInner = () => {
   return (
@@ -44,10 +45,10 @@ const ServicesInner = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -69,10 +70,10 @@ const ServicesInner = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -94,10 +95,10 @@ const ServicesInner = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -119,10 +120,10 @@ const ServicesInner = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -144,10 +145,10 @@ const ServicesInner = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -169,10 +170,10 @@ const ServicesInner = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -194,10 +195,10 @@ const ServicesInner = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -219,10 +220,10 @@ const ServicesInner = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />

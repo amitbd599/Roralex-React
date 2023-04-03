@@ -3,6 +3,7 @@ import { FaAngleDoubleRight, FaCheckCircle, FaPlay } from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import ModalVideo from "react-modal-video";
+import { Link } from "react-router-dom";
 const AboutThree = () => {
   const [isOpen, setOpen] = useState(false);
   return (
@@ -103,11 +104,11 @@ const AboutThree = () => {
                       </div>
                     </div>
                     <div className='btn-section'>
-                      <a href='about.html'>
+                      <Link to='/about'>
                         <span className='btn-shape-normal-outline'>
                           <span>More About Us</span>
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

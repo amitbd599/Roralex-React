@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Isotope from "isotope-layout";
 import imagesLoaded from "imagesloaded";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const LatestProjectsTwo = () => {
   const isotope = React.useRef(Isotope | null);
@@ -126,11 +127,11 @@ const LatestProjectsTwo = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -161,11 +162,11 @@ const LatestProjectsTwo = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -196,11 +197,11 @@ const LatestProjectsTwo = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -231,11 +232,11 @@ const LatestProjectsTwo = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -266,11 +267,11 @@ const LatestProjectsTwo = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -301,11 +302,11 @@ const LatestProjectsTwo = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -336,11 +337,11 @@ const LatestProjectsTwo = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -371,11 +372,11 @@ const LatestProjectsTwo = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

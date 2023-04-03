@@ -266,13 +266,13 @@ const Demo = () => {
                 data-aos-delay='100'
                 data-aos-duration='1500'
               >
-                <Link target='_blank' to='/index-1'>
+                <Link to='/index-1'>
                   <span className='thumb'>
                     <img src='/assets/demo-img/1.png' alt='img' />
                   </span>
                   Home V.1
                 </Link>
-                <Link target='_blank' className='btns btns-base' to='/index-1'>
+                <Link className='btns btns-base' to='/index-1'>
                   Live Demo
                 </Link>
               </div>
@@ -284,13 +284,13 @@ const Demo = () => {
                 data-aos-delay='200'
                 data-aos-duration='1500'
               >
-                <Link target='_blank' to='/index-2'>
+                <Link to='/index-2'>
                   <span className='thumb'>
                     <img src='/assets/demo-img/2.png' alt='img' />
                   </span>
                   Home V.2
                 </Link>
-                <Link target='_blank' className='btns btns-base' to='/index-2'>
+                <Link className='btns btns-base' to='/index-2'>
                   Live Demo
                 </Link>
               </div>
@@ -302,13 +302,13 @@ const Demo = () => {
                 data-aos-delay='300'
                 data-aos-duration='1500'
               >
-                <Link target='_blank' to='/index-3'>
+                <Link to='/index-3'>
                   <span className='thumb'>
                     <img src='/assets/demo-img/3.png' alt='img' />
                   </span>
                   Home V.3
                 </Link>
-                <Link target='_blank' className='btns btns-base' to='/index-3'>
+                <Link className='btns btns-base' to='/index-3'>
                   Live Demo
                 </Link>
               </div>
@@ -320,13 +320,13 @@ const Demo = () => {
                 data-aos-delay='100'
                 data-aos-duration='1500'
               >
-                <Link target='_blank' to='/index-4'>
+                <Link to='/index-4'>
                   <span className='thumb'>
                     <img src='/assets/demo-img/4.png' alt='img' />
                   </span>
                   Home V.4
                 </Link>
-                <Link target='_blank' className='btns btns-base' to='/index-4'>
+                <Link className='btns btns-base' to='/index-4'>
                   Live Demo
                 </Link>
               </div>
@@ -338,13 +338,13 @@ const Demo = () => {
                 data-aos-delay='200'
                 data-aos-duration='1500'
               >
-                <Link target='_blank' to='/index-5'>
+                <Link to='/index-5'>
                   <span className='thumb'>
                     <img src='/assets/demo-img/5.png' alt='img' />
                   </span>
                   Home V.5
                 </Link>
-                <Link target='_blank' className='btns btns-base' to='/index-5'>
+                <Link className='btns btns-base' to='/index-5'>
                   Live Demo
                 </Link>
               </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { FaCalendarAlt, FaRegCalendarAlt, FaUserAlt } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import { Link } from "react-router-dom";
 const BlogSectionThree = () => {
   return (
     <>
@@ -77,12 +78,12 @@ const BlogSectionThree = () => {
                             />
                           </div>
                           <div className='inner-file'>
-                            <a href='blog-details.html'>
+                            <Link to='/blog-details'>
                               <h2>
                                 Building construction is the process of
                                 structure
                               </h2>
-                            </a>
+                            </Link>
                             <p>
                               The vast majority of building construction
                               projects are small renovations, such as the
@@ -115,11 +116,11 @@ const BlogSectionThree = () => {
                             />
                           </div>
                           <div className='inner-file'>
-                            <a href='blog-details.html'>
+                            <Link to='/blog-details'>
                               <h2>
                                 There is a wide range of building products.
                               </h2>
-                            </a>
+                            </Link>
                             <p>
                               The vast majority of building construction
                               projects are small renovations, such as the
@@ -152,11 +153,11 @@ const BlogSectionThree = () => {
                             />
                           </div>
                           <div className='inner-file'>
-                            <a href='blog-details.html'>
+                            <Link to='/blog-details'>
                               <h2>
                                 Construction today is a significant industrial.
                               </h2>
-                            </a>
+                            </Link>
                             <p>
                               The vast majority of building construction
                               projects are small renovations, such as the
@@ -189,12 +190,12 @@ const BlogSectionThree = () => {
                             />
                           </div>
                           <div className='inner-file'>
-                            <a href='blog-details.html'>
+                            <Link to='/blog-details'>
                               <h2>
                                 A tent illustrates basic elements of
                                 environmental.
                               </h2>
-                            </a>
+                            </Link>
                             <p>
                               The vast majority of building construction
                               projects are small renovations, such as the
@@ -227,11 +228,11 @@ const BlogSectionThree = () => {
                             />
                           </div>
                           <div className='inner-file'>
-                            <a href='blog-details.html'>
+                            <Link to='/blog-details'>
                               <h2>
                                 People no traveled in search of game or herds.
                               </h2>
-                            </a>
+                            </Link>
                             <p>
                               The vast majority of building construction
                               projects are small renovations, such as the

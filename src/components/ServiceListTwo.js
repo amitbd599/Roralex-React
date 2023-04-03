@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import { Link } from "react-router-dom";
 const ServiceListTwo = () => {
   return (
     <>
@@ -81,11 +82,11 @@ const ServiceListTwo = () => {
                             </p>
                           </div>
                           <div className='btn-section'>
-                            <a href='services-details.html'>
+                            <Link to='/services-details'>
                               <span className='btn-shape-normal-outline'>
                                 <span>More Info</span>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -108,11 +109,11 @@ const ServiceListTwo = () => {
                             </p>
                           </div>
                           <div className='btn-section'>
-                            <a href='services-details.html'>
+                            <Link to='/services-details'>
                               <span className='btn-shape-normal-outline'>
                                 <span>More Info</span>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -135,11 +136,11 @@ const ServiceListTwo = () => {
                             </p>
                           </div>
                           <div className='btn-section'>
-                            <a href='services-details.html'>
+                            <Link to='/services-details'>
                               <span className='btn-shape-normal-outline'>
                                 <span>More Info</span>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -162,11 +163,11 @@ const ServiceListTwo = () => {
                             </p>
                           </div>
                           <div className='btn-section'>
-                            <a href='services-details.html'>
+                            <Link to='/services-details'>
                               <span className='btn-shape-normal-outline'>
                                 <span>More Info</span>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -189,11 +190,11 @@ const ServiceListTwo = () => {
                             </p>
                           </div>
                           <div className='btn-section'>
-                            <a href='services-details.html'>
+                            <Link to='/services-details'>
                               <span className='btn-shape-normal-outline'>
                                 <span>More Info</span>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -216,11 +217,11 @@ const ServiceListTwo = () => {
                             </p>
                           </div>
                           <div className='btn-section'>
-                            <a href='services-details.html'>
+                            <Link to='/services-details'>
                               <span className='btn-shape-normal-outline'>
                                 <span>More Info</span>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

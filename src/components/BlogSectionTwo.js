@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight, FaCalendarAlt, FaUserAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BlogSectionTwo = () => {
   return (
@@ -57,12 +58,12 @@ const BlogSectionTwo = () => {
                         Home renovations, especially those involving plentiful
                         of demolition can be a very dusty affair.
                       </p>
-                      <a href='blog-details.html'>
+                      <Link to='/blog-details'>
                         <div className='inner'>
                           <span>Read More</span>
                           <FaArrowRight />
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -97,12 +98,12 @@ const BlogSectionTwo = () => {
                         Home renovations, especially those involving plentiful
                         of demolition can be a very dusty affair.
                       </p>
-                      <a href='blog-details.html'>
+                      <Link to='/blog-details'>
                         <div className='inner'>
                           <span>Read More</span>
                           <FaArrowRight />
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -139,12 +140,12 @@ const BlogSectionTwo = () => {
                         Home renovations, especially those involving plentiful
                         of demolition can be a very dusty affair.
                       </p>
-                      <a href='blog-details.html'>
+                      <Link to='/blog-details'>
                         <div className='inner'>
                           <span>Read More</span>
                           <FaArrowRight />
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -179,12 +180,12 @@ const BlogSectionTwo = () => {
                         Home renovations, especially those involving plentiful
                         of demolition can be a very dusty affair.
                       </p>
-                      <a href='blog-details.html'>
+                      <Link to='/blog-details'>
                         <div className='inner'>
                           <span>Read More</span>
                           <FaArrowRight />
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -219,12 +220,12 @@ const BlogSectionTwo = () => {
                         Home renovations, especially those involving plentiful
                         of demolition can be a very dusty affair.
                       </p>
-                      <a href='blog-details.html'>
+                      <Link to='/blog-details'>
                         <div className='inner'>
                           <span>Read More</span>
                           <FaArrowRight />
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -259,12 +260,12 @@ const BlogSectionTwo = () => {
                         Home renovations, especially those involving plentiful
                         of demolition can be a very dusty affair.
                       </p>
-                      <a href='blog-details.html'>
+                      <Link to='/blog-details'>
                         <div className='inner'>
                           <span>Read More</span>
                           <FaArrowRight />
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

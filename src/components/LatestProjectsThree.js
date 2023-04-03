@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Isotope from "isotope-layout";
 import imagesLoaded from "imagesloaded";
 import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const LatestProjectsThree = () => {
   const isotope = React.useRef(Isotope | null);
@@ -89,12 +90,12 @@ const LatestProjectsThree = () => {
                         </p>
                       </div>
                       <div className='btn-hold'>
-                        <a href='blog-details.html'>
+                        <Link to='/blog-details'>
                           <span className='inner'>
                             <span>View Info</span>
                             <FaArrowRight />
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -131,12 +132,12 @@ const LatestProjectsThree = () => {
                         </p>
                       </div>
                       <div className='btn-hold'>
-                        <a href='blog-details.html'>
+                        <Link to='/blog-details'>
                           <span className='inner'>
                             <span>View Info</span>
                             <FaArrowRight />
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -173,12 +174,12 @@ const LatestProjectsThree = () => {
                         </p>
                       </div>
                       <div className='btn-hold'>
-                        <a href='blog-details.html'>
+                        <Link to='/blog-details'>
                           <span className='inner'>
                             <span>View Info</span>
                             <FaArrowRight />
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -215,12 +216,12 @@ const LatestProjectsThree = () => {
                         </p>
                       </div>
                       <div className='btn-hold'>
-                        <a href='blog-details.html'>
+                        <Link to='/blog-details'>
                           <span className='inner'>
                             <span>View Info</span>
                             <FaArrowRight />
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -257,12 +258,12 @@ const LatestProjectsThree = () => {
                         </p>
                       </div>
                       <div className='btn-hold'>
-                        <a href='blog-details.html'>
+                        <Link to='/blog-details'>
                           <span className='inner'>
                             <span>View Info</span>
                             <FaArrowRight />
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -299,12 +300,12 @@ const LatestProjectsThree = () => {
                         </p>
                       </div>
                       <div className='btn-hold'>
-                        <a href='blog-details.html'>
+                        <Link to='/blog-details'>
                           <span className='inner'>
                             <span>View Info</span>
                             <FaArrowRight />
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -316,11 +317,11 @@ const LatestProjectsThree = () => {
             <div className='row'>
               <div className='col-12'>
                 <div className='btn-section'>
-                  <a href='blog.html'>
+                  <Link to='/blog'>
                     <span className='btn-shape-normal-outline'>
                       <span>View All Project</span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

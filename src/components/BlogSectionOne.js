@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCalendarAlt, FaUserAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BlogSectionOne = () => {
   return (
@@ -72,9 +73,9 @@ const BlogSectionOne = () => {
                       demolition can be a very dusty affair. This nasty dust can
                       easily free flow.
                     </p>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       <span>Read More</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -111,9 +112,9 @@ const BlogSectionOne = () => {
                       demolition can be a very dusty affair. This nasty dust can
                       easily free flow.
                     </p>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       <span>Read More</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -150,9 +151,9 @@ const BlogSectionOne = () => {
                       demolition can be a very dusty affair. This nasty dust can
                       easily free flow.
                     </p>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       <span>Read More</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -189,9 +190,9 @@ const BlogSectionOne = () => {
                       demolition can be a very dusty affair. This nasty dust can
                       easily free flow.
                     </p>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       <span>Read More</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -228,9 +229,9 @@ const BlogSectionOne = () => {
                       demolition can be a very dusty affair. This nasty dust can
                       easily free flow.
                     </p>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       <span>Read More</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -267,9 +268,9 @@ const BlogSectionOne = () => {
                       demolition can be a very dusty affair. This nasty dust can
                       easily free flow.
                     </p>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       <span>Read More</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -277,11 +278,11 @@ const BlogSectionOne = () => {
             <div className='row'>
               <div className='col-12'>
                 <div className='btn-section'>
-                  <a href='blog.html'>
+                  <Link to='/blog'>
                     <span className='btn-shape-normal-outline'>
                       <span>View More News</span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

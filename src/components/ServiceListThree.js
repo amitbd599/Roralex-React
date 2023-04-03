@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ServiceListThree = () => {
   return (
@@ -44,10 +45,10 @@ const ServiceListThree = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -69,10 +70,10 @@ const ServiceListThree = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -94,10 +95,10 @@ const ServiceListThree = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -119,10 +120,10 @@ const ServiceListThree = () => {
                       </p>
                     </div>
                     <div className='btn-hold'>
-                      <a href='services-details.html'>
+                      <Link to='/services-details'>
                         <span>Read More</span>
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='overlay' />
@@ -133,11 +134,11 @@ const ServiceListThree = () => {
         </div>
         {/* Button Section */}
         <div className='btn-section text-center'>
-          <a href='services.html'>
+          <Link to='/services'>
             <span className='btn-shape-normal-outline'>
               <span>More Services</span>
             </span>
-          </a>
+          </Link>
         </div>
       </section>
       {/* Service List Section version three End */}

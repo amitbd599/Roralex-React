@@ -62,12 +62,12 @@ const HeaderOne = () => {
             <div className='col-xl-2 col-lg-2 col-md-6 col-6'>
               <div className='logo-area'>
                 <div className='logo'>
-                  <a href='index-1.html'>
+                  <Link to='/index-1'>
                     <img
                       src='./assets/img/common/Logo_White.png'
                       alt='Roralex'
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -77,77 +77,77 @@ const HeaderOne = () => {
                   <nav id='mobile-menu'>
                     <ul>
                       <li className='has-dropdown'>
-                        <a href='index-1.html'>
+                        <Link to='/index-1'>
                           Home <FaAngleDown />
-                        </a>
+                        </Link>
                         <ul className='sub-menu'>
                           <li>
-                            <a href='index-1.html'>Home One</a>
+                            <Link to='/index-1'>Home One</Link>
                           </li>
                           <li>
-                            <a href='index-2.html'>Home Two</a>
+                            <Link to='/index-2'>Home Two</Link>
                           </li>
                           <li>
-                            <a href='index-3.html'>Home Three</a>
+                            <Link to='/index-3'>Home Three</Link>
                           </li>
                         </ul>
                       </li>
                       <li className='has-dropdown'>
-                        <a href='services.html'>
+                        <Link to='/services'>
                           Services <FaAngleDown />
-                        </a>
+                        </Link>
                         <ul className='sub-menu'>
                           <li>
-                            <a href='services.html'>Services</a>
+                            <Link to='services'>Services</Link>
                           </li>
                           <li>
-                            <a href='services-details.html'>Services Details</a>
+                            <Link to='/services-details'>Services Details</Link>
                           </li>
                         </ul>
                       </li>
                       <li className='has-dropdown'>
-                        <a href='about.html'>
+                        <Link to='/about'>
                           Pages <FaAngleDown />
-                        </a>
+                        </Link>
                         <ul className='sub-menu'>
                           <li>
-                            <a href='about.html'>About Us</a>
+                            <Link to='/about'>About Us</Link>
                           </li>
                           <li>
-                            <a href='team.html'>Team</a>
+                            <Link to='/team'>Team</Link>
                           </li>
                           <li>
-                            <a href='team-details.html'>Team Details</a>
+                            <Link to='/team-details'>Team Details</Link>
                           </li>
                           <li>
-                            <a href='project.html'>projects</a>
+                            <Link to='/project'>projects</Link>
                           </li>
                           <li>
-                            <a href='project-details.html'>projects Details</a>
+                            <Link to='/project-details'>projects Details</Link>
                           </li>
                           <li>
-                            <a href='pricing.html'>pricing Page</a>
+                            <Link to='/pricing'>pricing Page</Link>
                           </li>
                           <li>
-                            <a href='faq.html'>FAQ Page</a>
+                            <Link to='/faq'>FAQ Page</Link>
                           </li>
                         </ul>
                       </li>
                       <li className='has-dropdown'>
-                        <a href='blog.html'>
+                        <Link to='/blog'>
                           Blogs <FaAngleDown />
-                        </a>
+                        </Link>
                         <ul className='sub-menu'>
                           <li>
-                            <a href='blog.html'>Blogs</a>
+                            <Link to='/blog'>Blogs</Link>
                           </li>
                           <li>
-                            <a href='blog-details.html'>Blog Details</a>
+                            <Link to='/blog-details'>Blog Details</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='contact.html'>Contact</a>
+                        <Link to='/contact'>Contact</Link>
                       </li>
                     </ul>
                   </nav>
@@ -201,9 +201,9 @@ const HeaderOne = () => {
         >
           <div className='sidebar__logo mb-20'>
             <div>
-              <a href='index-1.html'>
+              <Link to='/index-1'>
                 <img src='./assets/img/common/Logo_Black.png' alt='logo' />
-              </a>
+              </Link>
               <p>Trusted Contraction service!</p>
             </div>
 
@@ -230,71 +230,71 @@ const HeaderOne = () => {
               <nav className='offcanvas-navigation' id='offcanvas-navigation'>
                 <ul>
                   <li className='menu-item-has-children'>
-                    <Link to={`/home-one`}>HOME</Link>
+                    <Link to='/index-1'>HOME</Link>
                     <ul className='sub-menu'>
                       <li>
-                        <Link to={`/home-one`}>Home One</Link>
+                        <Link to='/index-1'>Home One</Link>
                       </li>
                       <li>
-                        <Link to={`/home-two`}>Home Two</Link>
+                        <Link to='/index-2'>Home Two</Link>
                       </li>
                       <li>
-                        <Link to={`/home-three`}>Home Three</Link>
+                        <Link to='/index-3'>Home Three</Link>
                       </li>
                     </ul>
                   </li>
 
                   <li className='menu-item-has-children'>
-                    <Link to={`/services`}>Services</Link>
+                    <Link to='/services'>Services</Link>
                     <ul className='sub-menu'>
                       <li>
-                        <Link to={`/services`}>Service Page</Link>
+                        <Link to='/services'>Service Page</Link>
                       </li>
                       <li>
-                        <Link to={`/services-details`}>Services Details</Link>
+                        <Link to='/services-details'>Services Details</Link>
                       </li>
                     </ul>
                   </li>
 
                   <li className='menu-item-has-children'>
-                    <Link to={`/about`}>Pages</Link>
+                    <Link to='/about'>Pages</Link>
                     <ul className='sub-menu'>
                       <li>
-                        <Link to={`/about`}>About Us</Link>
+                        <Link to='/about'>About Us</Link>
                       </li>
                       <li>
-                        <Link to={`/team`}>Team</Link>
+                        <Link to='/team'>Team</Link>
                       </li>
                       <li>
-                        <Link to={`/team-details`}>Team Details</Link>
+                        <Link to='/team-details'>Team Details</Link>
                       </li>
                       <li>
-                        <Link to={`/project`}>Projects</Link>
+                        <Link to='/project'>Projects</Link>
                       </li>
                       <li>
-                        <Link to={`/project-details`}>Projects Details</Link>
+                        <Link to='/project-details'>Projects Details</Link>
                       </li>
                       <li>
-                        <Link to={`/pricing`}>Pricing Page</Link>
+                        <Link to='/pricing'>Pricing Page</Link>
                       </li>
                       <li>
-                        <Link to={`/faq`}>FAQ Page</Link>
+                        <Link to='/faq'>FAQ Page</Link>
                       </li>
                     </ul>
                   </li>
                   <li className='menu-item-has-children'>
-                    <Link to={`/blog`}>Blog</Link>
+                    <Link to='/blog'>Blog</Link>
                     <ul className='sub-menu'>
                       <li>
-                        <Link to={`/blog`}>Blog</Link>
+                        <Link to='/blog'>Blog</Link>
                       </li>
                       <li>
-                        <Link to={`/blog-details`}>Blog Details</Link>
+                        <Link to='/blog-details'>Blog Details</Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <Link to={`/contact`}>CONTACT</Link>{" "}
+                    <Link to='/contact'>CONTACT</Link>{" "}
                   </li>
                 </ul>
               </nav>

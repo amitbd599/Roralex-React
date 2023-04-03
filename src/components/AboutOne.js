@@ -3,6 +3,7 @@ import { FaCheckCircle, FaPlay } from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import ModalVideo from "react-modal-video";
+import { Link } from "react-router-dom";
 const AboutOne = () => {
   const [isOpen, setOpen] = useState(false);
   return (
@@ -131,13 +132,13 @@ const AboutOne = () => {
                       <p>Process of constructing building infrastructure</p>
                     </div>
                   </div>
-                  <a href='about.html'>
+                  <Link to='/about'>
                     <div className='btn-section'>
                       <span className='btn-shape-normal-outline'>
                         <span>More About Us</span>
                       </span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

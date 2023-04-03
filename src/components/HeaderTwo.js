@@ -132,12 +132,12 @@ const HeaderTwo = () => {
               <div className='col-xl-2 col-lg-2 col-md-6 col-6'>
                 <div className='logo-area'>
                   <div className='logo'>
-                    <a href='index-2.html'>
+                    <Link to='/index-2'>
                       <img
                         src='./assets/img/common/Logo_White.png'
                         alt='Roralex'
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -147,81 +147,81 @@ const HeaderTwo = () => {
                     <nav id='mobile-menu'>
                       <ul>
                         <li className='has-dropdown'>
-                          <a href='index-1.html'>
+                          <Link to='/index-1'>
                             Home <FaAngleDown />
-                          </a>
+                          </Link>
                           <ul className='sub-menu'>
                             <li>
-                              <a href='index-1.html'>Home One</a>
+                              <Link to='/index-1'>Home One</Link>
                             </li>
                             <li>
-                              <a href='index-2.html'>Home Two</a>
+                              <Link to='/index-2'>Home Two</Link>
                             </li>
                             <li>
-                              <a href='index-3.html'>Home Three</a>
+                              <Link to='/index-3'>Home Three</Link>
                             </li>
                           </ul>
                         </li>
                         <li className='has-dropdown'>
-                          <a href='services.html'>
+                          <Link to='/services'>
                             Services <FaAngleDown />
-                          </a>
+                          </Link>
                           <ul className='sub-menu'>
                             <li>
-                              <a href='services.html'>Services</a>
+                              <Link to='/services'>Services</Link>
                             </li>
                             <li>
-                              <a href='services-details.html'>
+                              <Link to='/services-details'>
                                 Services Details
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </li>
                         <li className='has-dropdown'>
-                          <a href='about.html'>
+                          <Link to='/about'>
                             Pages <FaAngleDown />
-                          </a>
+                          </Link>
                           <ul className='sub-menu'>
                             <li>
-                              <a href='about.html'>About Us</a>
+                              <Link to='/about'>About Us</Link>
                             </li>
                             <li>
-                              <a href='team.html'>Team</a>
+                              <Link to='/team'>Team</Link>
                             </li>
                             <li>
-                              <a href='team-details.html'>Team Details</a>
+                              <Link to='/team-details'>Team Details</Link>
                             </li>
                             <li>
-                              <a href='project.html'>projects</a>
+                              <Link to='/project'>projects</Link>
                             </li>
                             <li>
-                              <a href='project-details.html'>
+                              <Link to='/project-details'>
                                 projects Details
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href='pricing.html'>pricing Page</a>
+                              <Link to='/pricing'>pricing Page</Link>
                             </li>
                             <li>
-                              <a href='faq.html'>FAQ Page</a>
+                              <Link to='/faq'>FAQ Page</Link>
                             </li>
                           </ul>
                         </li>
                         <li className='has-dropdown'>
-                          <a href='blog.html'>
+                          <Link to='/blog'>
                             Blogs <FaAngleDown />
-                          </a>
+                          </Link>
                           <ul className='sub-menu'>
                             <li>
-                              <a href='blog.html'>Blogs</a>
+                              <Link to='/blog'>Blogs</Link>
                             </li>
                             <li>
-                              <a href='blog-details.html'>Blog Details</a>
+                              <Link to='/blog-details'>Blog Details</Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href='contact.html'>Contact</a>
+                          <Link to='/contact'>Contact</Link>
                         </li>
                       </ul>
                     </nav>
@@ -253,9 +253,9 @@ const HeaderTwo = () => {
           >
             <div className='sidebar__logo mb-20'>
               <div>
-                <a href='index-1.html'>
+                <Link to='/index-1'>
                   <img src='./assets/img/common/Logo_Black.png' alt='logo' />
-                </a>
+                </Link>
                 <p>Trusted Contraction service!</p>
               </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BreadCrumb = ({ title }) => {
   return (
@@ -16,7 +17,7 @@ const BreadCrumb = ({ title }) => {
               <div className='wrapper'>
                 <h2>{title}</h2>
                 <p>
-                  <a href='/index-1.html'>Home</a> / <span>{title}</span>
+                  <Link to='/index-1'>Home</Link> / <span>{title}</span>
                 </p>
               </div>
             </div>

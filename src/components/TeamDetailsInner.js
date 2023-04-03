@@ -1,5 +1,6 @@
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const TeamDetailsInner = () => {
   return (
@@ -64,11 +65,11 @@ const TeamDetailsInner = () => {
                       </p>
                     </div>
                     <div>
-                      <a href='contact.html'>
+                      <Link to='/contact'>
                         <span className='btn-shape-normal-outline'>
                           <span>Get In Touch</span>
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

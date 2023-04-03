@@ -6,6 +6,7 @@ import {
   FaPlay,
   FaUserAlt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ProjectDetailsInner = () => {
   return (
@@ -431,11 +432,11 @@ const ProjectDetailsInner = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -466,11 +467,11 @@ const ProjectDetailsInner = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -501,11 +502,11 @@ const ProjectDetailsInner = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -536,11 +537,11 @@ const ProjectDetailsInner = () => {
                         </div>
                       </div>
                       <div className='btn-section'>
-                        <a href='project-details.html'>
+                        <Link to='/project-details'>
                           <span className='btn-shape-normal-outline'>
                             <span>View Info</span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

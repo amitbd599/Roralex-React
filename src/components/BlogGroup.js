@@ -8,6 +8,7 @@ import {
   FaTimes,
   FaUserAlt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BlogGroup = () => {
   return (
@@ -65,11 +66,11 @@ const BlogGroup = () => {
                       </p>
                     </div>
                     <div className='main-btn'>
-                      <a href='blog-details.html'>
+                      <Link to='/blog-details'>
                         <span className='btn-shape-normal-outline'>
                           <span>Read More</span>
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='blog-items'>
@@ -118,11 +119,11 @@ const BlogGroup = () => {
                       </p>
                     </div>
                     <div className='main-btn'>
-                      <a href='blog-details.html'>
+                      <Link to='/blog-details'>
                         <span className='btn-shape-normal-outline'>
                           <span>Read More</span>
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className='blog-items'>
@@ -171,11 +172,11 @@ const BlogGroup = () => {
                       </p>
                     </div>
                     <div className='main-btn'>
-                      <a href='blog-details.html'>
+                      <Link to='/blog-details'>
                         <span className='btn-shape-normal-outline'>
                           <span>Read More</span>
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -241,9 +242,9 @@ const BlogGroup = () => {
                           />
                         </div>
                         <div className='text-file'>
-                          <a href='blog-details.html'>
+                          <Link to='/blog-details'>
                             <h3>Basic Steps in Starting a Building</h3>
-                          </a>
+                          </Link>
                           <div className='footer-text'>
                             <span>Alex Jhon</span>
                             <span>|</span>
@@ -260,9 +261,9 @@ const BlogGroup = () => {
                           />
                         </div>
                         <div className='text-file'>
-                          <a href='blog-details.html'>
+                          <Link to='/blog-details'>
                             <h3>Human shelters were at first very simple</h3>
-                          </a>
+                          </Link>
                           <div className='footer-text'>
                             <span>Amit Biswas</span>
                             <span>|</span>
@@ -279,9 +280,9 @@ const BlogGroup = () => {
                           />
                         </div>
                         <div className='text-file'>
-                          <a href='blog-details.html'>
+                          <Link to='/blog-details'>
                             <h3>The history of building is marked by</h3>
-                          </a>
+                          </Link>
                           <div className='footer-text'>
                             <span>Maria Dayna</span>
                             <span>|</span>
@@ -298,9 +299,9 @@ const BlogGroup = () => {
                           />
                         </div>
                         <div className='text-file'>
-                          <a href='blog-details.html'>
+                          <Link to='/blog-details'>
                             <h3>Construction today is a significant part</h3>
-                          </a>
+                          </Link>
                           <div className='footer-text'>
                             <span>Maria Dayna</span>
                             <span>|</span>
@@ -317,9 +318,9 @@ const BlogGroup = () => {
                           />
                         </div>
                         <div className='text-file'>
-                          <a href='blog-details.html'>
+                          <Link to='/blog-details'>
                             <h3>A tent illustrates the basic environmental</h3>
-                          </a>
+                          </Link>
                           <div className='footer-text'>
                             <span>Suzanne Jage</span>
                             <span>|</span>

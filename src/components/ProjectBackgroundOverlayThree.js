@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import { FaAngleDoubleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const ProjectBackgroundOverlayThree = () => {
   return (
     <>
@@ -24,11 +25,11 @@ const ProjectBackgroundOverlayThree = () => {
                 </div>
                 {/* Button Section */}
                 <div className='btn-section text-center'>
-                  <a href='services.html'>
+                  <Link to='/services'>
                     <span className='btn-shape-normal-outline'>
                       <span>More Services</span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
                 {/* Hip Slider */}
                 <div className='hip-slider'>

@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import { Link } from "react-router-dom";
 
 const OurTeamOne = () => {
   return (
@@ -96,9 +97,9 @@ const OurTeamOne = () => {
                             />
                           </div>
                           <div className='intro'>
-                            <a href='team-details.html'>
+                            <Link to='/team-details'>
                               <h2 className='name'>Michael V. Fournier</h2>
-                            </a>
+                            </Link>
                             <p className='position'>Civil Engineer</p>
                             <div className='social-icon'>
                               <ul>
@@ -139,9 +140,9 @@ const OurTeamOne = () => {
                             />
                           </div>
                           <div className='intro'>
-                            <a href='team-details.html'>
+                            <Link to='/team-details'>
                               <h2 className='name'>George Skertchly</h2>
-                            </a>
+                            </Link>
                             <p className='position'>Building Inspector</p>
                             <div className='social-icon'>
                               <ul>
@@ -183,9 +184,9 @@ const OurTeamOne = () => {
                             />
                           </div>
                           <div className='intro'>
-                            <a href='team-details.html'>
+                            <Link to='/team-details'>
                               <h2 className='name'>Dakota Budd</h2>
-                            </a>
+                            </Link>
                             <p className='position'>Architecture</p>
                             <div className='social-icon'>
                               <ul>
@@ -226,9 +227,9 @@ const OurTeamOne = () => {
                             />
                           </div>
                           <div className='intro'>
-                            <a href='team-details.html'>
+                            <Link to='team-details'>
                               <h2 className='name'>Betty O. Werner</h2>
-                            </a>
+                            </Link>
                             <p className='position'>Architect</p>
                             <div className='social-icon'>
                               <ul>
@@ -269,9 +270,9 @@ const OurTeamOne = () => {
                             />
                           </div>
                           <div className='intro'>
-                            <a href='team-details.html'>
+                            <Link to='/team-details'>
                               <h2 className='name'>Michael V. Fournier</h2>
-                            </a>
+                            </Link>
                             <p className='position'>Civil Engineer</p>
                             <div className='social-icon'>
                               <ul>
@@ -312,9 +313,9 @@ const OurTeamOne = () => {
                             />
                           </div>
                           <div className='intro'>
-                            <a href='team-details.html'>
+                            <Link to='/team-details'>
                               <h2 className='name'>Betty R. Reis</h2>
-                            </a>
+                            </Link>
                             <p className='position'>Stereotyper</p>
                             <div className='social-icon'>
                               <ul>
@@ -356,9 +357,9 @@ const OurTeamOne = () => {
                             />
                           </div>
                           <div className='intro'>
-                            <a href='team-details.html'>
+                            <Link to='/team-details'>
                               <h2 className='name'>Dakota Budd</h2>
-                            </a>
+                            </Link>
                             <p className='position'>Architecture</p>
                             <div className='social-icon'>
                               <ul>
