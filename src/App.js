@@ -13,6 +13,8 @@ import Faq from "./pages/Faq";
 import Pricing from "./pages/Pricing";
 import ProjectDetails from "./pages/ProjectDetails";
 import Project from "./pages/Project";
+import ServicesDetails from "./pages/ServicesDetails";
+import Services from "./pages/Services";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -36,6 +38,8 @@ function App() {
         <Route exact path='/pricing' element={<Pricing />} />
         <Route exact path='/project' element={<Project />} />
         <Route exact path='/project-details' element={<ProjectDetails />} />
+        <Route exact path='/services' element={<Services />} />
+        <Route exact path='/services-details' element={<ServicesDetails />} />
       </Routes>
       <ScrollToTop smooth color='#DE2021' />
     </BrowserRouter>
