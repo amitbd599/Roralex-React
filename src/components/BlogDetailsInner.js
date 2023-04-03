@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaAngleDoubleRight,
   FaPlay,
@@ -8,8 +8,9 @@ import {
   FaUserAlt,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import ModalVideo from "react-modal-video";
 const BlogDetailsInner = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       {/* Blog Details version one start */}
@@ -476,8 +477,9 @@ const BlogDetailsInner = () => {
                           <img src='./assets/img/widgets/img-1.png' alt='' />
                           <div className='vide-button'>
                             <a
-                              href='https://www.youtube.com/watch?v=o4GuSJYSzrY'
+                              href='JavaScript:void(0)'
                               className='popup-video'
+                              onClick={() => setOpen(true)}
                             >
                               <FaPlay />
                             </a>
@@ -491,6 +493,13 @@ const BlogDetailsInner = () => {
             </div>
           </div>
         </div>
+        <ModalVideo
+          channel='youtube'
+          autoplay
+          isOpen={isOpen}
+          videoId='XM6kTQPzzpQ'
+          onClose={() => setOpen(false)}
+        />
       </section>
       {/* Blog Details version one End */}
     </>
