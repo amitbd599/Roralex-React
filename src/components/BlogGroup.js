@@ -5,12 +5,15 @@ import {
   FaPlay,
   FaRegCommentDots,
   FaSearch,
-  FaTimes,
+  FaCalendarAlt,
   FaUserAlt,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import ModalVideo from "react-modal-video";
+import { useState } from "react";
 
 const BlogGroup = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       {/* Blog Group version one start */}
@@ -37,7 +40,7 @@ const BlogGroup = () => {
                       </div>
                       <div className='date'>
                         <span>
-                          <FaTimes />
+                          <FaCalendarAlt />
                         </span>
                         <span>Wednesday, February 8, 2023</span>
                       </div>
@@ -90,7 +93,7 @@ const BlogGroup = () => {
                       </div>
                       <div className='date'>
                         <span>
-                          <FaTimes />
+                          <FaCalendarAlt />
                         </span>
                         <span>Wednesday, February 8, 2023</span>
                       </div>
@@ -143,7 +146,7 @@ const BlogGroup = () => {
                       </div>
                       <div className='date'>
                         <span>
-                          <FaTimes />
+                          <FaCalendarAlt />
                         </span>
                         <span>Wednesday, February 8, 2023</span>
                       </div>
@@ -417,8 +420,9 @@ const BlogGroup = () => {
                           <img src='./assets/img/widgets/img-1.png' alt='' />
                           <div className='vide-button'>
                             <a
-                              href='https://www.youtube.com/watch?v=o4GuSJYSzrY'
+                              href='JavaScript:void(0)'
                               className='popup-video'
+                              onClick={() => setOpen(true)}
                             >
                               <FaPlay />
                             </a>
@@ -432,6 +436,13 @@ const BlogGroup = () => {
             </div>
           </div>
         </div>
+        <ModalVideo
+          channel='youtube'
+          autoplay
+          isOpen={isOpen}
+          videoId='XM6kTQPzzpQ'
+          onClose={() => setOpen(false)}
+        />
       </section>
       {/* Our Team Section version three End */}
     </>
