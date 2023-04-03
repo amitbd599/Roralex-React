@@ -5,6 +5,7 @@ import TeamInner from "../components/TeamInner";
 import OurClientOne from "../components/OurClientOne";
 import FooterOne from "../components/FooterOne";
 import ProjectBackgroundOverlayFour from "../components/ProjectBackgroundOverlayFour";
+import ClientReviewThree from "../components/ClientReviewThree";
 
 const Team = () => {
   return (
@@ -20,6 +21,9 @@ const Team = () => {
 
       {/* ProjectBackgroundOverlayFour */}
       <ProjectBackgroundOverlayFour />
+
+      {/* ClientReviewThree */}
+      <ClientReviewThree />
 
       {/* Our Client One */}
       <section className='ourclient-section-version-one bg-white py-80'>
