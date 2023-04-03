@@ -637,7 +637,7 @@
               box-shadow: none;
             }
             &::after {
-              content: "\2b";
+              content: "+";
               background-image: none;
               font-family: "Font Awesome 6 Pro";
               position: absolute;
@@ -651,7 +651,7 @@
               &::after {
                 transition: all 0.2s linear;
                 background-image: none;
-                content: "\f068";
+                content: "-";
                 color: var(--bg_white);
               }
             }
