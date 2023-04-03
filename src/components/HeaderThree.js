@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 
 const HeaderThree = () => {
   const [active, setActive] = useState(false);
-
+  const [scroll, setScroll] = useState(false);
   useEffect(() => {
     var offCanvasNav = document.getElementById("offcanvas-navigation");
     var offCanvasNavSubMenu = offCanvasNav.querySelectorAll(".sub-menu");
@@ -47,6 +47,14 @@ const HeaderThree = () => {
     for (let i = 0; i < numMenuExpand; i++) {
       menuExpand[i].addEventListener("click", sideMenuExpand);
     }
+    window.onscroll = () => {
+      if (window.pageYOffset < 150) {
+        setScroll(false);
+      } else if (window.pageYOffset > 150) {
+        setScroll(true);
+      }
+      return () => (window.onscroll = null);
+    };
   }, []);
 
   const mobileMenu = () => {
@@ -55,7 +63,14 @@ const HeaderThree = () => {
   return (
     <>
       {/* header-area-start */}
-      <header id='header-sticky' className='header-intro-version-three-area'>
+      <header
+        id='header-sticky'
+        className={
+          scroll
+            ? "header-intro-version-three-area header__sticky"
+            : "header-intro-version-three-area"
+        }
+      >
         <div className='container'>
           <div className='row align-items-center'>
             <div className='col-xl-2 col-lg-2 col-md-6 col-6'>

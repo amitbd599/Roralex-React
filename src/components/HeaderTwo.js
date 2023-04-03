@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 const HeaderTwo = () => {
   const [active, setActive] = useState(false);
-
+  const [scroll, setScroll] = useState(false);
   useEffect(() => {
     var offCanvasNav = document.getElementById("offcanvas-navigation");
     var offCanvasNavSubMenu = offCanvasNav.querySelectorAll(".sub-menu");
@@ -48,6 +48,14 @@ const HeaderTwo = () => {
     for (let i = 0; i < numMenuExpand; i++) {
       menuExpand[i].addEventListener("click", sideMenuExpand);
     }
+    window.onscroll = () => {
+      if (window.pageYOffset < 150) {
+        setScroll(false);
+      } else if (window.pageYOffset > 150) {
+        setScroll(true);
+      }
+      return () => (window.onscroll = null);
+    };
   }, []);
 
   const mobileMenu = () => {
@@ -126,7 +134,14 @@ const HeaderTwo = () => {
 
       <>
         {/* header-area-start */}
-        <header id='header-sticky' className='header-intro-version-two-area'>
+        <header
+          id='header-sticky'
+          className={
+            scroll
+              ? "header-intro-version-two-area header__sticky"
+              : "header-intro-version-two-area"
+          }
+        >
           <div className='container'>
             <div className='row align-items-center justify-content-between'>
               <div className='col-xl-2 col-lg-2 col-md-6 col-6'>

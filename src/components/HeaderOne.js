@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 
 const HeaderOne = () => {
   const [active, setActive] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
     var offCanvasNav = document.getElementById("offcanvas-navigation");
@@ -47,6 +48,14 @@ const HeaderOne = () => {
     for (let i = 0; i < numMenuExpand; i++) {
       menuExpand[i].addEventListener("click", sideMenuExpand);
     }
+    window.onscroll = () => {
+      if (window.pageYOffset < 150) {
+        setScroll(false);
+      } else if (window.pageYOffset > 150) {
+        setScroll(true);
+      }
+      return () => (window.onscroll = null);
+    };
   }, []);
 
   const mobileMenu = () => {
@@ -56,7 +65,14 @@ const HeaderOne = () => {
   return (
     <>
       {/* header-area-start */}
-      <header id='header-sticky' className='header-intro-version-one-area'>
+      <header
+        id='header-sticky'
+        className={
+          scroll
+            ? "header-intro-version-one-area header__sticky"
+            : "header-intro-version-one-area"
+        }
+      >
         <div className='container'>
           <div className='row align-items-center'>
             <div className='col-xl-2 col-lg-2 col-md-6 col-6'>

@@ -60,6 +60,9 @@
             gap: 8px;
             font-size: 14px;
             font-weight: 600;
+            svg {
+              margin-top: -4px;
+            }
           }
           .admin {
             display: flex;
@@ -67,6 +70,9 @@
             gap: 8px;
             font-size: 14px;
             font-weight: 600;
+            svg {
+              margin-top: -4px;
+            }
           }
           &.rtl {
             justify-content: end;
@@ -161,6 +167,9 @@
             gap: 8px;
             color: var(--theme_color);
             font-size: 14px;
+            svg {
+              margin-top: -7px;
+            }
           }
           .admin {
             display: flex;
@@ -168,6 +177,9 @@
             gap: 8px;
             color: var(--theme_color);
             font-size: 14px;
+            svg {
+              margin-top: -7px;
+            }
           }
         }
         .inner-text {
@@ -271,13 +283,13 @@
                 margin-top: 10px;
                 margin-bottom: 20px;
                 display: flex;
-                gap: 12px;
+                gap: 20px;
                 @media #{$xs} {
                   margin-bottom: 30px;
                 }
                 .inner {
                   display: flex;
-                  gap: 4px;
+                  gap: 8px;
                   svg {
                     margin-top: 3px;
                   }

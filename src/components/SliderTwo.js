@@ -27,7 +27,7 @@ const SliderTwo = () => {
               effect='fade'
             >
               <SwiperSlide>
-                <div className='inner-item swiper-slide'>
+                <div className='inner-item '>
                   <div
                     className='slide-bg'
                     style={{
@@ -66,7 +66,7 @@ const SliderTwo = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='inner-item swiper-slide'>
+                <div className='inner-item '>
                   <div
                     className='slide-bg'
                     style={{
@@ -105,7 +105,7 @@ const SliderTwo = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='inner-item swiper-slide'>
+                <div className='inner-item '>
                   <div
                     className='slide-bg'
                     style={{

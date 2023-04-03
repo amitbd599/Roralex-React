@@ -149,7 +149,10 @@ const FooterTwo = () => {
             <div className='row'>
               <hr />
               <div className='inner'>
-                <p>RORALEX © 2023. All Rights Reserved</p>
+                <p>
+                  2023 © Copyright RORALEX Construction Building React Template.
+                  All rights Reserved.
+                </p>
                 <ul>
                   <li>
                     <a href='#'>Contact Us</a>

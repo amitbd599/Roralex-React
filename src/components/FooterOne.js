@@ -211,8 +211,8 @@ const FooterOne = () => {
             <div className='row'>
               <hr />
               <p>
-                2023 © Copyright RORALEX Construction Building. All rights
-                Reserved.
+                2023 © Copyright RORALEX Construction Building React Template.
+                All rights Reserved.
               </p>
             </div>
           </div>

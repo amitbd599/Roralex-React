@@ -18,6 +18,7 @@ import Services from "./pages/Services";
 import TeamDetails from "./pages/TeamDetails";
 import Team from "./pages/Team";
 import Demo from "./demo/Demo";
+import RouteScrollToTop from "./elements/RouteScrollToTop";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -29,6 +30,7 @@ function App() {
   }, []);
   return (
     <BrowserRouter>
+      <RouteScrollToTop />
       <Routes>
         {/* Standard Version */}
         <Route exact path='/' element={<Demo />} />

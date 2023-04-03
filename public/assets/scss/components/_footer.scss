@@ -95,25 +95,18 @@
             a {
               padding: 2px;
               font-size: 20px;
+
               @media #{$sm, $xs} {
                 padding: 4px;
                 font-size: 30px;
               }
 
-              i {
+              svg {
                 transition: all 0.2s linear;
+                color: var(--bg_white);
               }
-              &:hover .fa-facebook-f {
-                color: var(--facebook);
-              }
-              &:hover .fa-twitter {
-                color: var(--twitter);
-              }
-              &:hover .fa-youtube {
-                color: var(--youtube);
-              }
-              &:hover .fa-linkedin {
-                color: var(--linkedin);
+              &:hover svg {
+                color: var(--theme_color);
               }
             }
           }
