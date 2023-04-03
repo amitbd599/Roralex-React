@@ -25,27 +25,27 @@ const PricingInner = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>Evidence construction of clay and wood.</span>
                         </li>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>Heavier timber buildings also appeared.</span>
                         </li>
                         <li>
-                          <FaTimes />
+                          <FaTimes className='fa-xmark' />
                           <span>The packed clay walls of earlier times.</span>
                         </li>
                         <li>
-                          <FaTimes />
+                          <FaTimes className='fa-xmark' />
                           <span>Bricks were made from mud and straw.</span>
                         </li>
                         <li>
-                          <FaTimes />
+                          <FaTimes className='fa-xmark' />
                           <span>Less effort was thus required to fell.</span>
                         </li>
                         <li>
-                          <FaTimes />
+                          <FaTimes className='fa-xmark' />
                           <span>Against this drab background of endless.</span>
                         </li>
                       </ul>
@@ -73,27 +73,27 @@ const PricingInner = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>Evidence construction of clay and wood.</span>
                         </li>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>Heavier timber buildings also appeared.</span>
                         </li>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>The packed clay walls of earlier times.</span>
                         </li>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>Bricks were made from mud and straw.</span>
                         </li>
                         <li>
-                          <FaTimes />
+                          <FaTimes className='fa-xmark' />
                           <span>Less effort was thus required to fell.</span>
                         </li>
                         <li>
-                          <FaTimes />
+                          <FaTimes className='fa-xmark' />
                           <span>Against this drab background of endless.</span>
                         </li>
                       </ul>
@@ -121,27 +121,27 @@ const PricingInner = () => {
                     <div className='inner-list'>
                       <ul>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>Evidence construction of clay and wood.</span>
                         </li>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>Heavier timber buildings also appeared.</span>
                         </li>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>The packed clay walls of earlier times.</span>
                         </li>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>Bricks were made from mud and straw.</span>
                         </li>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>Less effort was thus required to fell.</span>
                         </li>
                         <li>
-                          <FaCheck />
+                          <FaCheck className='fa-check' />
                           <span>Against this background of endless.</span>
                         </li>
                       </ul>
