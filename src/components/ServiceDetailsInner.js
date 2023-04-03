@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaArrowRight,
   FaBuilding,
@@ -10,8 +10,9 @@ import {
   FaUserAlt,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import ModalVideo from "react-modal-video";
 const ServiceDetailsInner = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       {/* Service Details Inner Section version One start */}
@@ -186,8 +187,9 @@ const ServiceDetailsInner = () => {
                           <img src='./assets/img/widgets/img-1.png' alt='' />
                           <div className='vide-button'>
                             <a
-                              href='https://www.youtube.com/watch?v=o4GuSJYSzrY'
+                              href='JavaScript:void(0)'
                               className='popup-video'
+                              onClick={() => setOpen(true)}
                             >
                               <FaPlay />
                             </a>
@@ -196,6 +198,13 @@ const ServiceDetailsInner = () => {
                       </div>
                     </div>
                   </div>
+                  <ModalVideo
+                    channel='youtube'
+                    autoplay
+                    isOpen={isOpen}
+                    videoId='XM6kTQPzzpQ'
+                    onClose={() => setOpen(false)}
+                  />
                 </div>
                 {/* Widget Three */}
                 <div className='widget-three mt-40'>
