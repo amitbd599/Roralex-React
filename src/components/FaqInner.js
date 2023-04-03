@@ -1,12 +1,14 @@
 import React from "react";
+import { useState } from "react";
 import {
   FaEnvelopeOpen,
   FaPlay,
   FaTextHeight,
   FaUserAlt,
 } from "react-icons/fa";
-
+import ModalVideo from "react-modal-video";
 const FaqInner = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       {/* FAQ Section version one Start */}
@@ -490,8 +492,9 @@ const FaqInner = () => {
                           <img src='./assets/img/widgets/img-1.png' alt='' />
                           <div className='vide-button'>
                             <a
-                              href='https://www.youtube.com/watch?v=o4GuSJYSzrY'
+                              href='JavaScript:void(0)'
                               className='popup-video'
+                              onClick={() => setOpen(true)}
                             >
                               <FaPlay />
                             </a>
@@ -504,8 +507,183 @@ const FaqInner = () => {
               </div>
             </div>
           </div>
+          <ModalVideo
+            channel='youtube'
+            autoplay
+            isOpen={isOpen}
+            videoId='XM6kTQPzzpQ'
+            onClose={() => setOpen(false)}
+          />
         </div>
       </section>
+
+      <section className='latest-project-version-two bg-gray py-60'>
+        {/* Header Intro Version Two */}
+        <div className='header-intro-version-two'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-12'>
+                <div className='wrapper'>
+                  <div className='pop-text'>
+                    <h2>Our Latest Projects</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Inner Items Data */}
+        <div className='project-body'>
+          <div className='container'>
+            {/* Start Project Filter Items Area */}
+            <div id='project-version-two' className='row project-version-two'>
+              <div className='col-xl-3 col-lg-4 col-md-6 pro5 pro2'>
+                <div className='project-item'>
+                  <div className='project-wrapper'>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/project/project-1.png'
+                        alt=''
+                      />
+                      <div className='text-overlay'>
+                        <div className='text'>
+                          <h2>construction site</h2>
+                          <p>
+                            civil engineer and construction worker manager
+                            holding digital tablet and blueprints talking
+                          </p>
+                          <div className='location'>
+                            <span>
+                              <i className='fa-sharp fa-solid fa-location-dot' />
+                            </span>
+                            <span>North America</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='btn-section'>
+                        <a href='project-details.html'>
+                          <span className='btn-shape-normal-outline'>
+                            <span>View Info</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='col-xl-3 col-lg-4 col-md-6 pro3 pro4'>
+                <div className='project-item'>
+                  <div className='project-wrapper'>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/project/project-2.png'
+                        alt=''
+                      />
+                      <div className='text-overlay'>
+                        <div className='text'>
+                          <h2>Integrating Digital</h2>
+                          <p>
+                            civil engineer and construction worker manager
+                            holding digital tablet and blueprints talking
+                          </p>
+                          <div className='location'>
+                            <span>
+                              <i className='fa-sharp fa-solid fa-location-dot' />
+                            </span>
+                            <span>Zappia Drive</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='btn-section'>
+                        <a href='project-details.html'>
+                          <span className='btn-shape-normal-outline'>
+                            <span>View Info</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='col-xl-3 col-lg-4 col-md-6 pro1 pro5 pro2'>
+                <div className='project-item'>
+                  <div className='project-wrapper'>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/project/project-3.png'
+                        alt=''
+                      />
+                      <div className='text-overlay'>
+                        <div className='text'>
+                          <h2>Building Plan</h2>
+                          <p>
+                            civil engineer and construction worker manager
+                            holding digital tablet and blueprints talking
+                          </p>
+                          <div className='location'>
+                            <span>
+                              <i className='fa-sharp fa-solid fa-location-dot' />
+                            </span>
+                            <span>Meadowcrest Lane</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='btn-section'>
+                        <a href='project-details.html'>
+                          <span className='btn-shape-normal-outline'>
+                            <span>View Info</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='col-xl-3 col-lg-4 col-md-6 pro4 pro3'>
+                <div className='project-item'>
+                  <div className='project-wrapper'>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/project/project-4.png'
+                        alt=''
+                      />
+                      <div className='text-overlay'>
+                        <div className='text'>
+                          <h2>Insurance Building</h2>
+                          <p>
+                            civil engineer and construction worker manager
+                            holding digital tablet and blueprints talking
+                          </p>
+                          <div className='location'>
+                            <span>
+                              <i className='fa-sharp fa-solid fa-location-dot' />
+                            </span>
+                            <span>Passaic Street</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='btn-section'>
+                        <a href='project-details.html'>
+                          <span className='btn-shape-normal-outline'>
+                            <span>View Info</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* End Project Filter Items Area */}
+          </div>
+        </div>
+      </section>
+      {/* Latest Projects Section version two End */}
+
       {/* FAQ Section version one End */}
     </>
   );
