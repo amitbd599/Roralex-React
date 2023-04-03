@@ -1,9 +1,26 @@
 import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
-import { FaCartArrowDown, FaCog } from "react-icons/fa";
+import {
+  FaAngleDoubleRight,
+  FaAngleDown,
+  FaBars,
+  FaCartArrowDown,
+  FaCog,
+  FaEnvelope,
+  FaEye,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaLocationArrow,
+  FaMapMarkerAlt,
+  FaRegShareSquare,
+  FaSearch,
+  FaShoppingCart,
+  FaTimes,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
 import { Link } from "react-router-dom";
-import "./style.css";
 const Demo = () => {
   const [stickyNav, setStickyNav] = useState(false);
 
@@ -18,843 +35,1787 @@ const Demo = () => {
     };
   }, []);
 
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    var offCanvasNav = document.getElementById("offcanvas-navigation");
+    var offCanvasNavSubMenu = offCanvasNav.querySelectorAll(".sub-menu");
+
+    for (let i = 0; i < offCanvasNavSubMenu.length; i++) {
+      offCanvasNavSubMenu[i].insertAdjacentHTML(
+        "beforebegin",
+        "<span class='menu-expand'><i></i></span>"
+      );
+    }
+
+    var menuExpand = offCanvasNav.querySelectorAll(".menu-expand");
+    var numMenuExpand = menuExpand.length;
+
+    function sideMenuExpand() {
+      if (this.parentElement.classList.contains("active") === true) {
+        this.parentElement.classList.remove("active");
+      } else {
+        for (let i = 0; i < numMenuExpand; i++) {
+          menuExpand[i].parentElement.classList.remove("active");
+        }
+        this.parentElement.classList.add("active");
+      }
+    }
+
+    for (let i = 0; i < numMenuExpand; i++) {
+      menuExpand[i].addEventListener("click", sideMenuExpand);
+    }
+  }, []);
+
+  const mobileMenu = () => {
+    setActive(!active);
+  };
+
   return (
-    <section className='root-demo'>
-      {/* Navigation */}
-      <header className='navbar-area m-0 demo-main'>
-        <nav
-          className={
-            stickyNav
-              ? "navbar navbar-expand-lg navbar-default navbar-fixed-top top-nav-collapse"
-              : "navbar navbar-expand-lg navbar-default navbar-fixed-top"
-          }
-        >
-          <div className='container nav-container demo'>
-            <div className='logo'>
-              <Link className='main-logo' to='/'>
-                <img src='/assets/demo-img/logo.png' alt='img' />
-              </Link>
-            </div>
-            <div className='nav-right-part nav-right-part-mobile ms-auto'>
-              <ul className='text-end'>
-                <li>
-                  <a className='page-scroll' href='#demo'>
-                    Demos
-                  </a>
-                </li>
-                <li>
-                  <a className='page-scroll' href='#inner'>
-                    Inners
-                  </a>
-                </li>
-                <li>
-                  <Link className='cart' to='/'>
-                    <img src='/assets/demo-img/add-to-cart.svg' alt='img' />
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className='collapse navbar-collapse' id='al_main_menu'>
-              <ul className='navbar-nav menu-open text-center m-auto'>
-                <li>
-                  <a className='page-scroll' href='#demo'>
-                    Demos
-                  </a>
-                </li>
-                <li>
-                  <a className='page-scroll' href='#inner'>
-                    Inner Pages
-                  </a>
-                </li>
-                <li>
-                  <a className='page-scroll' href='#header'>
-                    Header
-                  </a>
-                </li>
-                <li>
-                  <a className='page-scroll' href='#footer'>
-                    Footer
-                  </a>
-                </li>
-                <li>
-                  <a className='page-scroll' href='#featured'>
-                    Features
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className='nav-right-part nav-right-part-desktop'>
-              <ul>
-                <li>
-                  <a
-                    href='https://themeforest.net/user/wowtheme7'
-                    className='btns btns-whites'
-                  >
-                    Purchase Now
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      {/* Banner Area Start*/}
-      <div id='banner' className='banner-area demo-main'>
-        <div className='sidebar-links'>
-          <a
-            className='btns btns-whites'
-            href='https://themeforest.net/user/wowtheme7'
-          >
-            <FaCartArrowDown />
-            Add To Cart
-          </a>
-          <a
-            className='btns btns-whites'
-            href='https://themeforest.net/user/wowtheme7'
-          >
-            <FaCog />
-            Demo Link
-          </a>
-        </div>
+    <>
+      {/* header-area-start */}
+      <header id='header-sticky' className='header-intro-version-one-area'>
         <div className='container'>
-          <div className='row justify-content-center justify-content-xl-start'>
-            <div className='col-xl-6 col-lg-6 align-self-center'>
-              <div className='banner-inner text-xl-start text-center'>
-                <h1
-                  data-aos='fade-right'
-                  data-aos-delay='100'
-                  data-aos-duration='1500'
-                >
-                  AglieTech - Trendy &amp; Powerful React Template
-                </h1>
-                <div
-                  className='btns-area'
-                  data-aos='fade-right'
-                  data-aos-delay='200'
-                  data-aos-duration='1500'
-                >
-                  <a
-                    className='btns btns-border-whites page-scroll'
-                    href='#demo'
-                  >
-                    Try Demos
-                  </a>
-                  <a
-                    className='btns btns-whites me-0'
-                    href='https://themeforest.net/user/wowtheme7'
-                  >
-                    Buy Now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className='col-xl-6 col-lg-6'
-              data-aos='fade-left'
-              data-aos-delay='100'
-              data-aos-duration='1500'
-            >
-              <div className='row'>
-                <img src='/assets/demo-img/in.png' alt='img' />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Banner Area End */}
-      {/* counter start */}
-      <div className='counter-area pd-top-120 pd-bottom-90'>
-        <div className='container'>
-          <div className='counter-area-inner'>
-            <div className='row'>
-              <div className='col-md-4 col-sm-6'>
-                <div className='single-counter-inner text-center'>
-                  <div className='details'>
-                    <h2>
-                      <TrackVisibility once>
-                        {({ isVisible }) =>
-                          isVisible && (
-                            <span className='counter'>
-                              <CountUp
-                                duration={1}
-                                delay={0}
-                                start={0}
-                                end={4}
-                              />
-                            </span>
-                          )
-                        }
-                      </TrackVisibility>
-                    </h2>
-                    <p>Total Homes</p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-4 col-sm-6'>
-                <div className='single-counter-inner text-center'>
-                  <div className='details'>
-                    <h2>
-                      <TrackVisibility once>
-                        {({ isVisible }) =>
-                          isVisible && (
-                            <span className='counter'>
-                              <CountUp
-                                duration={1}
-                                delay={0}
-                                start={0}
-                                end={10}
-                              />{" "}
-                              +
-                            </span>
-                          )
-                        }
-                      </TrackVisibility>
-                    </h2>
-                    <p>Total Pages</p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-4 col-sm-6'>
-                <div className='single-counter-inner text-center'>
-                  <div className='details'>
-                    <h2>
-                      <TrackVisibility once>
-                        {({ isVisible }) =>
-                          isVisible && (
-                            <span className='counter'>
-                              <CountUp
-                                duration={1}
-                                delay={0}
-                                start={0}
-                                end={14}
-                              />
-                            </span>
-                          )
-                        }
-                      </TrackVisibility>
-                    </h2>
-                    <p>Inner Pages</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* counter end */}
-      {/* demo Section */}
-      <section id='demo' className='demo-section pd-top-100'>
-        <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-lg-8 text-center'>
-              <div
-                className='section-title '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <h5 className='subtitle'>AWESOME DEMOS</h5>
-                <h2 className='title'>Great Home Pages</h2>
-              </div>
-            </div>
-          </div>
-          <div className='row justify-content-center'>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item style-large '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <Link to='/index-1'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/1.png' alt='img' />
-                  </span>
-                  Home V.1
-                </Link>
-                <Link className='btns btns-base' to='/index-1'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item style-large '
-                data-aos='fade-up'
-                data-aos-delay='200'
-                data-aos-duration='1500'
-              >
-                <Link to='/index-2'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/2.png' alt='img' />
-                  </span>
-                  Home V.2
-                </Link>
-                <Link className='btns btns-base' to='/index-2'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item style-large '
-                data-aos='fade-up'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
-                <Link to='/index-3'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/3.png' alt='img' />
-                  </span>
-                  Home V.3
-                </Link>
-                <Link className='btns btns-base' to='/index-3'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item style-large '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <Link to='/index-4'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/4.png' alt='img' />
-                  </span>
-                  Home V.4
-                </Link>
-                <Link className='btns btns-base' to='/index-4'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item style-large  '
-                data-aos='fade-up'
-                data-aos-delay='200'
-                data-aos-duration='1500'
-              >
-                <Link to='/index-5'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/5.png' alt='img' />
-                  </span>
-                  Home V.5
-                </Link>
-                <Link className='btns btns-base' to='/index-5'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item style-large  coming-soon'
-                data-aos='fade-up'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
-                <Link to='#'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/4.png' alt='img' />
-                  </span>
-                  <span className='cm-soon-title'>Comming Soon</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* inner Section */}
-      <section id='inner' className='inner-section pd-top-130'>
-        <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-lg-8 text-center'>
-              <div
-                className='section-title '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <h2 className='title'>Great Inner Pages</h2>
-              </div>
-            </div>
-          </div>
-          <div className='row justify-content-center'>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item inner-page-item '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <Link to='/about'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/about.png' alt='img' />
-                  </span>
-                  About Page
-                </Link>
-                <Link className='btns btns-base' to='/about'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item inner-page-item '
-                data-aos='fade-up'
-                data-aos-delay='200'
-                data-aos-duration='1500'
-              >
-                <Link to='/service'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/portfolio.png' alt='img' />
-                  </span>
-                  Service Page
-                </Link>
-                <Link className='btns btns-base' to='/service'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item inner-page-item '
-                data-aos='fade-up'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
-                <Link to='/service-details'>
-                  <span className='thumb'>
+          <div className='row align-items-center'>
+            <div className='col-xl-2 col-lg-2 col-md-6 col-6'>
+              <div className='logo-area'>
+                <div className='logo'>
+                  <Link to='/index-1'>
                     <img
-                      src='/assets/demo-img/portfolio-details.png'
-                      alt='img'
+                      src='./assets/img/common/Logo_White.png'
+                      alt='Roralex'
                     />
-                  </span>
-                  Service Details
-                </Link>
-                <Link className='btns btns-base' to='/service-details'>
-                  Live Demo
-                </Link>
+                  </Link>
+                </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item inner-page-item '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <Link to='/team'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/team.png' alt='img' />
-                  </span>
-                  Team Page{" "}
-                </Link>
-                <Link className='btns btns-base' to='/team'>
-                  Live Demo
-                </Link>
+            <div className='col-xl-7 col-lg-10 col-md-6 col-6'>
+              <div className='menu-body'>
+                <div className='main-menu'>
+                  <nav id='mobile-menu'>
+                    <ul>
+                      <li className='has-dropdown'>
+                        <Link to='/index-1'>
+                          Home <FaAngleDown />
+                        </Link>
+                        <ul className='sub-menu'>
+                          <li>
+                            <Link to='/index-1'>Home One</Link>
+                          </li>
+                          <li>
+                            <Link to='/index-2'>Home Two</Link>
+                          </li>
+                          <li>
+                            <Link to='/index-3'>Home Three</Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className='has-dropdown'>
+                        <Link to='/services'>
+                          Services <FaAngleDown />
+                        </Link>
+                        <ul className='sub-menu'>
+                          <li>
+                            <Link to='services'>Services</Link>
+                          </li>
+                          <li>
+                            <Link to='/services-details'>Services Details</Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className='has-dropdown'>
+                        <Link to='/about'>
+                          Pages <FaAngleDown />
+                        </Link>
+                        <ul className='sub-menu'>
+                          <li>
+                            <Link to='/about'>About Us</Link>
+                          </li>
+                          <li>
+                            <Link to='/team'>Team</Link>
+                          </li>
+                          <li>
+                            <Link to='/team-details'>Team Details</Link>
+                          </li>
+                          <li>
+                            <Link to='/project'>projects</Link>
+                          </li>
+                          <li>
+                            <Link to='/project-details'>projects Details</Link>
+                          </li>
+                          <li>
+                            <Link to='/pricing'>pricing Page</Link>
+                          </li>
+                          <li>
+                            <Link to='/faq'>FAQ Page</Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className='has-dropdown'>
+                        <Link to='/blog'>
+                          Blogs <FaAngleDown />
+                        </Link>
+                        <ul className='sub-menu'>
+                          <li>
+                            <Link to='/blog'>Blogs</Link>
+                          </li>
+                          <li>
+                            <Link to='/blog-details'>Blog Details</Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <Link to='/contact'>Contact</Link>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item inner-page-item '
-                data-aos='fade-up'
-                data-aos-delay='200'
-                data-aos-duration='1500'
-              >
-                <Link to='/team-details'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/team-details.png' alt='img' />
-                  </span>
-                  Team Details Page{" "}
-                </Link>
-                <Link className='btns btns-base' to='/team-details'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item inner-page-item '
-                data-aos='fade-up'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
-                <Link href='/blog'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/blog.png' alt='img' />
-                  </span>
-                  Blog Page
-                </Link>
-                <Link className='btns btns-base' to='/blog'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item inner-page-item '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <Link to='/blog-details'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/blog-details.png' alt='img' />
-                  </span>
-                  Blog Details Page
-                </Link>
-                <Link className='btns btns-base' to='/blog-details'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item inner-page-item '
-                data-aos='fade-up'
-                data-aos-delay='200'
-                data-aos-duration='1500'
-              >
-                <Link to='/contact'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/contact.png' alt='img' />
-                  </span>
-                  Contact
-                </Link>
-                <Link className='btns btns-base' to='/contact'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item style-large  coming-soon'
-                data-aos='fade-up'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
-                <Link to='#'>
-                  <span className='thumb'>
-                    <img src='/assets/demo-img/4.png' alt='img' />
-                  </span>
-                  <span className='cm-soon-title'>Comming Soon</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* demo Section */}
-      <section id='header' className='widget-section pd-top-87'>
-        <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-lg-8 text-center'>
-              <div
-                className='section-title '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <h2 className='title'>Header Style</h2>
-              </div>
-            </div>
-          </div>
-          <div className='row justify-content-center'>
-            <div className='col-lg-12'>
-              <div className='header-item mb-4'>
-                <span className='thumb'>
-                  <img
-                    className='w-100'
-                    src='/assets/demo-img/header.png'
-                    alt='img'
-                  />
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className='row justify-content-center'>
-            <div className='col-lg-12'>
-              <div className='header-item mb-4'>
-                <span className='thumb'>
-                  <img
-                    className='w-100'
-                    src='/assets/demo-img/header2.png'
-                    alt='img'
-                  />
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* demo Section */}
-      <section id='footer' className='widget-section'>
-        <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-lg-8 text-center pd-top-130'>
-              <div className='section-title'>
-                <h2 className='title'>Footer Style</h2>
-              </div>
-            </div>
-          </div>
-          <div className='row justify-content-center'>
-            <div className='col-lg-12'>
-              <div className='header-item mb-4'>
-                <span className='thumb'>
-                  <img
-                    className='w-100'
-                    src='/assets/demo-img/footer.png'
-                    alt='img'
-                  />
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className='row justify-content-center'>
-            <div className='col-lg-12'>
-              <div className='header-item mb-4'>
-                <span className='thumb'>
-                  <img
-                    className='w-100'
-                    src='/assets/demo-img/footer2.png'
-                    alt='img'
-                  />
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* inner Section */}
-      <section
-        id='featured'
-        className='featured-section pd-top-87 pd-bottom-110'
-      >
-        <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-lg-8 text-center'>
-              <div
-                className='section-title '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <h2 className='title'>Core Features</h2>
-              </div>
-            </div>
-          </div>
-          <div className='row justify-content-center'>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/3.png' alt='img' />
-                Bootstrap 5+
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='200'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/1.png' alt='img' />
-                Sass
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/4.png' alt='img' />
-                React Icons
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/2.png' alt='img' />
-                React-Slick
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='200'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/5.png' alt='img' />
-                HTML5
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/6.png' alt='img' />
-                CSS3
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/7.png' alt='img' />
-                NPM Package
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='200'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/8.png' alt='img' />
-                React Router Dom
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/9.png' alt='img' />
-                Clean Code
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/10.png' alt='img' />
-                Magnific Popup
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='200'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/12.png' alt='img' />
-                100% Responsive
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/11.png' alt='img' />
-                Google Fonts
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/14.png' alt='img' />
-                Well Documented
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='200'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/15.png' alt='img' />
-                Counter Up
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='featured-item '
-                data-aos='fade-up'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
-                <img src='/assets/demo-img/featured/13.png' alt='img' />
-                Animation
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* footer area start */}
-      <footer
-        className='footer-area pd-top-100'
-        // style={{ backgroundImage: 'url("/assets/demo-img/01.png")' }}
-      >
-        <div className='container '>
-          <div className='row justify-content-center'>
-            <div className='col-lg-9'>
-              <div className='footer-widget widget text-center pd-bottom-100 demo-main'>
-                <Link className='logo' to='/'>
-                  <img src='/assets/demo-img/logo.png' alt='#' />
-                </Link>
-                <h5 className='text-white mb-5 mt-5 lh-base'>
-                  Mechanic, car repair workshop, garage owner, car wash company.
-                  No matter which of these businesses you choose, AglieTech is
-                  the first choice when it comes to a website.
-                </h5>
+              <div className='side-menu-icon d-lg-none text-end'>
                 <a
-                  className='btns btns-whites'
-                  href='https://themeforest.net/user/wowtheme7'
+                  href='javascript:void(0)'
+                  className='info-toggle-btn f-right sidebar-toggle-btn'
+                  onClick={mobileMenu}
                 >
-                  Purchase Now
+                  <FaBars />
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-        <div className='footer-bottom'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-md-12 text-center align-self-center'>
-                <p>Copy Right by wowtheme7</p>
+            <div className='col-xl-3 col-lg-4 d-none d-xl-block'>
+              <div className='location-email-intro'>
+                <div className='inner-location-email-intro pr-30'>
+                  <div className='inner'>
+                    <span>
+                      <FaMapMarkerAlt />
+                    </span>
+                    <span className='text'>Location</span>
+                  </div>
+                  <h5>Riverside Augusta</h5>
+                </div>
+                <div className='inner-location-email-intro'>
+                  <div className='inner'>
+                    <span>
+                      <FaEnvelope />
+                    </span>
+                    <span className='text'>Get In Touch</span>
+                  </div>
+                  <h5>info@roralex.com</h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-      {/* footer area end */}
-    </section>
+      </header>
+      {/* header-area-end */}
+
+      <div className={active ? "body-overlay active" : "body-overlay"} />
+      <div>
+        {/*=======  offcanvas mobile menu  =======*/}
+        <div
+          className={`offcanvas-mobile-menu ${
+            active === true ? "active" : ""
+          } `}
+          id='mobile-menu-overlay'
+        >
+          <div className='sidebar__logo mb-20'>
+            <div>
+              <Link to='/index-1'>
+                <img src='./assets/img/common/Logo_Black.png' alt='logo' />
+              </Link>
+              <p>Trusted Contraction service!</p>
+            </div>
+
+            <div className='sidebar__close'>
+              <button
+                className='sidebar__close-btn'
+                id='sidebar__close-btn'
+                onClick={mobileMenu}
+              >
+                <FaTimes />
+              </button>
+            </div>
+          </div>
+          <div className='sidebar__search mb-25'>
+            <form action='#'>
+              <input type='text' placeholder='Find A Construction Service!' />
+              <button type='submit'>
+                <FaSearch />
+              </button>
+            </form>
+          </div>
+          <div className='offcanvas-wrapper'>
+            <div className='offcanvas-inner-content'>
+              <nav className='offcanvas-navigation' id='offcanvas-navigation'>
+                <ul>
+                  <li className='menu-item-has-children'>
+                    <Link to='/index-1'>HOME</Link>
+                    <ul className='sub-menu'>
+                      <li>
+                        <Link to='/index-1'>Home One</Link>
+                      </li>
+                      <li>
+                        <Link to='/index-2'>Home Two</Link>
+                      </li>
+                      <li>
+                        <Link to='/index-3'>Home Three</Link>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li className='menu-item-has-children'>
+                    <Link to='/services'>Services</Link>
+                    <ul className='sub-menu'>
+                      <li>
+                        <Link to='/services'>Service Page</Link>
+                      </li>
+                      <li>
+                        <Link to='/services-details'>Services Details</Link>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li className='menu-item-has-children'>
+                    <Link to='/about'>Pages</Link>
+                    <ul className='sub-menu'>
+                      <li>
+                        <Link to='/about'>About Us</Link>
+                      </li>
+                      <li>
+                        <Link to='/team'>Team</Link>
+                      </li>
+                      <li>
+                        <Link to='/team-details'>Team Details</Link>
+                      </li>
+                      <li>
+                        <Link to='/project'>Projects</Link>
+                      </li>
+                      <li>
+                        <Link to='/project-details'>Projects Details</Link>
+                      </li>
+                      <li>
+                        <Link to='/pricing'>Pricing Page</Link>
+                      </li>
+                      <li>
+                        <Link to='/faq'>FAQ Page</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='menu-item-has-children'>
+                    <Link to='/blog'>Blog</Link>
+                    <ul className='sub-menu'>
+                      <li>
+                        <Link to='/blog'>Blog</Link>
+                      </li>
+                      <li>
+                        <Link to='/blog-details'>Blog Details</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link to='/contact'>CONTACT</Link>{" "}
+                  </li>
+                </ul>
+              </nav>
+
+              <div className='sidebar__contact  mb-20'>
+                <h4>Contact With US</h4>
+                <div className='sidebar__social'>
+                  <ul>
+                    <li>
+                      <a href='#'>
+                        <FaFacebookF />
+                      </a>
+                    </li>
+                    <li>
+                      <a href='#'>
+                        <FaTwitter />
+                      </a>
+                    </li>
+                    <li>
+                      <a href='#'>
+                        <FaYoutube />
+                      </a>
+                    </li>
+                    <li>
+                      <a href='#'>
+                        <FaLinkedinIn />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className='location-email-intro mobile'>
+                  <div className='inner-location-email-intro pr-30'>
+                    <div className='inner'>
+                      <span>
+                        <FaLocationArrow />
+                      </span>
+                      <span className='text'>Location</span>
+                    </div>
+                    <h5 className='text'>4043 Riverside Augusta</h5>
+                  </div>
+                  <div className='inner-location-email-intro pt-5'>
+                    <div className='inner'>
+                      <span>
+                        <FaEnvelope />
+                      </span>
+                      <span className='text'>Get In Touch</span>
+                    </div>
+                    <h5 className='text'>info@roralex.com</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*=======  End of offcanvas mobile menu  =======*/}
+      </div>
+      <section className='demo-inner'>
+        <div
+          id='intro'
+          className='banner-intro'
+          style={{
+            backgroundImage: "url('assets/img/bg-overlay/bg-overlay-9.png')",
+          }}
+        >
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-6'>
+                <div className='left-side'>
+                  <div className='wrapper'>
+                    <h2
+                      className='wow animated fadeInUp'
+                      data-wow-duration='1.5s'
+                      data-wow-delay='400ms'
+                    >
+                      RORALEX Trendy &amp; Powerful React Template With RTL
+                    </h2>
+                    <div className='intro-list'>
+                      <h3
+                        className='wow animated fadeInUp'
+                        data-wow-duration='1.5s'
+                        data-wow-delay='500ms'
+                      >
+                        Features &amp; Trend:
+                      </h3>
+                      <ul
+                        className='wow animated fadeInUp'
+                        data-wow-duration='1.5s'
+                        data-wow-delay='600ms'
+                      >
+                        <li>
+                          <FaAngleDoubleRight /> Three HomePage Layout
+                        </li>
+                        <li>
+                          <FaAngleDoubleRight /> Three RTL HomePage Layout
+                        </li>
+                        <li>
+                          <FaAngleDoubleRight /> Every Section Are Unique!
+                        </li>
+                        <li>
+                          <FaAngleDoubleRight /> Working Contact Form.
+                        </li>
+                        <li>
+                          <FaAngleDoubleRight /> Total 30 Pages Included.
+                        </li>
+                        <li>
+                          <FaAngleDoubleRight /> Easy Code Maintain.
+                        </li>
+                        <li>
+                          <FaAngleDoubleRight /> Full Responsive &amp; Cross
+                          Browser Support.
+                        </li>
+                        <li>
+                          <FaAngleDoubleRight /> Using Latest Bootstrap 5 &amp;
+                          Include SCSS
+                        </li>
+                        <li>
+                          <FaAngleDoubleRight /> Coming Soon HomePage Layout
+                          Four, Five &amp; Six Version.{" "}
+                        </li>
+                        <li>
+                          <FaAngleDoubleRight /> Coming Soon ReactJs, NextJS,
+                          Wordpress Theme Version
+                        </li>
+                      </ul>
+                      <div
+                        className='button-intro wow animated fadeInUp'
+                        data-wow-duration='1s'
+                        data-wow-delay='100ms'
+                      >
+                        <div className='btn-section'>
+                          <Link to='/index-1'>
+                            <span className='btn-shape-normal-outline left'>
+                              <FaRegShareSquare /> <span>View Demo</span>
+                            </span>
+                          </Link>
+                        </div>
+                        <div className='btn-section'>
+                          <Link to='/rtl/index-1'>
+                            <span className='btn-shape-normal-outline right'>
+                              <FaRegShareSquare /> <span>View RTL Demo</span>
+                            </span>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-6'>
+                <div
+                  className='right-side wow animated fadeInUp'
+                  data-wow-duration='1.5s'
+                  data-wow-delay='400ms'
+                >
+                  <div className='wrapper'>
+                    <div className='left-tab'>
+                      <div className='img-file img-file-1'>
+                        <img
+                          className='img-fluid'
+                          src='./assets/img/demo/demo_7.png'
+                          alt=''
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Counter  Data */}
+        <div className='counter-view'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-4 inner'>
+                <h2 className='counter'>3</h2>
+                <h3>HomePage</h3>
+              </div>
+              <div className='col-md-4 inner'>
+                <h2 className='counter'>3</h2>
+                <h3>RTL HomePage</h3>
+              </div>
+              <div className='col-md-4 inner'>
+                <h2 className='counter'>24</h2>
+                <h3>Inner Pages</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Inner Items */}
+        <div className='inner-items '>
+          {/* Home Page all */}
+          <div id='allHome' className='container mt-80'>
+            <div className='row header'>
+              <div className='col-12'>
+                <h2>
+                  Introduction Our All <br />{" "}
+                  <span className='theme-color'>Awesome And Unique</span> Home
+                  Pages
+                </h2>
+              </div>
+            </div>
+            <div className='row mt-50'>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/demo_1.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/index-1'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Home Version - 1</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/demo_2.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link Link='/index-2'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Home Version - 2 </h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/demo_3.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/index-3'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Home Version - 3 </h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper  wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file '>
+                      <img
+                        className='img-fluid blur'
+                        src='./assets/img/demo/demo_3.png'
+                        alt=''
+                      />
+                    </div>
+                    <h3>
+                      Home Version - 4 <br /> (Coming Soon){" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper  wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file '>
+                      <img
+                        className='img-fluid blur'
+                        src='./assets/img/demo/demo_3.png'
+                        alt=''
+                      />
+                    </div>
+                    <h3>
+                      Home Version - 5 <br /> (Coming Soon){" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper  wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file '>
+                      <img
+                        className='img-fluid blur'
+                        src='./assets/img/demo/demo_3.png'
+                        alt=''
+                      />
+                    </div>
+                    <h3>
+                      Home Version - 6 <br /> (Coming Soon){" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* RTL Home Page all */}
+          <div id='allRtlHome' className='container mt-80'>
+            <div className='row header'>
+              <div className='col-12'>
+                <h2>
+                  Introduction All{" "}
+                  <span className='theme-color'>
+                    <br /> RTL
+                  </span>{" "}
+                  Home Pages
+                </h2>
+              </div>
+            </div>
+            <div className='row mt-50'>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-home-1.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/index-1'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Home Version - 3 </h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-home-2.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/index-2'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Home Version - 2</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-home-3.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/index-3'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Home Version - 3</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper  wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file '>
+                      <img
+                        className='img-fluid blur'
+                        src='./assets/img/demo/demo_3.png'
+                        alt=''
+                      />
+                    </div>
+                    <h3>
+                      RTL Home Version - 4 <br /> (Coming Soon){" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper  wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file '>
+                      <img
+                        className='img-fluid blur'
+                        src='./assets/img/demo/demo_3.png'
+                        alt=''
+                      />
+                    </div>
+                    <h3>
+                      RTL Home Version - 5 <br /> (Coming Soon){" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper  wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file '>
+                      <img
+                        className='img-fluid blur'
+                        src='./assets/img/demo/demo_3.png'
+                        alt=''
+                      />
+                    </div>
+                    <h3>
+                      RTL Home Version - 6 <br /> (Coming Soon){" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Inner Page all */}
+          <div id='innerPage' className='container mt-80'>
+            <div className='row header'>
+              <div className='col-12'>
+                <h2>
+                  Explore Our <span className='theme-color'>All Inner</span>{" "}
+                  Pages{" "}
+                </h2>
+              </div>
+            </div>
+            <div className='row mt-50'>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/aboutUs.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/about'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>About Us</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-about.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/about'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL About Us</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/service.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/services'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Service</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-service.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/services'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Service</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/service-details.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/services-details'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Service Details</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-service-details.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/services-details'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Service Details</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/team.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/team'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Our Team</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-team.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/team'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Our Team</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/team-details.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/team-details'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Team Details</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-team-details.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/team-details'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Team Details</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/projectPage.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/project'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Projects</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-project.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/project'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Projects</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/project-details.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/project-details'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Project Details</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-project-details.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/project-details'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Project Details</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/price.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/pricing'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Price &amp; Plan</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-price.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/pricing'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Price &amp; Plan</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/faq.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/faq'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>FAQ</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-faq.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/faq'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL FAQ</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/blog.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/blog'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Blog</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-blog.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/blog'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Blog</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/blog-details.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/blog-details'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Blog Details</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-blog-details.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/blog-details'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Blog Details</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/contactPage.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/contact'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>Contact</h3>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 col-md-6'>
+                <div
+                  className='wrapper wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='800ms'
+                >
+                  <div className='items '>
+                    <div className='img-file'>
+                      <img
+                        className='img-fluid'
+                        src='./assets/img/demo/rtl-contact.png'
+                        alt=''
+                      />
+                      <div className='btn-section d-flex justify-content-center'>
+                        <Link to='/rtl/contact'>
+                          <span className='btn-shape-normal-outline purchase'>
+                            <FaEye /> <span>View Demo</span>
+                          </span>
+                        </Link>
+                      </div>
+                    </div>
+                    <h3>RTL Contact</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Feature Intro */}
+        <div id='feature' className='feature mt-80 bg-gray py-60'>
+          <div className='container'>
+            <div className='row header'>
+              <div className='col'>
+                <div className='wrapper'>
+                  <h2>Core Features</h2>
+                  <p className='px-100'>
+                    There are amazing color combinations and new features. The
+                    template is built with unit and attractive design
+                    management.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div className='row'>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/page.png'
+                      alt=''
+                    />
+                    <p>3 Awesome HomePages</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='450ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/rtl.png'
+                      alt=''
+                    />
+                    <p>3 RTL HomePages</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/content.png'
+                      alt=''
+                    />
+                    <p>24 Inner Pages</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='750ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/speed.png'
+                      alt=''
+                    />
+                    <p>Speed Optimized</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/responsive.png'
+                      alt=''
+                    />
+                    <p>Fully Responsive</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='450ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/sass.png'
+                      alt=''
+                    />
+                    <p>Include SCSS File</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='450ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/bootstrap.png'
+                      alt=''
+                    />
+                    <p>Latest Bootstrap 5</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/w3.png'
+                      alt=''
+                    />
+                    <p>100% W3C Validation </p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='750ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/firefox.png'
+                      alt=''
+                    />
+                    <p>Cross Browser Support</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/code.png'
+                      alt=''
+                    />
+                    <p>Clean Coded</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='450ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/programming.png'
+                      alt=''
+                    />
+                    <p>Modern Design</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/font.png'
+                      alt=''
+                    />
+                    <p>Google Fonts</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='750ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/coding.png'
+                      alt=''
+                    />
+                    <p>Easy Customizable</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='300ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/contact-form.png'
+                      alt=''
+                    />
+                    <p>Contact With Email JS</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='450ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/folder.png'
+                      alt=''
+                    />
+                    <p>Well Documented</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='600ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/customer-service.png'
+                      alt=''
+                    />
+                    <p>24/7 Support</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='750ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/control.png'
+                      alt=''
+                    />
+                    <p>Easy To Maintain Code Format</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='750ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/nextjs.png'
+                      alt=''
+                    />
+                    <p>Coming Soon NextJS Version</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='750ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/reactjs.png'
+                      alt=''
+                    />
+                    <p>Have HTML Version</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='750ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/wordpress.png'
+                      alt=''
+                    />
+                    <p>Coming Soon Wordpress Theme</p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6'>
+                <div
+                  className='item wow animated fadeInUp'
+                  data-wow-duration='1.5'
+                  data-wow-delay='750ms'
+                >
+                  <div>
+                    <img
+                      className='img-fluid'
+                      src='./assets/img/demo/coming.png'
+                      alt=''
+                    />
+                    <p>Coming More HomePages</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Footer Section */}
+      <section className='footer-demo'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12'>
+              <div className='wrapper'>
+                <div className='img-file'>
+                  <img src='./assets/img/common/Logo_White.png' alt='' />
+                  <p>
+                    RORALEX is a modern design combination React template. This
+                    template can be used very nicely for a building construction
+                    or any construction related services. This template contains
+                    a total of 30 pages. There are also RTL facilities. The
+                    template is made with unique design combination. It is Our
+                    React version. Have already HTML Version. We are coming soon
+                    with WordPress theme version of this template.
+                  </p>
+                </div>
+                <div className='btn-section d-flex justify-content-center'>
+                  <a href='https://www.templatemonster.com/authors/themesoft69/'>
+                    <span className='btn-shape-normal-outline purchase'>
+                      <FaShoppingCart /> <span>Purchase Now</span>
+                    </span>
+                  </a>
+                </div>
+                <br />
+                <hr />
+                <div className='d-flex justify-content-center'>
+                  <a
+                    href='https://www.templatemonster.com/authors/themesoft69/'
+                    className='text-center text-white '
+                  >
+                    © By <strong>themesoft69</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
