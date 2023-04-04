@@ -87,7 +87,7 @@ const Demo = () => {
               </div>
               <div className='side-menu-icon d-lg-none text-end'>
                 <a
-                  href='javascript:void(0)'
+                  href='#'
                   className='info-toggle-btn f-right sidebar-toggle-btn'
                   onClick={mobileMenu}
                 >
@@ -319,9 +319,9 @@ const Demo = () => {
                         <li>
                           <FaAngleDoubleRight /> Three HomePage Layout
                         </li>
-                        <li>
+                        {/* <li>
                           <FaAngleDoubleRight /> Three RTL HomePage Layout
-                        </li>
+                        </li> */}
                         <li>
                           <FaAngleDoubleRight /> Every Section Are Unique!
                         </li>
@@ -329,7 +329,7 @@ const Demo = () => {
                           <FaAngleDoubleRight /> Working Contact Form.
                         </li>
                         <li>
-                          <FaAngleDoubleRight /> Total 30 Pages Included.
+                          <FaAngleDoubleRight /> Total 15 Pages Included.
                         </li>
                         <li>
                           <FaAngleDoubleRight /> Easy Code Maintain.
@@ -347,8 +347,8 @@ const Demo = () => {
                           Four, Five &amp; Six Version.{" "}
                         </li>
                         <li>
-                          <FaAngleDoubleRight /> Coming Soon ReactJs, NextJS,
-                          Wordpress Theme Version
+                          <FaAngleDoubleRight /> Coming Soon NextJS, Wordpress
+                          Theme Version
                         </li>
                       </ul>
                       <div
@@ -359,14 +359,14 @@ const Demo = () => {
                         <div className='btn-section'>
                           <Link to='/index-1'>
                             <span className='btn-shape-normal-outline left'>
-                              <FaRegShareSquare /> <span>View Demo</span>
+                              <span>View Demo</span>
                             </span>
                           </Link>
                         </div>
                         <div className='btn-section'>
                           <Link to='/rtl/index-1'>
                             <span className='btn-shape-normal-outline right'>
-                              <FaRegShareSquare /> <span>View RTL Demo</span>
+                              <span>View RTL Demo</span>
                             </span>
                           </Link>
                         </div>
@@ -469,7 +469,7 @@ const Demo = () => {
                         alt=''
                       />
                       <div className='btn-section d-flex justify-content-center'>
-                        <Link Link='/index-2'>
+                        <Link to='/index-2'>
                           <span className='btn-shape-normal-outline purchase'>
                             <FaEye /> <span>View Demo</span>
                           </span>
@@ -1701,10 +1701,10 @@ const Demo = () => {
                     RORALEX is a modern design combination React template. This
                     template can be used very nicely for a building construction
                     or any construction related services. This template contains
-                    a total of 30 pages. There are also RTL facilities. The
-                    template is made with unique design combination. It is Our
-                    React version. Have already HTML Version. We are coming soon
-                    with WordPress theme version of this template.
+                    a total of 15 pages. There are also RTL facilities coming
+                    soon. The template is made with unique design combination.
+                    It is Our React version. Have already HTML Version. We are
+                    coming soon with WordPress theme version of this template.
                   </p>
                 </div>
                 <div className='btn-section d-flex justify-content-center'>

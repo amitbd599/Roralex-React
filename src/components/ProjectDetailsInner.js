@@ -332,7 +332,7 @@ const ProjectDetailsInner = () => {
                           <img src='./assets/img/widgets/img-1.png' alt='' />
                           <div className='vide-button'>
                             <a
-                              href='JavaScript:void(0)'
+                              href='#'
                               className='popup-video'
                               onClick={() => setOpen(true)}
                             >

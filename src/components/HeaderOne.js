@@ -171,7 +171,7 @@ const HeaderOne = () => {
               </div>
               <div className='side-menu-icon d-lg-none text-end'>
                 <a
-                  href='javascript:void(0)'
+                  href='#'
                   className='info-toggle-btn f-right sidebar-toggle-btn'
                   onClick={mobileMenu}
                 >

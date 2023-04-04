@@ -28,7 +28,7 @@ const AboutOne = () => {
                       alt='Roralex'
                     />
                     <div className='vide-button' onClick={() => setOpen(true)}>
-                      <a href='JavaScript:void(0)' className='popup-video'>
+                      <a href='#' className='popup-video'>
                         <FaPlay />
                       </a>
                     </div>

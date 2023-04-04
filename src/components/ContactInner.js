@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { toast, Toaster } from "react-hot-toast";
 import { FaEnvelopeOpen, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
 
 const ContactInner = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    // Please See Documentation for more information
+    emailjs
+      .sendForm(
+        "service_yipk4xg", //YOUR_SERVICE_ID
+        "template_71bgc2q", //YOUR_TEMPLATE_ID
+        form.current,
+        "cwf8kROl5o3__96Ti" //YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            toast.success("Massage Sent Successfully!");
+            form.current[0].value = "";
+            form.current[1].value = "";
+            form.current[2].value = "";
+            form.current[3].value = "";
+            form.current[4].value = "";
+          }
+        },
+        (error) => {
+          if (error.text !== "OK") {
+            toast.error("Massage Not Sent!");
+          }
+        }
+      );
+  };
   return (
     <>
+      <Toaster position='bottom-center' reverseOrder={false} />
       {/* Contact version one start */}
       <section className='contact-version-one bg-white pt-80'>
         {/* Header Intro Version One */}
@@ -41,7 +73,7 @@ const ContactInner = () => {
             <div className='row'>
               <div className='col-lg-8'>
                 <div className='wrapper'>
-                  <form id='contact-form' action='#'>
+                  <form ref={form} onSubmit={sendEmail}>
                     <div className='input-field'>
                       <div className='field'>
                         <div className='wrapper'>
@@ -51,7 +83,7 @@ const ContactInner = () => {
                                 name='user_name'
                                 type='text'
                                 placeholder='Your Name : '
-                                required=''
+                                required
                                 title='Field must be a number.'
                                 aria-required='true'
                               />
@@ -59,7 +91,7 @@ const ContactInner = () => {
                                 name='user_email'
                                 type='email'
                                 placeholder='Email ID :  '
-                                required=''
+                                required
                               />
                             </div>
                             <div className='d-md-flex access gap-3 mt-15'>
@@ -67,7 +99,7 @@ const ContactInner = () => {
                                 name='country'
                                 type='text'
                                 placeholder='Country : '
-                                required=''
+                                required
                               />
                               <input
                                 name='phone'
@@ -90,7 +122,7 @@ const ContactInner = () => {
                                 rows={4}
                                 cols={50}
                                 placeholder='Enter Details...'
-                                required=''
+                                required
                                 defaultValue={""}
                               />
                             </div>
@@ -103,7 +135,6 @@ const ContactInner = () => {
                               </button>
                             </div>
                             <br />
-                            <p id='emailjs-response' className=' text-danger' />
                           </div>
                         </div>
                       </div>

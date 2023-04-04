@@ -32,7 +32,6 @@ function App() {
     <BrowserRouter>
       <RouteScrollToTop />
       <Routes>
-        {/* Standard Version */}
         <Route exact path='/' element={<Demo />} />
         <Route exact path='/index-1' element={<HomeOne />} />
         <Route exact path='/index-2' element={<HomeTwo />} />
@@ -49,7 +48,6 @@ function App() {
         <Route exact path='/services-details' element={<ServicesDetails />} />
         <Route exact path='/team' element={<Team />} />
         <Route exact path='/team-details' element={<TeamDetails />} />
-        {/* RTL Version */}
       </Routes>
       <ScrollToTop smooth color='#DE2021' />
     </BrowserRouter>
