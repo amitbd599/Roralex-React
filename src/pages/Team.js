@@ -1,37 +1,47 @@
-import React from "react";
-import HeaderOne from "../components/HeaderOne";
-import BreadCrumb from "../elements/BreadCrumb";
-import TeamInner from "../components/TeamInner";
-import OurClientOne from "../components/OurClientOne";
-import FooterOne from "../components/FooterOne";
-import ProjectBackgroundOverlayFour from "../components/ProjectBackgroundOverlayFour";
-import ClientReviewThree from "../components/ClientReviewThree";
+import React, { Fragment, Suspense } from "react";
+import Preloader from "../elements/Preloader";
+const BreadCrumb = React.lazy(() => import("../elements/BreadCrumb"));
+
+const HeaderOne = React.lazy(() => import("../components/HeaderOne"));
+const TeamInner = React.lazy(() => import("../components/TeamInner"));
+const OurClientOne = React.lazy(() => import("../components/OurClientOne"));
+const FooterOne = React.lazy(() => import("../components/FooterOne"));
+const ProjectBackgroundOverlayFour = React.lazy(() =>
+  import("../components/ProjectBackgroundOverlayFour")
+);
+const ClientReviewThree = React.lazy(() =>
+  import("../components/ClientReviewThree")
+);
 
 const Team = () => {
   return (
     <>
-      {/* Header One */}
-      <HeaderOne />
+      <Fragment>
+        <Suspense fallback={<Preloader />}>
+          {/* Header One */}
+          <HeaderOne />
 
-      {/* Bread Crumb */}
-      <BreadCrumb title={"Team"} />
+          {/* Bread Crumb */}
+          <BreadCrumb title={"Team"} />
 
-      {/* TeamInner */}
-      <TeamInner />
+          {/* TeamInner */}
+          <TeamInner />
 
-      {/* ProjectBackgroundOverlayFour */}
-      <ProjectBackgroundOverlayFour />
+          {/* ProjectBackgroundOverlayFour */}
+          <ProjectBackgroundOverlayFour />
 
-      {/* ClientReviewThree */}
-      <ClientReviewThree />
+          {/* ClientReviewThree */}
+          <ClientReviewThree />
 
-      {/* Our Client One */}
-      <section className='ourclient-section-version-one bg-white py-80'>
-        <OurClientOne />
-      </section>
+          {/* Our Client One */}
+          <section className='ourclient-section-version-one bg-white py-80'>
+            <OurClientOne />
+          </section>
 
-      {/* Footer One */}
-      <FooterOne />
+          {/* Footer One */}
+          <FooterOne />
+        </Suspense>
+      </Fragment>
     </>
   );
 };
