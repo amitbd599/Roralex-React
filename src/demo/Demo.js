@@ -22,49 +22,17 @@ import {
 import TrackVisibility from "react-on-screen";
 import { Link } from "react-router-dom";
 const Demo = () => {
-  const [stickyNav, setStickyNav] = useState(false);
-
+  const [active, setActive] = useState(false);
+  const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.onscroll = () => {
-      if (window.pageYOffset < 100) {
-        setStickyNav(false);
-      } else if (window.pageYOffset > 100) {
-        setStickyNav(true);
+      if (window.pageYOffset < 150) {
+        setScroll(false);
+      } else if (window.pageYOffset > 150) {
+        setScroll(true);
       }
       return () => (window.onscroll = null);
     };
-  }, []);
-
-  const [active, setActive] = useState(false);
-
-  useEffect(() => {
-    var offCanvasNav = document.getElementById("offcanvas-navigation");
-    var offCanvasNavSubMenu = offCanvasNav.querySelectorAll(".sub-menu");
-
-    for (let i = 0; i < offCanvasNavSubMenu.length; i++) {
-      offCanvasNavSubMenu[i].insertAdjacentHTML(
-        "beforebegin",
-        "<span class='menu-expand'><i></i></span>"
-      );
-    }
-
-    var menuExpand = offCanvasNav.querySelectorAll(".menu-expand");
-    var numMenuExpand = menuExpand.length;
-
-    function sideMenuExpand() {
-      if (this.parentElement.classList.contains("active") === true) {
-        this.parentElement.classList.remove("active");
-      } else {
-        for (let i = 0; i < numMenuExpand; i++) {
-          menuExpand[i].parentElement.classList.remove("active");
-        }
-        this.parentElement.classList.add("active");
-      }
-    }
-
-    for (let i = 0; i < numMenuExpand; i++) {
-      menuExpand[i].addEventListener("click", sideMenuExpand);
-    }
   }, []);
 
   const mobileMenu = () => {
@@ -74,7 +42,14 @@ const Demo = () => {
   return (
     <>
       {/* header-area-start */}
-      <header id='header-sticky' className='header-intro-version-one-area'>
+      <header
+        id='header-sticky'
+        className={
+          scroll
+            ? "header-intro-version-one-area header__sticky"
+            : "header-intro-version-one-area"
+        }
+      >
         <div className='container'>
           <div className='row align-items-center'>
             <div className='col-xl-2 col-lg-2 col-md-6 col-6'>
@@ -94,78 +69,17 @@ const Demo = () => {
                 <div className='main-menu'>
                   <nav id='mobile-menu'>
                     <ul>
-                      <li className='has-dropdown'>
-                        <Link to='/index-1'>
-                          Home <FaAngleDown />
-                        </Link>
-                        <ul className='sub-menu'>
-                          <li>
-                            <Link to='/index-1'>Home One</Link>
-                          </li>
-                          <li>
-                            <Link to='/index-2'>Home Two</Link>
-                          </li>
-                          <li>
-                            <Link to='/index-3'>Home Three</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className='has-dropdown'>
-                        <Link to='/services'>
-                          Services <FaAngleDown />
-                        </Link>
-                        <ul className='sub-menu'>
-                          <li>
-                            <Link to='services'>Services</Link>
-                          </li>
-                          <li>
-                            <Link to='/services-details'>Services Details</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className='has-dropdown'>
-                        <Link to='/about'>
-                          Pages <FaAngleDown />
-                        </Link>
-                        <ul className='sub-menu'>
-                          <li>
-                            <Link to='/about'>About Us</Link>
-                          </li>
-                          <li>
-                            <Link to='/team'>Team</Link>
-                          </li>
-                          <li>
-                            <Link to='/team-details'>Team Details</Link>
-                          </li>
-                          <li>
-                            <Link to='/project'>projects</Link>
-                          </li>
-                          <li>
-                            <Link to='/project-details'>projects Details</Link>
-                          </li>
-                          <li>
-                            <Link to='/pricing'>pricing Page</Link>
-                          </li>
-                          <li>
-                            <Link to='/faq'>FAQ Page</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className='has-dropdown'>
-                        <Link to='/blog'>
-                          Blogs <FaAngleDown />
-                        </Link>
-                        <ul className='sub-menu'>
-                          <li>
-                            <Link to='/blog'>Blogs</Link>
-                          </li>
-                          <li>
-                            <Link to='/blog-details'>Blog Details</Link>
-                          </li>
-                        </ul>
+                      <li>
+                        <a href='#intro'>Intro</a>
                       </li>
                       <li>
-                        <Link to='/contact'>Contact</Link>
+                        <a href='#allHome'>All Home</a>
+                      </li>
+                      <li>
+                        <a href='#innerPage'>Inner Page</a>
+                      </li>
+                      <li>
+                        <a href='#feature'>Core Features</a>
                       </li>
                     </ul>
                   </nav>
@@ -493,10 +407,10 @@ const Demo = () => {
               </div>
               <div className='col-md-4 inner'>
                 <h2 className='counter'>3</h2>
-                <h3>RTL HomePage</h3>
+                <h3>RTL HomePage Coming</h3>
               </div>
               <div className='col-md-4 inner'>
-                <h2 className='counter'>24</h2>
+                <h2 className='counter'>12</h2>
                 <h3>Inner Pages</h3>
               </div>
             </div>
@@ -654,7 +568,7 @@ const Demo = () => {
             </div>
           </div>
           {/* RTL Home Page all */}
-          <div id='allRtlHome' className='container mt-80'>
+          {/* <div id='allRtlHome' className='container mt-80'>
             <div className='row header'>
               <div className='col-12'>
                 <h2>
@@ -803,7 +717,7 @@ const Demo = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* Inner Page all */}
           <div id='innerPage' className='container mt-80'>
             <div className='row header'>
@@ -840,7 +754,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -864,7 +778,7 @@ const Demo = () => {
                     <h3>RTL About Us</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -890,7 +804,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -914,7 +828,7 @@ const Demo = () => {
                     <h3>RTL Service</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -940,7 +854,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -964,7 +878,7 @@ const Demo = () => {
                     <h3>RTL Service Details</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -990,7 +904,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -1014,7 +928,7 @@ const Demo = () => {
                     <h3>RTL Our Team</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -1040,7 +954,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -1064,7 +978,7 @@ const Demo = () => {
                     <h3>RTL Team Details</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -1090,7 +1004,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -1114,7 +1028,7 @@ const Demo = () => {
                     <h3>RTL Projects</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -1140,7 +1054,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -1164,7 +1078,7 @@ const Demo = () => {
                     <h3>RTL Project Details</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -1190,7 +1104,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -1214,7 +1128,7 @@ const Demo = () => {
                     <h3>RTL Price &amp; Plan</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -1240,7 +1154,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -1264,7 +1178,7 @@ const Demo = () => {
                     <h3>RTL FAQ</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -1290,7 +1204,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -1314,7 +1228,7 @@ const Demo = () => {
                     <h3>RTL Blog</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -1340,7 +1254,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -1364,7 +1278,7 @@ const Demo = () => {
                     <h3>RTL Blog Details</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -1390,7 +1304,7 @@ const Demo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6'>
+              {/* <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
                   data-wow-duration='1.5'
@@ -1414,7 +1328,7 @@ const Demo = () => {
                     <h3>RTL Contact</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -1463,7 +1377,7 @@ const Demo = () => {
                       src='./assets/img/demo/rtl.png'
                       alt=''
                     />
-                    <p>3 RTL HomePages</p>
+                    <p>Coming RTL HomePages</p>
                   </div>
                 </div>
               </div>
@@ -1479,7 +1393,7 @@ const Demo = () => {
                       src='./assets/img/demo/content.png'
                       alt=''
                     />
-                    <p>24 Inner Pages</p>
+                    <p>12 Inner Pages</p>
                   </div>
                 </div>
               </div>
