@@ -73,7 +73,6 @@ const OurPlanPriceTwo = () => {
                       </div>
                     </div>
                   </div>
-                  <div className='overlay' />
                 </div>
               </div>
               <div className='col-lg-4 col-md-6'>
@@ -124,7 +123,6 @@ const OurPlanPriceTwo = () => {
                       </div>
                     </div>
                   </div>
-                  <div className='overlay' />
                 </div>
               </div>
               <div className='col-lg-4 col-md-6'>
@@ -175,7 +173,6 @@ const OurPlanPriceTwo = () => {
                       </div>
                     </div>
                   </div>
-                  <div className='overlay' />
                 </div>
               </div>
             </div>
