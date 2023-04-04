@@ -310,8 +310,9 @@
             padding: 2px 0;
             display: flex;
             gap: 2px;
-            align-items: center;
+            align-items: start;
             svg {
+              margin-top: 8px;
               font-size: 8px;
               color: var(--theme_color);
             }
@@ -397,10 +398,11 @@
           li {
             padding: 5px 0;
             display: flex;
-            align-items: center;
+            align-items: start;
             gap: 5px;
 
             svg {
+              margin-top: 5px;
               margin-right: 3px;
               color: var(--theme_color);
             }
