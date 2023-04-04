@@ -1,8 +1,9 @@
 import React, { Fragment, Suspense } from "react";
 import Preloader from "../elements/Preloader";
+const BreadCrumb = React.lazy(() => import("../elements/BreadCrumb"));
+
 
 const HeaderOne = React.lazy(() => import("../components/HeaderOne"));
-const BreadCrumb = React.lazy(() => import("../elements/BreadCrumb"));
 const LatestProjectsTwo = React.lazy(() =>
   import("../components/LatestProjectsTwo")
 );
