@@ -1,29 +1,37 @@
-import React from "react";
-import HeaderOne from "../components/HeaderOne";
-import BreadCrumb from "../elements/BreadCrumb";
-import TeamDetailsInner from "../components/TeamDetailsInner";
-import OurClientOne from "../components/OurClientOne";
-import FooterOne from "../components/FooterOne";
+import React, { Fragment, Suspense } from "react";
+import Preloader from "../elements/Preloader";
+const BreadCrumb = React.lazy(() => import("../elements/BreadCrumb"));
+
+const HeaderOne = React.lazy(() => import("../components/HeaderOne"));
+const TeamDetailsInner = React.lazy(() =>
+  import("../components/TeamDetailsInner")
+);
+const OurClientOne = React.lazy(() => import("../components/OurClientOne"));
+const FooterOne = React.lazy(() => import("../components/FooterOne"));
 
 const TeamDetails = () => {
   return (
     <>
-      {/* Header One */}
-      <HeaderOne />
+      <Fragment>
+        <Suspense fallback={<Preloader />}>
+          {/* Header One */}
+          <HeaderOne />
 
-      {/* Bread Crumb */}
-      <BreadCrumb title={"Team Details"} />
+          {/* Bread Crumb */}
+          <BreadCrumb title={"Team Details"} />
 
-      {/* TeamDetailsInner */}
-      <TeamDetailsInner />
+          {/* TeamDetailsInner */}
+          <TeamDetailsInner />
 
-      {/* Our Client One */}
-      <section className='ourclient-section-version-one bg-white py-80'>
-        <OurClientOne />
-      </section>
+          {/* Our Client One */}
+          <section className='ourclient-section-version-one bg-white py-80'>
+            <OurClientOne />
+          </section>
 
-      {/* Footer One */}
-      <FooterOne />
+          {/* Footer One */}
+          <FooterOne />
+        </Suspense>
+      </Fragment>
     </>
   );
 };

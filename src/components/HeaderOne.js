@@ -114,7 +114,7 @@ const HeaderOne = () => {
                         </Link>
                         <ul className='sub-menu'>
                           <li>
-                            <Link to='services'>Services</Link>
+                            <Link to='/services'>Services</Link>
                           </li>
                           <li>
                             <Link to='/services-details'>Services Details</Link>

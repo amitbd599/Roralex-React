@@ -161,123 +161,23 @@ const Demo = () => {
             <div className='offcanvas-inner-content'>
               <nav className='offcanvas-navigation' id='offcanvas-navigation'>
                 <ul>
-                  <li className='menu-item-has-children'>
-                    <Link to='/index-1'>HOME</Link>
-                    <ul className='sub-menu'>
-                      <li>
-                        <Link to='/index-1'>Home One</Link>
-                      </li>
-                      <li>
-                        <Link to='/index-2'>Home Two</Link>
-                      </li>
-                      <li>
-                        <Link to='/index-3'>Home Three</Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className='menu-item-has-children'>
-                    <Link to='/services'>Services</Link>
-                    <ul className='sub-menu'>
-                      <li>
-                        <Link to='/services'>Service Page</Link>
-                      </li>
-                      <li>
-                        <Link to='/services-details'>Services Details</Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className='menu-item-has-children'>
-                    <Link to='/about'>Pages</Link>
-                    <ul className='sub-menu'>
-                      <li>
-                        <Link to='/about'>About Us</Link>
-                      </li>
-                      <li>
-                        <Link to='/team'>Team</Link>
-                      </li>
-                      <li>
-                        <Link to='/team-details'>Team Details</Link>
-                      </li>
-                      <li>
-                        <Link to='/project'>Projects</Link>
-                      </li>
-                      <li>
-                        <Link to='/project-details'>Projects Details</Link>
-                      </li>
-                      <li>
-                        <Link to='/pricing'>Pricing Page</Link>
-                      </li>
-                      <li>
-                        <Link to='/faq'>FAQ Page</Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className='menu-item-has-children'>
-                    <Link to='/blog'>Blog</Link>
-                    <ul className='sub-menu'>
-                      <li>
-                        <Link to='/blog'>Blog</Link>
-                      </li>
-                      <li>
-                        <Link to='/blog-details'>Blog Details</Link>
-                      </li>
-                    </ul>
-                  </li>
                   <li>
-                    <Link to='/contact'>CONTACT</Link>{" "}
+                    <a to='#intro'>Intro</a>{" "}
+                  </li>
+
+                  <li>
+                    <a to='#allHome'>allHome</a>{" "}
+                  </li>
+
+                  <li>
+                    <a to='#innerPage'>InnerPage</a>{" "}
+                  </li>
+
+                  <li>
+                    <a to='#feature'>Feature</a>{" "}
                   </li>
                 </ul>
               </nav>
-
-              <div className='sidebar__contact  mb-20'>
-                <h4>Contact With US</h4>
-                <div className='sidebar__social'>
-                  <ul>
-                    <li>
-                      <a href='#'>
-                        <FaFacebookF />
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <FaTwitter />
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <FaYoutube />
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <FaLinkedinIn />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className='location-email-intro mobile'>
-                  <div className='inner-location-email-intro pr-30'>
-                    <div className='inner'>
-                      <span>
-                        <FaLocationArrow />
-                      </span>
-                      <span className='text'>Location</span>
-                    </div>
-                    <h5 className='text'>4043 Riverside Augusta</h5>
-                  </div>
-                  <div className='inner-location-email-intro pt-5'>
-                    <div className='inner'>
-                      <span>
-                        <FaEnvelope />
-                      </span>
-                      <span className='text'>Get In Touch</span>
-                    </div>
-                    <h5 className='text'>info@roralex.com</h5>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

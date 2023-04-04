@@ -24,6 +24,7 @@ const ContactInner = () => {
             form.current[2].value = "";
             form.current[3].value = "";
             form.current[4].value = "";
+            form.current[5].value = "";
           }
         },
         (error) => {
