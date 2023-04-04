@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import { FaCheckCircle, FaCircle, FaPlay } from "react-icons/fa";
-import TrackVisibility from "react-on-screen";
-import CountUp from "react-countup";
-import ModalVideo from "react-modal-video";
+import React from "react";
+import { FaCircle } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 const AboutTwo = () => {
-  const [isOpen, setOpen] = useState(false);
   return (
     <>
       {/* About Section version two start */}

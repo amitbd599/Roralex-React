@@ -1,12 +1,8 @@
 import React from "react";
 import {
   FaCircle,
-  FaEnvelope,
   FaFacebookF,
-  FaFax,
-  FaGlobe,
   FaLinkedinIn,
-  FaPhoneAlt,
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";

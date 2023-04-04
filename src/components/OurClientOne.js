@@ -4,7 +4,6 @@ const OurClientOne = () => {
   return (
     <>
       {/* Our Client version one Start */}
-      {/* <section className='ourclient-section-version-one py-80'> */}
       <div className='container'>
         <div className='row'>
           <div className='col-12'>
@@ -82,7 +81,6 @@ const OurClientOne = () => {
           </div>
         </div>
       </div>
-      {/* </section> */}
       {/* Our Client version one End */}
     </>
   );
