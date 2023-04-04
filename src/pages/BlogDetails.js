@@ -1,23 +1,30 @@
-import React from "react";
-import HeaderOne from "../components/HeaderOne";
-import BreadCrumb from "../elements/BreadCrumb";
-import BlogDetailsInner from "../components/BlogDetailsInner";
-import FooterOne from "../components/FooterOne";
+import React, { Fragment, Suspense } from "react";
+import Preloader from "../elements/Preloader";
 
+const HeaderOne = React.lazy(() => import("../components/HeaderOne"));
+const BlogDetailsInner = React.lazy(() =>
+  import("../components/BlogDetailsInner")
+);
+const FooterOne = React.lazy(() => import("../components/FooterOne"));
+const BreadCrumb = React.lazy(() => import("../elements/BreadCrumb"));
 const BlogDetails = () => {
   return (
     <>
-      {/* Header One */}
-      <HeaderOne />
+      <Fragment>
+        <Suspense fallback={<Preloader />}>
+          {/* Header One */}
+          <HeaderOne />
 
-      {/* Bread Crumb */}
-      <BreadCrumb title={"Blog Details"} />
+          {/* Bread Crumb */}
+          <BreadCrumb title={"Blog Details"} />
 
-      {/* Bread Crumb */}
-      <BlogDetailsInner />
+          {/* Bread Crumb */}
+          <BlogDetailsInner />
 
-      {/* Footer One */}
-      <FooterOne />
+          {/* Footer One */}
+          <FooterOne />
+        </Suspense>
+      </Fragment>
     </>
   );
 };
