@@ -331,13 +331,12 @@ const ProjectDetailsInner = () => {
                         <div className='inner'>
                           <img src='./assets/img/widgets/img-1.png' alt='' />
                           <div className='vide-button'>
-                            <a
-                              href='#'
+                            <span
                               className='popup-video'
                               onClick={() => setOpen(true)}
                             >
                               <FaPlay />
-                            </a>
+                            </span>
                           </div>
                         </div>
                       </div>

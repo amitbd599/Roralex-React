@@ -77,9 +77,10 @@
               padding-bottom: 10px;
               display: flex;
               gap: 8px;
-              align-items: center;
+              align-items: start;
             }
-            i {
+            svg {
+              margin-top: 4px;
               color: var(--theme_color);
             }
           }

@@ -2,22 +2,11 @@ import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import {
   FaAngleDoubleRight,
-  FaAngleDown,
   FaBars,
-  FaCartArrowDown,
-  FaCog,
-  FaEnvelope,
   FaEye,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaLocationArrow,
-  FaMapMarkerAlt,
-  FaRegShareSquare,
   FaSearch,
   FaShoppingCart,
   FaTimes,
-  FaTwitter,
-  FaYoutube,
 } from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
 import { Link } from "react-router-dom";
@@ -55,7 +44,7 @@ const Demo = () => {
             <div className='col-xl-2 col-lg-2 col-md-6 col-6'>
               <div className='logo-area'>
                 <div className='logo'>
-                  <Link to='/index-1'>
+                  <Link to='/'>
                     <img
                       src='./assets/img/common/Logo_White.png'
                       alt='Roralex'
@@ -95,28 +84,7 @@ const Demo = () => {
                 </a>
               </div>
             </div>
-            <div className='col-xl-3 col-lg-4 d-none d-xl-block'>
-              <div className='location-email-intro'>
-                <div className='inner-location-email-intro pr-30'>
-                  <div className='inner'>
-                    <span>
-                      <FaMapMarkerAlt />
-                    </span>
-                    <span className='text'>Location</span>
-                  </div>
-                  <h5>Riverside Augusta</h5>
-                </div>
-                <div className='inner-location-email-intro'>
-                  <div className='inner'>
-                    <span>
-                      <FaEnvelope />
-                    </span>
-                    <span className='text'>Get In Touch</span>
-                  </div>
-                  <h5>info@roralex.com</h5>
-                </div>
-              </div>
-            </div>
+            <div className='col-xl-3 col-lg-4 d-none d-xl-block'></div>
           </div>
         </div>
       </header>
@@ -201,7 +169,7 @@ const Demo = () => {
                       data-wow-duration='1.5s'
                       data-wow-delay='400ms'
                     >
-                      RORALEX Trendy &amp; Powerful React Template With RTL
+                      RORALEX Trendy & Powerful React Template
                     </h2>
                     <div className='intro-list'>
                       <h3
@@ -235,16 +203,20 @@ const Demo = () => {
                           <FaAngleDoubleRight /> Easy Code Maintain.
                         </li>
                         <li>
-                          <FaAngleDoubleRight /> Full Responsive &amp; Cross
-                          Browser Support.
+                          <FaAngleDoubleRight /> Full Responsive & Cross Browser
+                          Support.
                         </li>
                         <li>
-                          <FaAngleDoubleRight /> Using Latest Bootstrap 5 &amp;
+                          <FaAngleDoubleRight /> Using React Router Dom with
+                          functional Component.
+                        </li>
+                        <li>
+                          <FaAngleDoubleRight /> Using Latest Bootstrap 5 &
                           Include SCSS
                         </li>
                         <li>
                           <FaAngleDoubleRight /> Coming Soon HomePage Layout
-                          Four, Five &amp; Six Version.{" "}
+                          Four, Five & Six Version.{" "}
                         </li>
                         <li>
                           <FaAngleDoubleRight /> Coming Soon NextJS, Wordpress
@@ -263,13 +235,13 @@ const Demo = () => {
                             </span>
                           </Link>
                         </div>
-                        <div className='btn-section'>
+                        {/* <div className='btn-section'>
                           <Link to='/rtl/index-1'>
                             <span className='btn-shape-normal-outline right'>
                               <span>View RTL Demo</span>
                             </span>
                           </Link>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -302,15 +274,39 @@ const Demo = () => {
           <div className='container'>
             <div className='row'>
               <div className='col-md-4 inner'>
-                <h2 className='counter'>3</h2>
+                <TrackVisibility once>
+                  {({ isVisible }) =>
+                    isVisible && (
+                      <h2 className='counter'>
+                        <CountUp delay={0} start={0} end={3} />
+                      </h2>
+                    )
+                  }
+                </TrackVisibility>
                 <h3>HomePage</h3>
               </div>
               <div className='col-md-4 inner'>
-                <h2 className='counter'>3</h2>
+                <TrackVisibility once>
+                  {({ isVisible }) =>
+                    isVisible && (
+                      <h2 className='counter'>
+                        <CountUp delay={0} start={0} end={3} />
+                      </h2>
+                    )
+                  }
+                </TrackVisibility>
                 <h3>RTL HomePage Coming</h3>
               </div>
               <div className='col-md-4 inner'>
-                <h2 className='counter'>12</h2>
+                <TrackVisibility once>
+                  {({ isVisible }) =>
+                    isVisible && (
+                      <h2 className='counter'>
+                        <CountUp delay={0} start={0} end={12} />
+                      </h2>
+                    )
+                  }
+                </TrackVisibility>
                 <h3>Inner Pages</h3>
               </div>
             </div>

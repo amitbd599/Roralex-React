@@ -138,9 +138,9 @@ const AboutThree = () => {
                         className='vide-button'
                         onClick={() => setOpen(true)}
                       >
-                        <a href='#' className='popup-video'>
+                        <span className='popup-video'>
                           <FaPlay />
-                        </a>
+                        </span>
                       </div>
                     </div>
                   </div>
