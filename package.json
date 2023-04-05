@@ -1,6 +1,6 @@
 {
-  "name": "agiletech",
-  "version": "0.1.0",
+  "name": "roralex-react",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
