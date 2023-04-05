@@ -32,7 +32,7 @@ const HomeOne = () => {
           {/* Slider One */}
           <SliderOne />
           {/* About One */}
-          <section className='about-section-version-one  pt-40 pb-80'>
+          <section className='about-section-version-one  pt-40 mb-140'>
             <AboutOne />
           </section>
           {/* Service List One */}
