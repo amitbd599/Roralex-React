@@ -243,13 +243,12 @@ const HeaderTwo = () => {
                   </div>
                 </div>
                 <div className='side-menu-icon d-lg-none text-end'>
-                  <a
-                    href='#'
+                  <span
                     className='info-toggle-btn f-right sidebar-toggle-btn'
                     onClick={mobileMenu}
                   >
                     <FaBars />
-                  </a>
+                  </span>
                 </div>
               </div>
             </div>

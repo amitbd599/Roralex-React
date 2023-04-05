@@ -123,15 +123,14 @@
             margin-bottom: 10px;
             border-radius: 5px;
             overflow: hidden;
+            border: 1px solid var(--theme_color);
             .accordion-header {
               .accordion-button {
                 padding-left: 40px;
                 position: relative;
                 color: var(--bg_white);
                 background-color: var(--theme_color);
-                border: 1px solid var(--theme_color);
                 &:focus {
-                  border: 1px solid var(--theme_color);
                   outline: 0;
                   box-shadow: none;
                 }

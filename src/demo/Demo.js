@@ -75,13 +75,12 @@ const Demo = () => {
                 </div>
               </div>
               <div className='side-menu-icon d-lg-none text-end'>
-                <a
-                  href='#'
+                <span
                   className='info-toggle-btn f-right sidebar-toggle-btn'
                   onClick={mobileMenu}
                 >
                   <FaBars />
-                </a>
+                </span>
               </div>
             </div>
             <div className='col-xl-3 col-lg-4 d-none d-xl-block'></div>
@@ -166,23 +165,26 @@ const Demo = () => {
                   <div className='wrapper'>
                     <h2
                       className='wow animated fadeInUp'
-                      data-wow-duration='1.5s'
-                      data-wow-delay='400ms'
+                      data-aos='fade-right'
+                      data-aos-delay='100'
+                      data-aos-duration='1500'
                     >
                       RORALEX Trendy & Powerful React Template
                     </h2>
                     <div className='intro-list'>
                       <h3
                         className='wow animated fadeInUp'
-                        data-wow-duration='1.5s'
-                        data-wow-delay='500ms'
+                        data-aos='fade-right'
+                        data-aos-delay='150'
+                        data-aos-duration='1500'
                       >
                         Features &amp; Trend:
                       </h3>
                       <ul
                         className='wow animated fadeInUp'
-                        data-wow-duration='1.5s'
-                        data-wow-delay='600ms'
+                        data-aos='fade-right'
+                        data-aos-delay='200'
+                        data-aos-duration='1500'
                       >
                         <li>
                           <FaAngleDoubleRight /> Three HomePage Layout
@@ -225,8 +227,9 @@ const Demo = () => {
                       </ul>
                       <div
                         className='button-intro wow animated fadeInUp'
-                        data-wow-duration='1s'
-                        data-wow-delay='100ms'
+                        data-aos='fade-right'
+                        data-aos-delay='100'
+                        data-aos-duration='1500'
                       >
                         <div className='btn-section'>
                           <Link to='/index-1'>
@@ -250,8 +253,9 @@ const Demo = () => {
               <div className='col-lg-6'>
                 <div
                   className='right-side wow animated fadeInUp'
-                  data-wow-duration='1.5s'
-                  data-wow-delay='400ms'
+                  data-aos='fade-left'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='wrapper'>
                     <div className='left-tab'>
@@ -270,7 +274,12 @@ const Demo = () => {
           </div>
         </div>
         {/* Counter  Data */}
-        <div className='counter-view'>
+        <div
+          className='counter-view'
+          data-aos='fade-up'
+          data-aos-delay='100'
+          data-aos-duration='1500'
+        >
           <div className='container'>
             <div className='row'>
               <div className='col-md-4 inner'>
@@ -325,7 +334,12 @@ const Demo = () => {
                 </h2>
               </div>
             </div>
-            <div className='row mt-50'>
+            <div
+              className='row mt-50'
+              data-aos='fade-up'
+              data-aos-delay='100'
+              data-aos-duration='1500'
+            >
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
@@ -354,8 +368,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='600ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -379,8 +394,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='800ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -404,8 +420,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper  wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='300ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file '>
@@ -424,8 +441,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper  wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='600ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file '>
@@ -444,8 +462,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper  wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='800ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file '>
@@ -628,8 +647,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='300ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -678,8 +698,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='800ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -728,8 +749,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='600ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -778,8 +800,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='300ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -828,8 +851,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='800ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -878,8 +902,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='600ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -928,8 +953,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='300ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -978,8 +1004,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='800ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -1028,8 +1055,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='600ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -1078,8 +1106,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='300ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -1128,8 +1157,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='800ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -1178,8 +1208,9 @@ const Demo = () => {
               <div className='col-lg-4 col-md-6'>
                 <div
                   className='wrapper wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='600ms'
+                  data-aos='fade-up'
+                  data-aos-delay='100'
+                  data-aos-duration='1500'
                 >
                   <div className='items '>
                     <div className='img-file'>
@@ -1244,13 +1275,14 @@ const Demo = () => {
               </div>
             </div>
             <br />
-            <div className='row'>
+            <div
+              className='row'
+              data-aos='fade-up'
+              data-aos-delay='100'
+              data-aos-duration='2000'
+            >
               <div className='col-lg-3 col-md-6'>
-                <div
-                  className='item wow animated fadeInUp'
-                  data-wow-duration='1.5'
-                  data-wow-delay='300ms'
-                >
+                <div className='item wow animated fadeInUp'>
                   <div>
                     <img
                       className='img-fluid'
@@ -1542,7 +1574,7 @@ const Demo = () => {
                   <div>
                     <img
                       className='img-fluid'
-                      src='./assets/img/demo/reactjs.png'
+                      src='./assets/img/demo/html.png'
                       alt=''
                     />
                     <p>Have HTML Version</p>

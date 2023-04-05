@@ -786,12 +786,16 @@ a.meanmenu-reveal {
         margin-right: 5px;
       }
       & a {
-        display: inline-block;
         width: 35px;
         height: 35px;
         line-height: 42px;
         text-align: center;
         background: #f1f1f1;
+        border-radius: 5px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @include border-radius(5px);
         font-size: 20px;
         .fa-facebook-f {

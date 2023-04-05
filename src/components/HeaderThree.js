@@ -168,13 +168,12 @@ const HeaderThree = () => {
                 </div>
               </div>
               <div className='side-menu-icon d-lg-none text-end'>
-                <a
-                  href='#'
+                <span
                   className='info-toggle-btn f-right sidebar-toggle-btn'
                   onClick={mobileMenu}
                 >
                   <FaBars />
-                </a>
+                </span>
               </div>
             </div>
             <div className='col-xl-3 col-lg-4 d-none d-lg-block'>
